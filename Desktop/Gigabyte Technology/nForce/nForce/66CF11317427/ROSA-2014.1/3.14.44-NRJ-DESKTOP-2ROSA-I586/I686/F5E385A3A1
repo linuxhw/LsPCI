@@ -1,0 +1,200 @@
+00:00.0 Host bridge [0600]: NVIDIA Corporation nForce3 Host Bridge [10de:00d1] (rev a4)
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Region 0: Memory at d0000000 (32-bit, prefetchable) [size=128M]
+	Capabilities: [44] HyperTransport: Slave or Primary Interface
+		Command: BaseUnitID=0 UnitCnt=12 MastHost- DefDir- DUL-
+		Link Control 0: CFlE+ CST- CFE- <LkFail- Init+ EOC- TXO- <CRCErr=0 IsocEn- LSEn- ExtCTL- 64b-
+		Link Config 0: MLWI=16bit DwFcIn- MLWO=8bit DwFcOut- LWI=16bit DwFcInEn- LWO=8bit DwFcOutEn-
+		Link Control 1: CFlE- CST- CFE- <LkFail+ Init- EOC+ TXO+ <CRCErr=0 IsocEn- LSEn- ExtCTL- 64b-
+		Link Config 1: MLWI=8bit DwFcIn- MLWO=8bit DwFcOut- LWI=8bit DwFcInEn- LWO=8bit DwFcOutEn-
+		Revision ID: 1.03
+		Link Frequency 0: 600MHz
+		Link Error 0: <Prot- <Ovfl- <EOC- CTLTm-
+		Link Frequency Capability 0: 200MHz+ 300MHz+ 400MHz+ 500MHz+ 600MHz+ 800MHz- 1.0GHz- 1.2GHz- 1.4GHz- 1.6GHz- Vend-
+		Feature Capability: IsocFC+ LDTSTOP+ CRCTM- ECTLT- 64bA- UIDRD-
+		Link Frequency 1: 200MHz
+		Link Error 1: <Prot- <Ovfl- <EOC- CTLTm-
+		Link Frequency Capability 1: 200MHz- 300MHz- 400MHz- 500MHz- 600MHz- 800MHz- 1.0GHz- 1.2GHz- 1.4GHz- 1.6GHz- Vend-
+		Error Handling: PFlE- OFlE- PFE- OFE- EOCFE- RFE- CRCFE- SERRFE- CF- RE- PNFE- ONFE- EOCNFE- RNFE- CRCNFE- SERRNFE-
+		Prefetchable memory behind bridge Upper: 00-00
+		Bus Number: 00
+	Capabilities: [c0] AGP version 3.0
+		Status: RQ=32 Iso- ArqSz=2 Cal=0 SBA+ ITACoh- GART64- HTrans- 64bit- FW+ AGP3+ Rate=x4,x8
+		Command: RQ=1 ArqSz=0 Cal=0 SBA+ AGP+ GART64- 64bit- FW+ Rate=x8
+	Kernel driver in use: agpgart-amd64
+
+00:01.0 ISA bridge [0601]: NVIDIA Corporation nForce3 LPC Bridge [10de:00d0] (rev a6)
+	Subsystem: Gigabyte Technology Co., Ltd Device [1458:0c11]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle+ MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+
+00:01.1 SMBus [0c05]: NVIDIA Corporation nForce3 SMBus [10de:00d4] (rev a4)
+	Subsystem: Gigabyte Technology Co., Ltd Device [1458:0c11]
+	Control: I/O+ Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Interrupt: pin A routed to IRQ 11
+	Region 4: I/O ports at 1c00 [size=64]
+	Region 5: I/O ports at 2000 [size=64]
+	Capabilities: [44] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: nForce2_smbus
+	Kernel modules: i2c_nforce2
+
+00:02.0 USB controller [0c03]: NVIDIA Corporation nForce3 USB 1.1 [10de:00d7] (rev a5) (prog-if 10 [OHCI])
+	Subsystem: Gigabyte Technology Co., Ltd Device [1458:5004]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0 (750ns min, 250ns max)
+	Interrupt: pin A routed to IRQ 22
+	Region 0: Memory at e3003000 (32-bit, non-prefetchable) [size=4K]
+	Capabilities: [44] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: ohci-pci
+	Kernel modules: ohci_pci
+
+00:02.1 USB controller [0c03]: NVIDIA Corporation nForce3 USB 1.1 [10de:00d7] (rev a5) (prog-if 10 [OHCI])
+	Subsystem: Gigabyte Technology Co., Ltd Device [1458:5004]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0 (750ns min, 250ns max)
+	Interrupt: pin B routed to IRQ 21
+	Region 0: Memory at e3004000 (32-bit, non-prefetchable) [size=4K]
+	Capabilities: [44] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: ohci-pci
+	Kernel modules: ohci_pci
+
+00:02.2 USB controller [0c03]: NVIDIA Corporation nForce3 USB 2.0 [10de:00d8] (rev a2) (prog-if 20 [EHCI])
+	Subsystem: Gigabyte Technology Co., Ltd Device [1458:5004]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0 (750ns min, 250ns max)
+	Interrupt: pin C routed to IRQ 20
+	Region 0: Memory at e3005000 (32-bit, non-prefetchable) [size=256]
+	Capabilities: [44] Debug port: BAR=1 offset=0080
+	Capabilities: [80] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: ehci-pci
+	Kernel modules: ehci_pci
+
+00:06.0 Multimedia audio controller [0401]: NVIDIA Corporation nForce3 Audio [10de:00da] (rev a2)
+	Subsystem: Gigabyte Technology Co., Ltd Device [1458:a002]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0 (500ns min, 1250ns max)
+	Interrupt: pin A routed to IRQ 22
+	Region 0: I/O ports at d800 [size=256]
+	Region 1: I/O ports at dc00 [size=128]
+	Region 2: Memory at e3001000 (32-bit, non-prefetchable) [size=4K]
+	Capabilities: [44] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: snd_intel8x0
+	Kernel modules: snd_intel8x0
+
+00:08.0 IDE interface [0101]: NVIDIA Corporation nForce3 IDE [10de:00d5] (rev a5) (prog-if 8a [Master SecP PriP])
+	Subsystem: Gigabyte Technology Co., Ltd Device [1458:5002]
+	Control: I/O+ Mem- BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0 (750ns min, 250ns max)
+	Region 0: [virtual] Memory at 000001f0 (32-bit, non-prefetchable) [size=8]
+	Region 1: [virtual] Memory at 000003f0 (type 3, non-prefetchable)
+	Region 2: [virtual] Memory at 00000170 (32-bit, non-prefetchable) [size=8]
+	Region 3: [virtual] Memory at 00000370 (type 3, non-prefetchable)
+	Region 4: I/O ports at f000 [size=16]
+	Capabilities: [44] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: pata_amd
+	Kernel modules: pata_amd, pata_acpi, ata_generic, amd74xx, ide_pci_generic
+
+00:0a.0 PCI bridge [0604]: NVIDIA Corporation nForce3 PCI Bridge [10de:00dd] (rev a2) (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap- 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Bus: primary=00, secondary=01, subordinate=01, sec-latency=128
+	I/O behind bridge: 0000c000-0000cfff
+	Memory behind bridge: e2000000-e2ffffff
+	Secondary status: 66MHz- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort+ <SERR- <PERR-
+	BridgeCtl: Parity- SERR+ NoISA+ VGA- MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Kernel modules: shpchp
+
+00:0b.0 PCI bridge [0604]: NVIDIA Corporation nForce3 AGP Bridge [10de:00d2] (rev a4) (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap- 66MHz+ UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 16
+	Bus: primary=00, secondary=02, subordinate=02, sec-latency=10
+	Memory behind bridge: e0000000-e1ffffff
+	Prefetchable memory behind bridge: d8000000-dfffffff
+	Secondary status: 66MHz+ FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort+ <SERR- <PERR-
+	BridgeCtl: Parity+ SERR+ NoISA+ VGA+ MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Kernel modules: shpchp
+
+00:18.0 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] K8 [Athlon64/Opteron] HyperTransport Technology Configuration [1022:1100]
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Capabilities: [80] HyperTransport: Host or Secondary Interface
+		Command: WarmRst+ DblEnd- DevNum=0 ChainSide- HostHide+ Slave- <EOCErr- DUL-
+		Link Control: CFlE- CST- CFE- <LkFail- Init+ EOC- TXO- <CRCErr=0 IsocEn- LSEn- ExtCTL- 64b-
+		Link Config: MLWI=16bit DwFcIn- MLWO=16bit DwFcOut- LWI=8bit DwFcInEn- LWO=16bit DwFcOutEn-
+		Revision ID: 1.02
+		Link Frequency: 600MHz
+		Link Error: <Prot- <Ovfl- <EOC- CTLTm-
+		Link Frequency Capability: 200MHz+ 300MHz- 400MHz+ 500MHz- 600MHz+ 800MHz+ 1.0GHz+ 1.2GHz- 1.4GHz- 1.6GHz- Vend-
+		Feature Capability: IsocFC- LDTSTOP+ CRCTM- ECTLT- 64bA- UIDRD- ExtRS- UCnfE-
+
+00:18.1 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] K8 [Athlon64/Opteron] Address Map [1022:1101]
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+
+00:18.2 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] K8 [Athlon64/Opteron] DRAM Controller [1022:1102]
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+
+00:18.3 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] K8 [Athlon64/Opteron] Miscellaneous Control [1022:1103]
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Kernel driver in use: k8temp
+	Kernel modules: k8temp
+
+01:0b.0 Ethernet controller [0200]: Realtek Semiconductor Co., Ltd. RTL-8100/8101L/8139 PCI Fast Ethernet Adapter [10ec:8139] (rev 10)
+	Subsystem: Gigabyte Technology Co., Ltd GA-7VM400M/7VT600 Motherboard [1458:e000]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 32 (8000ns min, 16000ns max)
+	Interrupt: pin A routed to IRQ 19
+	Region 0: I/O ports at c000 [size=256]
+	Region 1: Memory at e2000000 (32-bit, non-prefetchable) [size=256]
+	Capabilities: [50] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=375mA PME(D0-,D1+,D2+,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: 8139too
+	Kernel modules: 8139cp, 8139too
+
+02:00.0 VGA compatible controller [0300]: NVIDIA Corporation NV34 [GeForce FX 5200] [10de:0322] (rev a1) (prog-if 00 [VGA controller])
+	Subsystem: ASUSTeK Computer Inc. Device [1043:80cf]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 32 (1250ns min, 250ns max)
+	Interrupt: pin A routed to IRQ 16
+	Region 0: Memory at e0000000 (32-bit, non-prefetchable) [size=16M]
+	Region 1: Memory at d8000000 (32-bit, prefetchable) [size=128M]
+	[virtual] Expansion ROM at e1000000 [disabled] [size=128K]
+	Capabilities: [60] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [44] AGP version 3.0
+		Status: RQ=32 Iso- ArqSz=0 Cal=3 SBA+ ITACoh- GART64- HTrans- 64bit- FW+ AGP3+ Rate=x4,x8
+		Command: RQ=32 ArqSz=2 Cal=0 SBA+ AGP+ GART64- 64bit- FW+ Rate=x8
+	Kernel driver in use: nouveau
+	Kernel modules: nvidiafb, nouveau, nvidia173
+

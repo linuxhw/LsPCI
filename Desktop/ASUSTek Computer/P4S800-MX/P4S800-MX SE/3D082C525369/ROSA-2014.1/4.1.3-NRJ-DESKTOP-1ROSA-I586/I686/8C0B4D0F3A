@@ -1,0 +1,151 @@
+00:00.0 Host bridge [0600]: Silicon Integrated Systems [SiS] 661FX/M661FX/M661MX Host [1039:0661] (rev 11)
+	Subsystem: ASUSTeK Computer Inc. Device [1043:8113]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort+ >SERR- <PERR- INTx-
+	Latency: 32
+	Region 0: Memory at e0000000 (32-bit, non-prefetchable) [size=128M]
+	Capabilities: [c0] AGP version 3.5
+		Status: RQ=32 Iso- ArqSz=2 Cal=3 SBA+ ITACoh- GART64- HTrans- 64bit- FW- AGP3+ Rate=x4,x8
+		Command: RQ=1 ArqSz=0 Cal=3 SBA+ AGP+ GART64- 64bit- FW- Rate=x8
+	Kernel driver in use: agpgart-sis
+
+00:01.0 PCI bridge [0604]: Silicon Integrated Systems [SiS] AGP Port (virtual PCI-to-PCI bridge) [1039:0003] (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap- 66MHz+ UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 64
+	Bus: primary=00, secondary=01, subordinate=01, sec-latency=64
+	I/O behind bridge: 0000e000-0000efff
+	Memory behind bridge: d6f00000-d7ffffff
+	Prefetchable memory behind bridge: d8000000-dfffffff
+	Secondary status: 66MHz+ FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort+ <SERR- <PERR-
+	BridgeCtl: Parity- SERR+ NoISA- VGA+ MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Kernel modules: shpchp
+
+00:02.0 ISA bridge [0601]: Silicon Integrated Systems [SiS] SiS964 [MuTIOL Media IO] LPC Controller [1039:0964] (rev 36)
+	Control: I/O+ Mem+ BusMaster+ SpecCycle+ MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Kernel modules: i2c_sis630
+
+00:02.5 IDE interface [0101]: Silicon Integrated Systems [SiS] 5513 IDE Controller [1039:5513] (rev 01) (prog-if 80 [Master])
+	Subsystem: ASUSTeK Computer Inc. Device [1043:810e]
+	Control: I/O+ Mem- BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 128
+	Interrupt: pin ? routed to IRQ 16
+	Region 0: I/O ports at 01f0 [size=8]
+	Region 1: I/O ports at 03f4
+	Region 2: I/O ports at 0170 [size=8]
+	Region 3: I/O ports at 0374
+	Region 4: I/O ports at ffa0 [size=16]
+	Capabilities: [58] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: pata_sis
+	Kernel modules: pata_sis, pata_acpi, ata_generic, sis5513, ide_pci_generic
+
+00:02.7 Multimedia audio controller [0401]: Silicon Integrated Systems [SiS] SiS7012 AC'97 Sound Controller [1039:7012] (rev a0)
+	Subsystem: ASUSTeK Computer Inc. Device [1043:810f]
+	Control: I/O+ Mem- BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 64 (13000ns min, 2750ns max)
+	Interrupt: pin C routed to IRQ 18
+	Region 0: I/O ports at d800 [size=256]
+	Region 1: I/O ports at d400 [size=128]
+	Capabilities: [48] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=55mA PME(D0-,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: snd_intel8x0
+	Kernel modules: snd_intel8x0
+
+00:03.0 USB controller [0c03]: Silicon Integrated Systems [SiS] USB 1.1 Controller [1039:7001] (rev 0f) (prog-if 10 [OHCI])
+	Subsystem: ASUSTeK Computer Inc. Device [1043:810e]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV+ VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 64 (20000ns max)
+	Interrupt: pin A routed to IRQ 20
+	Region 0: Memory at d6efc000 (32-bit, non-prefetchable) [size=4K]
+	Kernel driver in use: ohci-pci
+	Kernel modules: ohci_pci
+
+00:03.1 USB controller [0c03]: Silicon Integrated Systems [SiS] USB 1.1 Controller [1039:7001] (rev 0f) (prog-if 10 [OHCI])
+	Subsystem: ASUSTeK Computer Inc. Device [1043:810e]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV+ VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 64 (20000ns max)
+	Interrupt: pin B routed to IRQ 21
+	Region 0: Memory at d6efd000 (32-bit, non-prefetchable) [size=4K]
+	Kernel driver in use: ohci-pci
+	Kernel modules: ohci_pci
+
+00:03.2 USB controller [0c03]: Silicon Integrated Systems [SiS] USB 1.1 Controller [1039:7001] (rev 0f) (prog-if 10 [OHCI])
+	Subsystem: ASUSTeK Computer Inc. Device [1043:810e]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV+ VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 64 (20000ns max)
+	Interrupt: pin C routed to IRQ 22
+	Region 0: Memory at d6efe000 (32-bit, non-prefetchable) [size=4K]
+	Kernel driver in use: ohci-pci
+	Kernel modules: ohci_pci
+
+00:03.3 USB controller [0c03]: Silicon Integrated Systems [SiS] USB 2.0 Controller [1039:7002] (prog-if 20 [EHCI])
+	Subsystem: ASUSTeK Computer Inc. Device [1043:810e]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 64 (20000ns max)
+	Interrupt: pin D routed to IRQ 23
+	Region 0: Memory at d6eff000 (32-bit, non-prefetchable) [size=4K]
+	Capabilities: [50] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=375mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: ehci-pci
+	Kernel modules: ehci_pci
+
+00:04.0 Ethernet controller [0200]: Silicon Integrated Systems [SiS] SiS900 PCI Fast Ethernet [1039:0900] (rev 90)
+	Subsystem: ASUSTeK Computer Inc. Device [1043:810e]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 64 (13000ns min, 2750ns max)
+	Interrupt: pin A routed to IRQ 19
+	Region 0: I/O ports at d000 [size=256]
+	Region 1: Memory at d6efb000 (32-bit, non-prefetchable) [size=4K]
+	Expansion ROM at d6ec0000 [disabled] [size=128K]
+	Capabilities: [40] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: sis900
+	Kernel modules: sis900
+
+00:05.0 RAID bus controller [0104]: Silicon Integrated Systems [SiS] RAID bus controller 180 SATA/PATA  [SiS] [1039:0180] (rev 01) (prog-if 85)
+	Subsystem: ASUSTeK Computer Inc. Device [1043:810e]
+	Control: I/O+ Mem- BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz+ UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 128
+	Interrupt: pin A routed to IRQ 17
+	Region 0: I/O ports at c800 [size=8]
+	Region 1: I/O ports at c400 [size=4]
+	Region 2: I/O ports at c000 [size=8]
+	Region 3: I/O ports at b800 [size=4]
+	Region 4: I/O ports at b400 [size=16]
+	Region 5: I/O ports at 0000
+	Kernel driver in use: sata_sis
+	Kernel modules: sata_sis
+
+01:00.0 VGA compatible controller [0300]: NVIDIA Corporation NV34 [GeForce FX 5500] [10de:0326] (rev a1) (prog-if 00 [VGA controller])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 64 (1250ns min, 250ns max)
+	Interrupt: pin A routed to IRQ 16
+	Region 0: Memory at d7000000 (32-bit, non-prefetchable) [size=16M]
+	Region 1: Memory at d8000000 (32-bit, prefetchable) [size=128M]
+	Expansion ROM at d6fe0000 [disabled] [size=128K]
+	Capabilities: [60] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [44] AGP version 3.0
+		Status: RQ=32 Iso- ArqSz=0 Cal=3 SBA+ ITACoh- GART64- HTrans- 64bit- FW+ AGP3+ Rate=x4,x8
+		Command: RQ=32 ArqSz=2 Cal=0 SBA+ AGP+ GART64- 64bit- FW- Rate=x8
+	Kernel driver in use: nouveau
+	Kernel modules: nvidiafb, nouveau
+

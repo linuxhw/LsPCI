@@ -1,0 +1,195 @@
+00:00.0 Host bridge [0600]: VIA Technologies, Inc. VT8377 [KT400/KT600 AGP] Host Bridge [1106:3189] (rev 80)
+	Subsystem: VIA Technologies, Inc. VT8377 [KT400/KT600 AGP] Host Bridge [1106:3189]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort+ >SERR- <PERR- INTx-
+	Latency: 8
+	Region 0: Memory at e0000000 (32-bit, prefetchable) [size=128M]
+	Capabilities: [80] AGP version 3.5
+		Status: RQ=32 Iso- ArqSz=0 Cal=2 SBA+ ITACoh- GART64- HTrans- 64bit- FW+ AGP3+ Rate=x4
+		Command: RQ=1 ArqSz=0 Cal=0 SBA+ AGP+ GART64- 64bit- FW- Rate=x4
+	Capabilities: [c0] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: agpgart-via
+
+00:01.0 PCI bridge [0604]: VIA Technologies, Inc. VT8237/VX700 PCI Bridge [1106:b198] (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Bus: primary=00, secondary=01, subordinate=01, sec-latency=0
+	I/O behind bridge: 0000a000-0000afff
+	Memory behind bridge: e8000000-e9ffffff
+	Prefetchable memory behind bridge: c0000000-dfffffff
+	Secondary status: 66MHz+ FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort+ <SERR- <PERR-
+	BridgeCtl: Parity- SERR- NoISA+ VGA+ MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Capabilities: [80] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel modules: shpchp
+
+00:09.0 Ethernet controller [0200]: Realtek Semiconductor Co., Ltd. RTL-8100/8101L/8139 PCI Fast Ethernet Adapter [10ec:8139] (rev 10)
+	Subsystem: Realtek Semiconductor Co., Ltd. RTL-8100/8101L/8139 PCI Fast Ethernet Adapter [10ec:8139]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 32 (8000ns min, 16000ns max)
+	Interrupt: pin A routed to IRQ 17
+	Region 0: I/O ports at b000 [size=256]
+	Region 1: Memory at ea000000 (32-bit, non-prefetchable) [size=256]
+	Capabilities: [50] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0-,D1+,D2+,D3hot+,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: 8139too
+	Kernel modules: 8139cp, 8139too
+
+00:0f.0 RAID bus controller [0104]: VIA Technologies, Inc. VIA VT6420 SATA RAID Controller [1106:3149] (rev 80)
+	Subsystem: Foxconn International, Inc. Device [105b:0c17]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 32
+	Interrupt: pin B routed to IRQ 20
+	Region 0: I/O ports at b400 [size=8]
+	Region 1: I/O ports at b800 [size=4]
+	Region 2: I/O ports at bc00 [size=8]
+	Region 3: I/O ports at c000 [size=4]
+	Region 4: I/O ports at c400 [size=16]
+	Region 5: I/O ports at c800 [size=256]
+	Capabilities: [c0] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: sata_via
+	Kernel modules: sata_via
+
+00:0f.1 IDE interface [0101]: VIA Technologies, Inc. VT82C586A/B/VT82C686/A/B/VT823x/A/C PIPC Bus Master IDE [1106:0571] (rev 06) (prog-if 8a [Master SecP PriP])
+	Subsystem: Foxconn International, Inc. Device [105b:0c17]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 32
+	Interrupt: pin A routed to IRQ 20
+	Region 0: [virtual] Memory at 000001f0 (32-bit, non-prefetchable) [size=8]
+	Region 1: [virtual] Memory at 000003f0 (type 3, non-prefetchable)
+	Region 2: [virtual] Memory at 00000170 (32-bit, non-prefetchable) [size=8]
+	Region 3: [virtual] Memory at 00000370 (type 3, non-prefetchable)
+	Region 4: I/O ports at cc00 [size=16]
+	Capabilities: [c0] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: pata_via
+	Kernel modules: pata_via, pata_acpi, ata_generic, via82cxxx, ide_pci_generic
+
+00:10.0 USB controller [0c03]: VIA Technologies, Inc. VT82xx/62xx UHCI USB 1.1 Controller [1106:3038] (rev 81) (prog-if 00 [UHCI])
+	Subsystem: VIA Technologies, Inc. VT82xx/62xx UHCI USB 1.1 Controller [1106:3038]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 32, Cache Line Size: 32 bytes
+	Interrupt: pin A routed to IRQ 21
+	Region 4: I/O ports at d000 [size=32]
+	Capabilities: [80] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=375mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: uhci_hcd
+	Kernel modules: uhci_hcd
+
+00:10.1 USB controller [0c03]: VIA Technologies, Inc. VT82xx/62xx UHCI USB 1.1 Controller [1106:3038] (rev 81) (prog-if 00 [UHCI])
+	Subsystem: VIA Technologies, Inc. VT82xx/62xx UHCI USB 1.1 Controller [1106:3038]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 32, Cache Line Size: 32 bytes
+	Interrupt: pin A routed to IRQ 21
+	Region 4: I/O ports at d400 [size=32]
+	Capabilities: [80] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=375mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: uhci_hcd
+	Kernel modules: uhci_hcd
+
+00:10.2 USB controller [0c03]: VIA Technologies, Inc. VT82xx/62xx UHCI USB 1.1 Controller [1106:3038] (rev 81) (prog-if 00 [UHCI])
+	Subsystem: VIA Technologies, Inc. VT82xx/62xx UHCI USB 1.1 Controller [1106:3038]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 32, Cache Line Size: 32 bytes
+	Interrupt: pin B routed to IRQ 21
+	Region 4: I/O ports at d800 [size=32]
+	Capabilities: [80] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=375mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: uhci_hcd
+	Kernel modules: uhci_hcd
+
+00:10.3 USB controller [0c03]: VIA Technologies, Inc. VT82xx/62xx UHCI USB 1.1 Controller [1106:3038] (rev 81) (prog-if 00 [UHCI])
+	Subsystem: VIA Technologies, Inc. VT82xx/62xx UHCI USB 1.1 Controller [1106:3038]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 32, Cache Line Size: 32 bytes
+	Interrupt: pin B routed to IRQ 21
+	Region 4: I/O ports at dc00 [size=32]
+	Capabilities: [80] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=375mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: uhci_hcd
+	Kernel modules: uhci_hcd
+
+00:10.4 USB controller [0c03]: VIA Technologies, Inc. USB 2.0 [1106:3104] (rev 86) (prog-if 20 [EHCI])
+	Subsystem: VIA Technologies, Inc. USB 2.0 Controller [1106:3104]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV+ VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 32, Cache Line Size: 32 bytes
+	Interrupt: pin C routed to IRQ 21
+	Region 0: Memory at ea001000 (32-bit, non-prefetchable) [size=256]
+	Capabilities: [80] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=375mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: ehci-pci
+	Kernel modules: ehci_pci
+
+00:11.0 ISA bridge [0601]: VIA Technologies, Inc. VT8237 ISA bridge [KT600/K8T800/K8T890 South] [1106:3227]
+	Subsystem: VIA Technologies, Inc. DFI KT600-AL / Soltek SL-B9D-FGR Motherboard [1106:3227]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping+ SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Capabilities: [c0] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel modules: i2c_viapro
+
+00:11.5 Multimedia audio controller [0401]: VIA Technologies, Inc. VT8233/A/8235/8237 AC97 Audio Controller [1106:3059] (rev 60)
+	Subsystem: Foxconn International, Inc. Device [105b:0c17]
+	Control: I/O+ Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Interrupt: pin C routed to IRQ 22
+	Region 0: I/O ports at e000 [size=256]
+	Capabilities: [c0] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: snd_via82xx
+	Kernel modules: snd_via82xx
+
+01:00.0 VGA compatible controller [0300]: Advanced Micro Devices, Inc. [AMD/ATI] RV360 [Radeon 9600/X1050 Series] [1002:4152] (prog-if 00 [VGA controller])
+	Subsystem: GeCube Technologies, Inc. Device [18bc:0240]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 32 (2000ns min), Cache Line Size: 32 bytes
+	Interrupt: pin A routed to IRQ 16
+	Region 0: Memory at c0000000 (32-bit, prefetchable) [size=256M]
+	Region 1: I/O ports at a000 [size=256]
+	Region 2: Memory at e9000000 (32-bit, non-prefetchable) [size=64K]
+	[virtual] Expansion ROM at e8000000 [disabled] [size=128K]
+	Capabilities: [58] AGP version 3.0
+		Status: RQ=256 Iso- ArqSz=0 Cal=0 SBA+ ITACoh- GART64- HTrans- 64bit- FW+ AGP3+ Rate=x4,x8
+		Command: RQ=32 ArqSz=0 Cal=0 SBA+ AGP+ GART64- 64bit- FW- Rate=x4
+	Capabilities: [50] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: radeon
+	Kernel modules: radeonfb, radeon
+
+01:00.1 Display controller [0380]: Advanced Micro Devices, Inc. [AMD/ATI] RV350 [Radeon 9600/X1050 Series] (Secondary) [1002:4172]
+	Subsystem: GeCube Technologies, Inc. Device [18bc:0241]
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Region 0: Memory at d0000000 (32-bit, prefetchable) [disabled] [size=256M]
+	Region 1: Memory at e9010000 (32-bit, non-prefetchable) [disabled] [size=64K]
+	Capabilities: [50] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+

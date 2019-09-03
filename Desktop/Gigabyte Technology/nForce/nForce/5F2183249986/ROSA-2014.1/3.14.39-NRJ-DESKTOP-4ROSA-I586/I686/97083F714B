@@ -1,0 +1,230 @@
+00:00.0 Host bridge [0600]: NVIDIA Corporation nForce3 250Gb Host Bridge [10de:00e1] (rev a1)
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Region 0: Memory at e0000000 (32-bit, prefetchable) [size=128M]
+	Capabilities: [44] HyperTransport: Slave or Primary Interface
+		Command: BaseUnitID=0 UnitCnt=14 MastHost- DefDir- DUL-
+		Link Control 0: CFlE+ CST- CFE- <LkFail- Init+ EOC- TXO- <CRCErr=0 IsocEn- LSEn- ExtCTL- 64b-
+		Link Config 0: MLWI=16bit DwFcIn- MLWO=16bit DwFcOut- LWI=16bit DwFcInEn- LWO=16bit DwFcOutEn-
+		Link Control 1: CFlE- CST- CFE- <LkFail+ Init- EOC+ TXO+ <CRCErr=0 IsocEn- LSEn- ExtCTL- 64b-
+		Link Config 1: MLWI=8bit DwFcIn- MLWO=8bit DwFcOut- LWI=8bit DwFcInEn- LWO=8bit DwFcOutEn-
+		Revision ID: 1.03
+		Link Frequency 0: 800MHz
+		Link Error 0: <Prot- <Ovfl- <EOC- CTLTm-
+		Link Frequency Capability 0: 200MHz+ 300MHz+ 400MHz+ 500MHz+ 600MHz+ 800MHz+ 1.0GHz- 1.2GHz- 1.4GHz- 1.6GHz- Vend-
+		Feature Capability: IsocFC+ LDTSTOP+ CRCTM- ECTLT- 64bA- UIDRD-
+		Link Frequency 1: 200MHz
+		Link Error 1: <Prot- <Ovfl- <EOC- CTLTm-
+		Link Frequency Capability 1: 200MHz- 300MHz- 400MHz- 500MHz- 600MHz- 800MHz- 1.0GHz- 1.2GHz- 1.4GHz- 1.6GHz- Vend-
+		Error Handling: PFlE- OFlE- PFE- OFE- EOCFE- RFE- CRCFE- SERRFE- CF- RE- PNFE- ONFE- EOCNFE- RNFE- CRCNFE- SERRNFE-
+		Prefetchable memory behind bridge Upper: 00-00
+		Bus Number: 00
+	Capabilities: [c0] AGP version 3.0
+		Status: RQ=32 Iso- ArqSz=2 Cal=0 SBA+ ITACoh- GART64- HTrans- 64bit- FW+ AGP3+ Rate=x4,x8
+		Command: RQ=1 ArqSz=0 Cal=0 SBA+ AGP+ GART64- 64bit- FW- Rate=x8
+	Kernel driver in use: agpgart-amd64
+
+00:01.0 ISA bridge [0601]: NVIDIA Corporation nForce3 250Gb LPC Bridge [10de:00e0] (rev a2)
+	Subsystem: Gigabyte Technology Co., Ltd Device [1458:0c11]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle+ MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+
+00:01.1 SMBus [0c05]: NVIDIA Corporation nForce 250Gb PCI System Management [10de:00e4] (rev a1)
+	Subsystem: Gigabyte Technology Co., Ltd Device [1458:0c11]
+	Control: I/O+ Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Interrupt: pin A routed to IRQ 10
+	Region 0: I/O ports at e400 [size=32]
+	Region 4: I/O ports at 1c00 [size=64]
+	Region 5: I/O ports at 2000 [size=64]
+	Capabilities: [44] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: nForce2_smbus
+	Kernel modules: i2c_nforce2
+
+00:02.0 USB controller [0c03]: NVIDIA Corporation CK8S USB Controller [10de:00e7] (rev a1) (prog-if 10 [OHCI])
+	Subsystem: Gigabyte Technology Co., Ltd Device [1458:5004]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0 (750ns min, 250ns max)
+	Interrupt: pin A routed to IRQ 22
+	Region 0: Memory at fa004000 (32-bit, non-prefetchable) [size=4K]
+	Capabilities: [44] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: ohci-pci
+	Kernel modules: ohci_pci
+
+00:02.1 USB controller [0c03]: NVIDIA Corporation CK8S USB Controller [10de:00e7] (rev a1) (prog-if 10 [OHCI])
+	Subsystem: Gigabyte Technology Co., Ltd Device [1458:5004]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0 (750ns min, 250ns max)
+	Interrupt: pin B routed to IRQ 21
+	Region 0: Memory at fa005000 (32-bit, non-prefetchable) [size=4K]
+	Capabilities: [44] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: ohci-pci
+	Kernel modules: ohci_pci
+
+00:02.2 USB controller [0c03]: NVIDIA Corporation nForce3 EHCI USB 2.0 Controller [10de:00e8] (rev a2) (prog-if 20 [EHCI])
+	Subsystem: Gigabyte Technology Co., Ltd Device [1458:5004]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0 (750ns min, 250ns max)
+	Interrupt: pin C routed to IRQ 20
+	Region 0: Memory at fa000000 (32-bit, non-prefetchable) [size=256]
+	Capabilities: [44] Debug port: BAR=1 offset=0098
+	Capabilities: [80] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: ehci-pci
+	Kernel modules: ehci_pci
+
+00:05.0 Bridge [0680]: NVIDIA Corporation CK8S Ethernet Controller [10de:00df] (rev a2)
+	Subsystem: Gigabyte Technology Co., Ltd Device [1458:e000]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0 (250ns min, 5000ns max)
+	Interrupt: pin A routed to IRQ 21
+	Region 0: Memory at fa001000 (32-bit, non-prefetchable) [size=4K]
+	Region 1: I/O ports at b800 [size=8]
+	Capabilities: [44] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable+ DSel=0 DScale=0 PME-
+	Kernel driver in use: forcedeth
+	Kernel modules: forcedeth
+
+00:06.0 Multimedia audio controller [0401]: NVIDIA Corporation nForce3 250Gb AC'97 Audio Controller [10de:00ea] (rev a1)
+	Subsystem: Gigabyte Technology Co., Ltd Device [1458:a002]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0 (500ns min, 1250ns max)
+	Interrupt: pin A routed to IRQ 20
+	Region 0: I/O ports at bc00 [size=256]
+	Region 1: I/O ports at c000 [size=128]
+	Region 2: Memory at fa002000 (32-bit, non-prefetchable) [size=4K]
+	Capabilities: [44] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: snd_intel8x0
+	Kernel modules: snd_intel8x0
+
+00:08.0 IDE interface [0101]: NVIDIA Corporation CK8S Parallel ATA Controller (v2.5) [10de:00e5] (rev a2) (prog-if 8a [Master SecP PriP])
+	Subsystem: Gigabyte Technology Co., Ltd Device [1458:5002]
+	Control: I/O+ Mem- BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0 (750ns min, 250ns max)
+	Region 0: [virtual] Memory at 000001f0 (32-bit, non-prefetchable) [size=8]
+	Region 1: [virtual] Memory at 000003f0 (type 3, non-prefetchable)
+	Region 2: [virtual] Memory at 00000170 (32-bit, non-prefetchable) [size=8]
+	Region 3: [virtual] Memory at 00000370 (type 3, non-prefetchable)
+	Region 4: I/O ports at f000 [size=16]
+	Capabilities: [44] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: pata_amd
+	Kernel modules: pata_amd, pata_acpi, ata_generic, amd74xx, ide_pci_generic
+
+00:0a.0 IDE interface [0101]: NVIDIA Corporation nForce3 Serial ATA Controller [10de:00e3] (rev a2) (prog-if 85 [Master SecO PriO])
+	Subsystem: Gigabyte Technology Co., Ltd Device [1458:b002]
+	Control: I/O+ Mem- BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0 (750ns min, 250ns max)
+	Interrupt: pin A routed to IRQ 22
+	Region 0: I/O ports at 09f0 [size=8]
+	Region 1: I/O ports at 0bf0 [size=4]
+	Region 2: I/O ports at 0970 [size=8]
+	Region 3: I/O ports at 0b70 [size=4]
+	Region 4: I/O ports at dc00 [size=16]
+	Region 5: I/O ports at e000 [size=128]
+	Capabilities: [44] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: sata_nv
+	Kernel modules: sata_nv, pata_acpi, ata_generic, ide_pci_generic
+
+00:0b.0 PCI bridge [0604]: NVIDIA Corporation nForce3 250Gb AGP Host to PCI Bridge [10de:00e2] (rev a2) (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz+ UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 16
+	Bus: primary=00, secondary=01, subordinate=01, sec-latency=10
+	I/O behind bridge: 0000a000-0000afff
+	Memory behind bridge: f8000000-f9ffffff
+	Prefetchable memory behind bridge: e8000000-f7ffffff
+	Secondary status: 66MHz+ FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort+ <SERR- <PERR-
+	BridgeCtl: Parity- SERR- NoISA+ VGA+ MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Kernel modules: shpchp
+
+00:0e.0 PCI bridge [0604]: NVIDIA Corporation nForce3 250Gb PCI-to-PCI Bridge [10de:00ed] (rev a2) (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Bus: primary=00, secondary=02, subordinate=02, sec-latency=128
+	Secondary status: 66MHz- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort+ <SERR- <PERR-
+	BridgeCtl: Parity- SERR- NoISA+ VGA- MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Kernel modules: shpchp
+
+00:18.0 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] K8 [Athlon64/Opteron] HyperTransport Technology Configuration [1022:1100]
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Capabilities: [80] HyperTransport: Host or Secondary Interface
+		Command: WarmRst+ DblEnd- DevNum=0 ChainSide- HostHide+ Slave- <EOCErr- DUL-
+		Link Control: CFlE- CST- CFE- <LkFail- Init+ EOC- TXO- <CRCErr=0 IsocEn- LSEn- ExtCTL- 64b-
+		Link Config: MLWI=16bit DwFcIn- MLWO=16bit DwFcOut- LWI=16bit DwFcInEn- LWO=16bit DwFcOutEn-
+		Revision ID: 1.02
+		Link Frequency: 800MHz
+		Link Error: <Prot- <Ovfl- <EOC- CTLTm-
+		Link Frequency Capability: 200MHz+ 300MHz- 400MHz+ 500MHz- 600MHz+ 800MHz+ 1.0GHz- 1.2GHz- 1.4GHz- 1.6GHz- Vend-
+		Feature Capability: IsocFC- LDTSTOP+ CRCTM- ECTLT- 64bA- UIDRD- ExtRS- UCnfE-
+
+00:18.1 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] K8 [Athlon64/Opteron] Address Map [1022:1101]
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+
+00:18.2 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] K8 [Athlon64/Opteron] DRAM Controller [1022:1102]
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+
+00:18.3 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] K8 [Athlon64/Opteron] Miscellaneous Control [1022:1103]
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Kernel driver in use: k8temp
+	Kernel modules: k8temp
+
+01:00.0 VGA compatible controller [0300]: Advanced Micro Devices, Inc. [AMD/ATI] RV350 [Radeon 9550] [1002:4153] (prog-if 00 [VGA controller])
+	Subsystem: Hightech Information System Ltd. Device [17af:201c]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 32 (2000ns min), Cache Line Size: 32 bytes
+	Interrupt: pin A routed to IRQ 16
+	Region 0: Memory at e8000000 (32-bit, prefetchable) [size=128M]
+	Region 1: I/O ports at a000 [size=256]
+	Region 2: Memory at f9000000 (32-bit, non-prefetchable) [size=64K]
+	[virtual] Expansion ROM at f8000000 [disabled] [size=128K]
+	Capabilities: [58] AGP version 3.0
+		Status: RQ=256 Iso- ArqSz=0 Cal=0 SBA+ ITACoh- GART64- HTrans- 64bit- FW+ AGP3+ Rate=x4,x8
+		Command: RQ=32 ArqSz=2 Cal=0 SBA+ AGP+ GART64- 64bit- FW- Rate=x8
+	Capabilities: [50] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: radeon
+	Kernel modules: radeonfb, radeon
+
+01:00.1 Display controller [0380]: Advanced Micro Devices, Inc. [AMD/ATI] RV350 [Radeon 9550] (Secondary) [1002:4173]
+	Subsystem: Hightech Information System Ltd. Device [17af:201d]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 32 (2000ns min), Cache Line Size: 32 bytes
+	Region 0: Memory at f0000000 (32-bit, prefetchable) [size=128M]
+	Region 1: Memory at f9010000 (32-bit, non-prefetchable) [size=64K]
+	Capabilities: [50] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+

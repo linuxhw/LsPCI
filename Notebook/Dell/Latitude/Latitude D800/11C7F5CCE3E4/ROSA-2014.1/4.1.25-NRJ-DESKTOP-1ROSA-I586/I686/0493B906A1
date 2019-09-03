@@ -1,0 +1,248 @@
+00:00.0 Host bridge [0600]: Intel Corporation 82855PM Processor to I/O Controller [8086:3340] (rev 03)
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort+ >SERR- <PERR- INTx-
+	Latency: 0
+	Region 0: Memory at e0000000 (32-bit, prefetchable) [size=128M]
+	Capabilities: [e4] Vendor Specific Information: Len=04 <?>
+	Capabilities: [a0] AGP version 2.0
+		Status: RQ=32 Iso- ArqSz=0 Cal=0 SBA+ ITACoh- GART64- HTrans- 64bit- FW+ AGP3- Rate=x1,x2,x4
+		Command: RQ=1 ArqSz=0 Cal=0 SBA+ AGP+ GART64- 64bit- FW+ Rate=x4
+	Kernel driver in use: agpgart-intel
+
+00:01.0 PCI bridge [0604]: Intel Corporation 82855PM Processor to AGP Controller [8086:3341] (rev 03) (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap- 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 32
+	Bus: primary=00, secondary=01, subordinate=01, sec-latency=32
+	I/O behind bridge: 0000c000-0000cfff
+	Memory behind bridge: fc000000-fdffffff
+	Prefetchable memory behind bridge: d0000000-dfffffff
+	Secondary status: 66MHz+ FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort+ <SERR- <PERR-
+	BridgeCtl: Parity- SERR- NoISA+ VGA+ MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Kernel modules: shpchp
+
+00:1d.0 USB controller [0c03]: Intel Corporation 82801DB/DBL/DBM (ICH4/ICH4-L/ICH4-M) USB UHCI Controller #1 [8086:24c2] (rev 01) (prog-if 00 [UHCI])
+	Subsystem: Intel Corporation Latitude D400/D500 [8086:4541]
+	Control: I/O+ Mem- BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Interrupt: pin A routed to IRQ 11
+	Region 4: I/O ports at bf80 [size=32]
+	Kernel driver in use: uhci_hcd
+	Kernel modules: uhci_hcd
+
+00:1d.1 USB controller [0c03]: Intel Corporation 82801DB/DBL/DBM (ICH4/ICH4-L/ICH4-M) USB UHCI Controller #2 [8086:24c4] (rev 01) (prog-if 00 [UHCI])
+	Subsystem: Intel Corporation Latitude D400/D500 [8086:4541]
+	Control: I/O+ Mem- BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Interrupt: pin B routed to IRQ 11
+	Region 4: I/O ports at bf40 [size=32]
+	Kernel driver in use: uhci_hcd
+	Kernel modules: uhci_hcd
+
+00:1d.2 USB controller [0c03]: Intel Corporation 82801DB/DBL/DBM (ICH4/ICH4-L/ICH4-M) USB UHCI Controller #3 [8086:24c7] (rev 01) (prog-if 00 [UHCI])
+	Subsystem: Intel Corporation Latitude D400/D500 [8086:4541]
+	Control: I/O+ Mem- BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Interrupt: pin C routed to IRQ 11
+	Region 4: I/O ports at bf20 [size=32]
+	Kernel driver in use: uhci_hcd
+	Kernel modules: uhci_hcd
+
+00:1d.7 USB controller [0c03]: Intel Corporation 82801DB/DBM (ICH4/ICH4-M) USB2 EHCI Controller [8086:24cd] (rev 01) (prog-if 20 [EHCI])
+	Subsystem: Dell Device [1028:014e]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Interrupt: pin D routed to IRQ 11
+	Region 0: Memory at f4fffc00 (32-bit, non-prefetchable) [size=1K]
+	Capabilities: [50] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=375mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [58] Debug port: BAR=1 offset=0080
+	Kernel driver in use: ehci-pci
+	Kernel modules: ehci_pci
+
+00:1e.0 PCI bridge [0604]: Intel Corporation 82801 Mobile PCI Bridge [8086:2448] (rev 81) (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR+ INTx-
+	Latency: 0
+	Bus: primary=00, secondary=02, subordinate=0a, sec-latency=32
+	I/O behind bridge: 0000d000-0000efff
+	Memory behind bridge: f6000000-fbffffff
+	Prefetchable memory behind bridge: 80000000-87ffffff
+	Secondary status: 66MHz- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort+ <SERR- <PERR-
+	BridgeCtl: Parity- SERR- NoISA+ VGA- MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Kernel modules: shpchp
+
+00:1f.0 ISA bridge [0601]: Intel Corporation 82801DBM (ICH4-M) LPC Interface Bridge [8086:24cc] (rev 01)
+	Control: I/O+ Mem+ BusMaster+ SpecCycle+ MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Kernel driver in use: lpc_ich
+	Kernel modules: intel_rng, lpc_ich
+
+00:1f.1 IDE interface [0101]: Intel Corporation 82801DBM (ICH4-M) IDE Controller [8086:24ca] (rev 01) (prog-if 8a [Master SecP PriP])
+	Subsystem: Intel Corporation Latitude D400/D500 [8086:4541]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Interrupt: pin A routed to IRQ 11
+	Region 0: I/O ports at 01f0 [size=8]
+	Region 1: I/O ports at 03f4
+	Region 2: I/O ports at 0170 [size=8]
+	Region 3: I/O ports at 0374
+	Region 4: I/O ports at bfa0 [size=16]
+	Region 5: Memory at 88000000 (32-bit, non-prefetchable) [size=1K]
+	Kernel driver in use: ata_piix
+	Kernel modules: ata_piix, pata_acpi, ata_generic, piix, ide_pci_generic
+
+00:1f.5 Multimedia audio controller [0401]: Intel Corporation 82801DB/DBL/DBM (ICH4/ICH4-L/ICH4-M) AC'97 Audio Controller [8086:24c5] (rev 01)
+	Subsystem: Dell Device [1028:014e]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Interrupt: pin B routed to IRQ 5
+	Region 0: I/O ports at b800 [size=256]
+	Region 1: I/O ports at bc40 [size=64]
+	Region 2: Memory at f4fff800 (32-bit, non-prefetchable) [size=512]
+	Region 3: Memory at f4fff400 (32-bit, non-prefetchable) [size=256]
+	Capabilities: [50] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=375mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: snd_intel8x0
+	Kernel modules: snd_intel8x0
+
+00:1f.6 Modem [0703]: Intel Corporation 82801DB/DBL/DBM (ICH4/ICH4-L/ICH4-M) AC'97 Modem Controller [8086:24c6] (rev 01) (prog-if 00 [Generic])
+	Subsystem: Conexant Systems, Inc. D480 MDC V.9x Modem [14f1:5422]
+	Control: I/O+ Mem- BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Interrupt: pin B routed to IRQ 5
+	Region 0: I/O ports at b400 [size=256]
+	Region 1: I/O ports at b080 [size=128]
+	Capabilities: [50] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=375mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: snd_intel8x0m
+	Kernel modules: snd_intel8x0m
+
+01:00.0 VGA compatible controller [0300]: NVIDIA Corporation NV34M [GeForce FX Go5200 64M] [10de:0324] (rev a1) (prog-if 00 [VGA controller])
+	Subsystem: Dell Device [1028:019c]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop+ ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 32 (1250ns min, 250ns max)
+	Interrupt: pin A routed to IRQ 11
+	Region 0: Memory at fc000000 (32-bit, non-prefetchable) [size=16M]
+	Region 1: Memory at d0000000 (32-bit, prefetchable) [size=256M]
+	Expansiopcilib: sysfs_read_vpd: read failed: Connection timed out
+n ROM at fd000000 [disabled] [size=128K]
+	Capabilities: [60] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [44] AGP version 3.0
+		Status: RQ=32 Iso- ArqSz=0 Cal=0 SBA+ ITACoh- GART64- HTrans- 64bit- FW+ AGP3- Rate=x1,x2,x4
+		Command: RQ=32 ArqSz=0 Cal=0 SBA+ AGP+ GART64- 64bit- FW+ Rate=x4
+	Kernel driver in use: nouveau
+	Kernel modules: nvidiafb, nouveau
+
+02:00.0 Ethernet controller [0200]: Broadcom Corporation NetXtreme BCM5705M Gigabit Ethernet [14e4:165d] (rev 01)
+	Subsystem: Dell Latitude D400 [1028:865d]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 32 (16000ns min), Cache Line Size: 32 bytes
+	Interrupt: pin A routed to IRQ 11
+	Region 0: Memory at faff0000 (64-bit, non-prefetchable) [size=64K]
+	Expansion ROM at <ignored> [disabled]
+	Capabilities: [48] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=1 PME-
+	Capabilities: [50] Vital Product Data
+		Not readable
+	Capabilities: [58] MSI: Enable- Count=1/8 Maskable- 64bit+
+		Address: ffd7efffffff7fdc  Data: fbfe
+	Kernel driver in use: tg3
+	Kernel modules: tg3
+
+02:01.0 CardBus bridge [0607]: Texas Instruments PCI7510 PC card Cardbus Controller [104c:ac47] (rev 01)
+	Subsystem: Dell Latitude D800 [1028:014e]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 168, Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 11
+	Region 0: Memory at f8000000 (32-bit, non-prefetchable) [size=4K]
+	Bus: primary=02, secondary=03, subordinate=06, sec-latency=176
+	Memory window 0: 80000000-83ffffff (prefetchable)
+	Memory window 1: 8c000000-8fffffff
+	I/O window 0: 0000d000-0000d0ff
+	I/O window 1: 0000d400-0000d4ff
+	BridgeCtl: Parity- SERR- ISA- VGA- MAbort- >Reset+ 16bInt+ PostWrite+
+	16-bit legacy interface ports at 0001
+	Capabilities: [a0] Power Management version 2
+		Flags: PMEClk- DSI+ D1+ D2+ AuxCurrent=0mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+		Bridge: PM- B3+
+	Kernel driver in use: yenta_cardbus
+	Kernel modules: yenta_socket
+
+02:01.1 CardBus bridge [0607]: Texas Instruments PCI7510/7610 CardBus Bridge [104c:ac4a] (rev 01)
+	Subsystem: Dell Latitude D800 [1028:014e]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 168, Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 11
+	Region 0: Memory at 90000000 (32-bit, non-prefetchable) [size=4K]
+	Bus: primary=02, secondary=07, subordinate=0a, sec-latency=176
+	Memory window 0: 84000000-87ffffff (prefetchable)
+	Memory window 1: 94000000-97ffffff
+	I/O window 0: 0000d800-0000d8ff
+	I/O window 1: 0000dc00-0000dcff
+	BridgeCtl: Parity- SERR- ISA- VGA- MAbort- >Reset+ 16bInt+ PostWrite+
+	16-bit legacy interface ports at 0001
+	Capabilities: [a0] Power Management version 2
+		Flags: PMEClk- DSI+ D1+ D2+ AuxCurrent=0mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+		Bridge: PM- B3+
+	Kernel driver in use: yenta_cardbus
+	Kernel modules: yenta_socket
+
+02:01.2 FireWire (IEEE 1394) [0c00]: Texas Instruments PCI7410,7510,7610 OHCI-Lynx Controller [104c:802b] (prog-if 10 [OHCI])
+	Subsystem: Dell PCI7410,7510,7610 OHCI-Lynx Controller (Latitude D800) [1028:014e]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV+ VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 32 (500ns min, 1000ns max), Cache Line Size: 32 bytes
+	Interrupt: pin A routed to IRQ 11
+	Region 0: Memory at fafef800 (32-bit, non-prefetchable) [size=2K]
+	Region 1: Memory at fafe8000 (32-bit, non-prefetchable) [size=16K]
+	Capabilities: [44] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0+,D1+,D2+,D3hot+,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME+
+	Kernel driver in use: firewire_ohci
+	Kernel modules: firewire_ohci
+
+02:01.3 System peripheral [0880]: Texas Instruments PCI7410/7510/7610 PCI Firmware Loading Function [104c:8204]
+	Subsystem: Dell Latitude D800 [1028:014e]
+	Control: I/O+ Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Region 0: I/O ports at ecf8 [size=8]
+	Capabilities: [44] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+
+02:03.0 Network controller [0280]: Intel Corporation PRO/Wireless LAN 2100 3B Mini PCI Adapter [8086:1043] (rev 04)
+	Subsystem: Intel Corporation Dell Latitude D800 [8086:2561]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV+ VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 32 (500ns min, 8500ns max), Cache Line Size: 32 bytes
+	Interrupt: pin A routed to IRQ 5
+	Region 0: Memory at fafee000 (32-bit, non-prefetchable) [size=4K]
+	Capabilities: [dc] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=1 PME-
+	Kernel driver in use: ipw2100
+	Kernel modules: ipw2100
+

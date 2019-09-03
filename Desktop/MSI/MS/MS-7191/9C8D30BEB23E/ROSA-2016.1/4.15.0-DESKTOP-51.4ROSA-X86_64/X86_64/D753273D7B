@@ -1,0 +1,186 @@
+00:00.0 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD/ATI] RS480/RS482/RS485 Host Bridge [1002:5950] (rev 10)
+	Subsystem: Advanced Micro Devices, Inc. [AMD/ATI] RS480/RS482/RS485 Host Bridge [1002:5950]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz+ UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort+ >SERR- <PERR- INTx-
+	Latency: 0
+
+00:01.0 PCI bridge [0604]: Advanced Micro Devices, Inc. [AMD/ATI] RC4xx/RS4xx PCI Bridge [int gfx] [1002:5a3f] (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 64
+	Bus: primary=00, secondary=01, subordinate=01, sec-latency=64
+	I/O behind bridge: 0000d000-0000dfff
+	Memory behind bridge: fea00000-feafffff
+	Prefetchable memory behind bridge: 00000000d0000000-00000000dfffffff
+	Secondary status: 66MHz+ FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort+ <SERR- <PERR-
+	BridgeCtl: Parity- SERR+ NoISA- VGA+ MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Capabilities: [44] HyperTransport: MSI Mapping Enable+ Fixed+
+	Capabilities: [b0] Subsystem: Advanced Micro Devices, Inc. [AMD/ATI] RC4xx/RS4xx PCI Bridge [int gfx] [1002:5a3f]
+	Kernel modules: shpchp
+
+00:13.0 USB controller [0c03]: Advanced Micro Devices, Inc. [AMD/ATI] IXP SB4x0 USB Host Controller [1002:4374] (rev 80) (prog-if 10 [OHCI])
+	Subsystem: Micro-Star International Co., Ltd. [MSI] Device [1462:7191]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV+ VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 64, Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 19
+	Region 0: Memory at fe9fb000 (32-bit, non-prefetchable) [size=4K]
+	Capabilities: [d0] MSI: Enable- Count=1/1 Maskable- 64bit-
+		Address: 00000000  Data: 0000
+	Kernel driver in use: ohci-pci
+
+00:13.1 USB controller [0c03]: Advanced Micro Devices, Inc. [AMD/ATI] IXP SB4x0 USB Host Controller [1002:4375] (rev 80) (prog-if 10 [OHCI])
+	Subsystem: Micro-Star International Co., Ltd. [MSI] Device [1462:7191]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV+ VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 64, Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 19
+	Region 0: Memory at fe9fa000 (32-bit, non-prefetchable) [size=4K]
+	Capabilities: [d0] MSI: Enable- Count=1/1 Maskable- 64bit-
+		Address: 00000000  Data: 0000
+	Kernel driver in use: ohci-pci
+
+00:13.2 USB controller [0c03]: Advanced Micro Devices, Inc. [AMD/ATI] IXP SB4x0 USB2 Host Controller [1002:4373] (rev 80) (prog-if 20 [EHCI])
+	Subsystem: Micro-Star International Co., Ltd. [MSI] Device [1462:7191]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV+ VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 64, Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 19
+	Region 0: Memory at fe9f9000 (32-bit, non-prefetchable) [size=4K]
+	Capabilities: [dc] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0+,D1+,D2+,D3hot+,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+		Bridge: PM- B3+
+	Capabilities: [d0] MSI: Enable- Count=1/1 Maskable- 64bit-
+		Address: 00000000  Data: 0000
+	Kernel driver in use: ehci-pci
+
+00:14.0 SMBus [0c05]: Advanced Micro Devices, Inc. [AMD/ATI] IXP SB4x0 SMBus Controller [1002:4372] (rev 81)
+	Subsystem: Micro-Star International Co., Ltd. [MSI] Device [1462:7191]
+	Control: I/O+ Mem+ BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
+	Status: Cap+ 66MHz+ UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Region 0: I/O ports at 0b00 [size=16]
+	Region 1: Memory at f0000000 (32-bit, non-prefetchable) [size=1K]
+	Capabilities: [b0] HyperTransport: MSI Mapping Enable- Fixed+
+	Kernel modules: i2c_piix4
+
+00:14.1 IDE interface [0101]: Advanced Micro Devices, Inc. [AMD/ATI] IXP SB4x0 IDE Controller [1002:4376] (rev 80) (prog-if 82 [Master PriP])
+	Subsystem: Micro-Star International Co., Ltd. [MSI] Device [1462:7191]
+	Control: I/O+ Mem- BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 64
+	Interrupt: pin A routed to IRQ 16
+	Region 0: I/O ports at 01f0 [size=8]
+	Region 1: I/O ports at 03f4
+	Region 2: I/O ports at 0170 [size=8]
+	Region 3: I/O ports at 0374
+	Region 4: I/O ports at ff00 [size=16]
+	Capabilities: [70] MSI: Enable- Count=1/1 Maskable- 64bit-
+		Address: 00000000  Data: 0000
+	Kernel driver in use: pata_atiixp
+	Kernel modules: pata_atiixp, pata_acpi
+
+00:14.2 Audio device [0403]: Advanced Micro Devices, Inc. [AMD/ATI] IXP SB4x0 High Definition Audio Controller [1002:437b] (rev 01)
+	Subsystem: Micro-Star International Co., Ltd. [MSI] Device [1462:7191]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=slow >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 64, Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 16
+	Region 0: Memory at fe9e8000 (64-bit, non-prefetchable) [size=16K]
+	Capabilities: [50] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=55mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [60] MSI: Enable- Count=1/1 Maskable- 64bit+
+		Address: 0000000000000000  Data: 0000
+	Kernel driver in use: snd_hda_intel
+	Kernel modules: snd_hda_intel
+
+00:14.3 ISA bridge [0601]: Advanced Micro Devices, Inc. [AMD/ATI] IXP SB4x0 PCI-ISA Bridge [1002:4377] (rev 80)
+	Control: I/O+ Mem+ BusMaster+ SpecCycle+ MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap- 66MHz+ UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+
+00:14.4 PCI bridge [0604]: Advanced Micro Devices, Inc. [AMD/ATI] IXP SB4x0 PCI-PCI Bridge [1002:4371] (rev 80) (prog-if 01 [Subtractive decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap- 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 64
+	Bus: primary=00, secondary=02, subordinate=02, sec-latency=64
+	I/O behind bridge: 0000e000-0000efff
+	Memory behind bridge: feb00000-febfffff
+	Secondary status: 66MHz- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort+ <SERR- <PERR-
+	BridgeCtl: Parity+ SERR+ NoISA- VGA- MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+
+00:18.0 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] K8 [Athlon64/Opteron] HyperTransport Technology Configuration [1022:1100]
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Capabilities: [80] HyperTransport: Host or Secondary Interface
+		Command: WarmRst+ DblEnd- DevNum=0 ChainSide- HostHide+ Slave- <EOCErr- DUL-
+		Link Control: CFlE- CST- CFE- <LkFail- Init+ EOC- TXO- <CRCErr=0 IsocEn- LSEn- ExtCTL- 64b-
+		Link Config: MLWI=16bit DwFcIn- MLWO=16bit DwFcOut- LWI=16bit DwFcInEn- LWO=16bit DwFcOutEn-
+		Revision ID: 1.02
+		Link Frequency: 1.0GHz
+		Link Error: <Prot- <Ovfl- <EOC- CTLTm-
+		Link Frequency Capability: 200MHz+ 300MHz- 400MHz+ 500MHz- 600MHz+ 800MHz+ 1.0GHz+ 1.2GHz- 1.4GHz- 1.6GHz- Vend-
+		Feature Capability: IsocFC- LDTSTOP+ CRCTM- ECTLT- 64bA- UIDRD- ExtRS- UCnfE-
+
+00:18.1 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] K8 [Athlon64/Opteron] Address Map [1022:1101]
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+
+00:18.2 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] K8 [Athlon64/Opteron] DRAM Controller [1022:1102]
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+
+00:18.3 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] K8 [Athlon64/Opteron] Miscellaneous Control [1022:1103]
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Kernel driver in use: k8temp
+	Kernel modules: k8temp
+
+01:05.0 VGA compatible controller [0300]: Advanced Micro Devices, Inc. [AMD/ATI] RS482/RS485 [Radeon Xpress 1100/1150] [1002:5974] (prog-if 00 [VGA controller])
+	Subsystem: Micro-Star International Co., Ltd. [MSI] Aspire L250 [1462:7141]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 64 (2000ns min), Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 17
+	Region 0: Memory at d0000000 (32-bit, prefetchable) [size=256M]
+	Region 1: I/O ports at d800 [size=256]
+	Region 2: Memory at feaf0000 (32-bit, non-prefetchable) [size=64K]
+	Expansion ROM at 000c0000 [disabled] [size=128K]
+	Capabilities: [50] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: radeon
+	Kernel modules: radeon
+
+02:03.0 Ethernet controller [0200]: Realtek Semiconductor Co., Ltd. RTL-8100/8101L/8139 PCI Fast Ethernet Adapter [10ec:8139] (rev 10)
+	Subsystem: Micro-Star International Co., Ltd. [MSI] Device [1462:191c]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 64 (8000ns min, 16000ns max)
+	Interrupt: pin A routed to IRQ 20
+	Region 0: I/O ports at e800 [size=256]
+	Region 1: Memory at febffc00 (32-bit, non-prefetchable) [size=256]
+	Expansion ROM at febe0000 [disabled] [size=64K]
+	Capabilities: [50] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=375mA PME(D0-,D1+,D2+,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: 8139too
+	Kernel modules: 8139cp, 8139too
+
+02:04.0 FireWire (IEEE 1394) [0c00]: VIA Technologies, Inc. VT6306/7/8 [Fire II(M)] IEEE 1394 OHCI Controller [1106:3044] (rev 80) (prog-if 10 [OHCI])
+	Subsystem: Micro-Star International Co., Ltd. [MSI] Device [1462:191d]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV+ VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 64 (8000ns max), Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 9
+	Region 0: Memory at febff000 (32-bit, non-prefetchable) [size=2K]
+	Region 1: I/O ports at e400 [size=128]
+	Capabilities: [50] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2+ AuxCurrent=0mA PME(D0-,D1-,D2+,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: firewire_ohci
+	Kernel modules: firewire_ohci
+

@@ -1,0 +1,284 @@
+2c6c:f0:0b.0 Host bridge [0600]: Apple Inc. U3 AGP [106b:004b]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV+ VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort+ >SERR- <PERR- INTx-
+	Latency: 16, Cache Line Size: 32 bytes
+	Capabilities: [80] AGP version 3.0
+		Status: RQ=32 Iso- ArqSz=0 Cal=0 SBA+ ITACoh- GART64- HTrans+ 64bit+ FW+ AGP3+ Rate=x4,x8
+		Command: RQ=1 ArqSz=0 Cal=0 SBA+ AGP+ GART64- 64bit+ FW- Rate=x8
+	Kernel driver in use: agpgart-uninorth
+	Kernel modules: uninorth_agp
+
+2c6c:f0:10.0 VGA compatible controller [0300]: Advanced Micro Devices, Inc. [AMD/ATI] RV350 [Radeon 9550/9600/X1050 Series] [1002:4150] (prog-if 00 [VGA controller])
+	Subsystem: Advanced Micro Devices, Inc. [AMD/ATI] RV350 [Radeon 9550/9600/X1050 Series] [1002:4150]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 16 (2000ns min), Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 48
+	Region 0: Memory at a0000000 (32-bit, prefetchable) [size=256M]
+	Region 1: I/O ports at 0400 [size=256]
+	Region 2: Memory at 90000000 (32-bit, non-prefetchable) [size=64K]
+	Expansion ROM at 90020000 [disabled] [size=128K]
+	Capabilities: [58] AGP version 3.0
+		Status: RQ=256 Iso- ArqSz=0 Cal=0 SBA+ ITACoh- GART64- HTrans- 64bit- FW+ AGP3+ Rate=x4,x8
+		Command: RQ=8 ArqSz=0 Cal=0 SBA+ AGP+ GART64- 64bit- FW- Rate=x8
+	Capabilities: [50] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: radeon
+	Kernel modules: radeonfb, radeon
+
+7c70:00:00.0 Host bridge [0600]: Apple Inc. CPC945 HT Bridge [106b:004a]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Capabilities: [40] HyperTransport: Host or Secondary Interface
+		Command: WarmRst+ DblEnd- DevNum=0 ChainSide- HostHide- Slave- <EOCErr- DUL-
+		Link Control: CFlE- CST- CFE- <LkFail- Init+ EOC- TXO- <CRCErr=0 IsocEn- LSEn- ExtCTL- 64b-
+		Link Config: MLWI=16bit DwFcIn- MLWO=16bit DwFcOut- LWI=16bit DwFcInEn- LWO=16bit DwFcOutEn-
+		Revision ID: 1.04
+		Link Frequency: 400MHz
+		Link Error: <Prot- <Ovfl- <EOC- CTLTm-
+		Link Frequency Capability: 200MHz+ 300MHz+ 400MHz+ 500MHz+ 600MHz+ 800MHz- 1.0GHz- 1.2GHz- 1.4GHz- 1.6GHz- Vend-
+		Feature Capability: IsocFC- LDTSTOP+ CRCTM+ ECTLT- 64bA- UIDRD- ExtRS+ UCnfE-
+		Error Handling: PFlE- OFlE- PFE- OFE- EOCFE- RFE- CRCFE- SERRFE- CF- RE- PNFE- ONFE- EOCNFE- RNFE- CRCNFE- SERRNFE-
+		Prefetchable memory behind bridge Upper: 00-00
+	Kernel modules: uninorth_agp
+
+7c70:00:01.0 PCI bridge [0604]: Advanced Micro Devices, Inc. [AMD] AMD-8131 PCI-X Bridge [1022:7450] (rev 12) (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 32
+	Bus: primary=00, secondary=06, subordinate=06, sec-latency=32
+	Secondary status: 66MHz+ FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- <SERR- <PERR-
+	BridgeCtl: Parity+ SERR+ NoISA- VGA- MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn+
+	Capabilities: [a0] PCI-X bridge device
+		Secondary Status: 64bit+ 133MHz+ SCD- USC- SCO- SRD- Freq=100MHz
+		Status: Dev=00:01.0 64bit+ 133MHz+ SCD- USC- SCO- SRD-
+		Upstream: Capacity=14 CommitmentLimit=65535
+		Downstream: Capacity=2 CommitmentLimit=65535
+	Capabilities: [b8] HyperTransport: Interrupt Discovery and Configuration
+	Capabilities: [c0] HyperTransport: Slave or Primary Interface
+		Command: BaseUnitID=1 UnitCnt=2 MastHost- DefDir- DUL-
+		Link Control 0: CFlE+ CST- CFE- <LkFail- Init+ EOC- TXO- <CRCErr=0 IsocEn- LSEn- ExtCTL- 64b-
+		Link Config 0: MLWI=16bit DwFcIn- MLWO=16bit DwFcOut- LWI=16bit DwFcInEn- LWO=16bit DwFcOutEn-
+		Link Control 1: CFlE+ CST- CFE- <LkFail- Init+ EOC- TXO- <CRCErr=0 IsocEn- LSEn- ExtCTL- 64b-
+		Link Config 1: MLWI=8bit DwFcIn- MLWO=8bit DwFcOut- LWI=8bit DwFcInEn- LWO=8bit DwFcOutEn-
+		Revision ID: 1.02
+		Link Frequency 0: 400MHz
+		Link Error 0: <Prot- <Ovfl- <EOC- CTLTm-
+		Link Frequency Capability 0: 200MHz+ 300MHz- 400MHz+ 500MHz- 600MHz+ 800MHz+ 1.0GHz- 1.2GHz- 1.4GHz- 1.6GHz- Vend-
+		Feature Capability: IsocFC- LDTSTOP+ CRCTM- ECTLT- 64bA- UIDRD-
+		Link Frequency 1: 400MHz
+		Link Error 1: <Prot- <Ovfl- <EOC- CTLTm-
+		Link Frequency Capability 1: 200MHz+ 300MHz- 400MHz+ 500MHz- 600MHz+ 800MHz+ 1.0GHz- 1.2GHz- 1.4GHz- 1.6GHz- Vend-
+		Error Handling: PFlE- OFlE- PFE- OFE- EOCFE- RFE- CRCFE- SERRFE- CF- RE- PNFE- ONFE- EOCNFE- RNFE- CRCNFE- SERRNFE-
+		Prefetchable memory behind bridge Upper: 00-00
+		Bus Number: 00
+	Kernel driver in use: amd8131_edac
+	Kernel modules: shpchp, amd8131_edac
+
+7c70:00:02.0 PCI bridge [0604]: Advanced Micro Devices, Inc. [AMD] AMD-8131 PCI-X Bridge [1022:7450] (rev 12) (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 32
+	Bus: primary=00, secondary=07, subordinate=07, sec-latency=32
+	Secondary status: 66MHz+ FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- <SERR- <PERR-
+	BridgeCtl: Parity+ SERR+ NoISA- VGA- MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn+
+	Capabilities: [a0] PCI-X bridge device
+		Secondary Status: 64bit+ 133MHz+ SCD- USC- SCO- SRD- Freq=133MHz
+		Status: Dev=00:02.0 64bit+ 133MHz+ SCD- USC- SCO- SRD-
+		Upstream: Capacity=14 CommitmentLimit=65535
+		Downstream: Capacity=2 CommitmentLimit=65535
+	Capabilities: [b8] HyperTransport: Interrupt Discovery and Configuration
+	Kernel driver in use: amd8131_edac
+	Kernel modules: shpchp, amd8131_edac
+
+7c70:00:03.0 PCI bridge [0604]: Apple Inc. K2 HT-PCI Bridge [106b:0045] (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 64 bytes
+	Bus: primary=00, secondary=01, subordinate=01, sec-latency=32
+	Memory behind bridge: 80000000-800fffff
+	Prefetchable memory behind bridge: 00000000-000fffff
+	Secondary status: 66MHz+ FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- <SERR- <PERR-
+	BridgeCtl: Parity- SERR- NoISA- VGA- MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Capabilities: [70] HyperTransport: Slave or Primary Interface
+		Command: BaseUnitID=3 UnitCnt=5 MastHost- DefDir- DUL-
+		Link Control 0: CFlE- CST- CFE- <LkFail- Init+ EOC- TXO- <CRCErr=0 IsocEn- LSEn- ExtCTL- 64b-
+		Link Config 0: MLWI=8bit DwFcIn- MLWO=8bit DwFcOut- LWI=8bit DwFcInEn- LWO=8bit DwFcOutEn-
+		Link Control 1: CFlE- CST- CFE- <LkFail+ Init- EOC+ TXO+ <CRCErr=0 IsocEn- LSEn- ExtCTL- 64b-
+		Link Config 1: MLWI=8bit DwFcIn- MLWO=8bit DwFcOut- LWI=8bit DwFcInEn- LWO=8bit DwFcOutEn-
+		Revision ID: 1.04
+		Link Frequency 0: 400MHz
+		Link Error 0: <Prot- <Ovfl- <EOC- CTLTm-
+		Link Frequency Capability 0: 200MHz+ 300MHz- 400MHz+ 500MHz- 600MHz- 800MHz- 1.0GHz- 1.2GHz- 1.4GHz- 1.6GHz- Vend-
+		Feature Capability: IsocFC- LDTSTOP+ CRCTM+ ECTLT- 64bA- UIDRD-
+		Link Frequency 1: 200MHz
+		Link Error 1: <Prot- <Ovfl- <EOC- CTLTm-
+		Link Frequency Capability 1: 200MHz- 300MHz- 400MHz- 500MHz- 600MHz- 800MHz- 1.0GHz- 1.2GHz- 1.4GHz- 1.6GHz- Vend-
+		Error Handling: PFlE- OFlE- PFE- OFE- EOCFE- RFE- CRCFE- SERRFE- CF- RE- PNFE- ONFE- EOCNFE- RNFE- CRCNFE- SERRNFE-
+		Prefetchable memory behind bridge Upper: 00-00
+		Bus Number: 00
+	Capabilities: [90] HyperTransport: Interrupt Discovery and Configuration
+	Kernel modules: shpchp
+
+7c70:00:04.0 PCI bridge [0604]: Apple Inc. K2 HT-PCI Bridge [106b:0046] (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 64 bytes
+	Bus: primary=00, secondary=02, subordinate=02, sec-latency=32
+	Memory behind bridge: 80100000-801fffff
+	Prefetchable memory behind bridge: 00000000-000fffff
+	Secondary status: 66MHz+ FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort+ <SERR- <PERR-
+	BridgeCtl: Parity- SERR- NoISA- VGA- MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Capabilities: [70] HyperTransport: Revision ID: 1.04
+	Kernel modules: shpchp
+
+7c70:00:05.0 PCI bridge [0604]: Apple Inc. K2 HT-PCI Bridge [106b:0047] (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 64 bytes
+	Bus: primary=00, secondary=03, subordinate=03, sec-latency=32
+	Memory behind bridge: 80200000-802fffff
+	Prefetchable memory behind bridge: 00000000-000fffff
+	Secondary status: 66MHz+ FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- <SERR- <PERR-
+	BridgeCtl: Parity- SERR- NoISA- VGA- MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Capabilities: [70] HyperTransport: Revision ID: 1.04
+	Kernel modules: shpchp
+
+7c70:00:06.0 PCI bridge [0604]: Apple Inc. K2 HT-PCI Bridge [106b:0048] (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 64 bytes
+	Bus: primary=00, secondary=04, subordinate=04, sec-latency=32
+	Memory behind bridge: 80300000-805fffff
+	Prefetchable memory behind bridge: 00000000-000fffff
+	Secondary status: 66MHz+ FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- <SERR- <PERR-
+	BridgeCtl: Parity- SERR- NoISA- VGA- MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Capabilities: [70] HyperTransport: Revision ID: 1.04
+	Kernel modules: shpchp
+
+7c70:00:07.0 PCI bridge [0604]: Apple Inc. K2 HT-PCI Bridge [106b:0049] (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 64 bytes
+	Bus: primary=00, secondary=05, subordinate=05, sec-latency=32
+	Memory behind bridge: 80600000-806fffff
+	Prefetchable memory behind bridge: 00000000-000fffff
+	Secondary status: 66MHz+ FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort+ <SERR- <PERR-
+	BridgeCtl: Parity- SERR- NoISA- VGA- MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Capabilities: [70] HyperTransport: Revision ID: 1.04
+	Kernel modules: shpchp
+
+7c70:01:07.0 Unassigned class [ff00]: Apple Inc. K2 KeyLargo Mac/IO [106b:0041] (rev 20)
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 16, Cache Line Size: 64 bytes
+	Region 0: Memory at 80000000 (32-bit, non-prefetchable) [size=512K]
+	Kernel driver in use: macio
+
+7c70:01:08.0 USB controller [0c03]: Apple Inc. K2 KeyLargo USB [106b:0040] (prog-if 10 [OHCI])
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 16 (750ns min, 21500ns max), Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 27
+	Region 0: Memory at 80081000 (32-bit, non-prefetchable) [size=4K]
+	Kernel driver in use: ohci-pci
+
+7c70:01:09.0 USB controller [0c03]: Apple Inc. K2 KeyLargo USB [106b:0040] (prog-if 10 [OHCI])
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 16 (750ns min, 21500ns max), Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 28
+	Region 0: Memory at 80080000 (32-bit, non-prefetchable) [size=4K]
+	Kernel driver in use: ohci-pci
+
+7c70:02:0b.0 USB controller [0c03]: NEC Corporation OHCI USB Controller [1033:0035] (rev 43) (prog-if 10 [OHCI])
+	Subsystem: NEC Corporation USB Controller [1033:0035]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 16 (250ns min, 10500ns max), Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 63
+	Region 0: Memory at 80102000 (32-bit, non-prefetchable) [size=4K]
+	Capabilities: [40] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: ohci-pci
+
+7c70:02:0b.1 USB controller [0c03]: NEC Corporation OHCI USB Controller [1033:0035] (rev 43) (prog-if 10 [OHCI])
+	Subsystem: NEC Corporation USB Controller [1033:0035]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 16 (250ns min, 10500ns max), Cache Line Size: 64 bytes
+	Interrupt: pin B routed to IRQ 63
+	Region 0: Memory at 80101000 (32-bit, non-prefetchable) [size=4K]
+	Capabilities: [40] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME+
+	Kernel driver in use: ohci-pci
+
+7c70:02:0b.2 USB controller [0c03]: NEC Corporation uPD72010x USB 2.0 Controller [1033:00e0] (rev 04) (prog-if 20 [EHCI])
+	Subsystem: NEC Corporation uPD72010x USB 2.0 Controller [1033:00e0]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 16 (4000ns min, 8500ns max), Cache Line Size: 64 bytes
+	Interrupt: pin C routed to IRQ 63
+	Region 0: Memory at 80100000 (32-bit, non-prefetchable) [size=256]
+	Capabilities: [40] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: ehci-pci
+
+7c70:03:0d.0 Unassigned class [ff00]: Apple Inc. K2 ATA/100 [106b:0043]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV+ VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 32, Cache Line Size: 32 bytes
+	Interrupt: pin ? routed to IRQ 39
+	Region 0: Memory at 80204000 (32-bit, non-prefetchable) [size=16K]
+	Kernel driver in use: pata-pci-macio
+
+7c70:03:0e.0 FireWire (IEEE 1394) [0c00]: Apple Inc. K2 FireWire [106b:0042] (prog-if 10 [OHCI])
+	Subsystem: Apple Inc. K2 FireWire [106b:5811]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 248 (3000ns min, 6000ns max), Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 40
+	Region 0: Memory at 80200000 (32-bit, non-prefetchable) [size=4K]
+	Capabilities: [44] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0+,D1+,D2+,D3hot+,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME+
+	Kernel driver in use: firewire_ohci
+	Kernel modules: firewire_ohci
+
+7c70:04:0f.0 Ethernet controller [0200]: Apple Inc. K2 GMAC (Sun GEM) [106b:004c]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=slow >TAbort- <TAbort- <MAbort- >SERR- <PERR+ INTx-
+	Latency: 16 (16000ns min, 16000ns max), Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 41
+	Region 0: Memory at 80400000 (32-bit, non-prefetchable) [size=2M]
+	Expansion ROM at 80300000 [disabled] [size=1M]
+	Kernel driver in use: gem
+	Kernel modules: sungem
+
+7c70:05:0c.0 IDE interface [0101]: Broadcom K2 SATA [1166:0240] (prog-if 8f [Master SecP SecO PriP PriO])
+	Subsystem: Broadcom K2 SATA [1166:0240]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 16
+	Interrupt: pin ? routed to IRQ 16
+	Region 0: I/O ports at <unassigned> [disabled]
+	Region 1: I/O ports at <unassigned> [disabled]
+	Region 2: I/O ports at <unassigned> [disabled]
+	Region 3: I/O ports at <unassigned> [disabled]
+	Region 4: I/O ports at <unassigned> [disabled]
+	Region 5: Memory at 80600000 (32-bit, non-prefetchable) [size=8K]
+	Kernel driver in use: sata_svw
+	Kernel modules: ata_generic
+

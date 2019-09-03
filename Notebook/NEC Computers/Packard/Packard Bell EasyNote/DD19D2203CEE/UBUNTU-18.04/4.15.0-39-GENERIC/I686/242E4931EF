@@ -1,0 +1,220 @@
+00:00.0 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD/ATI] RS480/RS482/RS485 Host Bridge [1002:5950] (rev 01)
+	Subsystem: Advanced Micro Devices, Inc. [AMD/ATI] RS480/RS482/RS485 Host Bridge [1002:5950]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz+ UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort+ >SERR- <PERR- INTx-
+	Latency: 64
+	Kernel modules: ati_agp
+
+00:01.0 PCI bridge [0604]: Advanced Micro Devices, Inc. [AMD/ATI] RC4xx/RS4xx PCI Bridge [int gfx] [1002:5a3f] (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 128
+	Bus: primary=00, secondary=01, subordinate=01, sec-latency=32
+	I/O behind bridge: 0000c000-0000dfff [size=8K]
+	Memory behind bridge: c0000000-cfffffff [size=256M]
+	Prefetchable memory behind bridge: 0000000090000000-000000009fffffff [size=256M]
+	Secondary status: 66MHz+ FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort+ <SERR- <PERR-
+	BridgeCtl: Parity- SERR+ NoISA- VGA+ VGA16- MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Capabilities: <access denied>
+	Kernel modules: shpchp
+
+00:10.0 CardBus bridge [0607]: Texas Instruments PCIxx21/PCIxx11/PCIx515 PC Card Controller [104c:8031]
+	Subsystem: Packard Bell B.V. Device [1631:c00a]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 168, Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 17
+	Region 0: Memory at 40000000 (32-bit, non-prefetchable) [size=4K]
+	Bus: primary=00, secondary=03, subordinate=06, sec-latency=176
+	Memory window 0: 44000000-47ffffff (prefetchable)
+	Memory window 1: 48000000-4bffffff
+	I/O window 0: 00001800-000018ff
+	I/O window 1: 00001c00-00001cff
+	BridgeCtl: Parity- SERR- ISA- VGA- MAbort- >Reset+ 16bInt+ PostWrite+
+	16-bit legacy interface ports at 0001
+	Capabilities: <access denied>
+	Kernel driver in use: yenta_cardbus
+	Kernel modules: yenta_socket
+
+00:10.2 FireWire (IEEE 1394) [0c00]: Texas Instruments OHCI Compliant IEEE 1394 Host Controller [104c:8032] (prog-if 10 [OHCI])
+	Subsystem: Packard Bell B.V. Device [1631:c00a]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 128 (750ns min, 1000ns max), Cache Line Size: 16 bytes
+	Interrupt: pin C routed to IRQ 19
+	Region 0: Memory at d0000000 (32-bit, non-prefetchable) [size=2K]
+	Region 1: Memory at d0004000 (32-bit, non-prefetchable) [size=16K]
+	Capabilities: <access denied>
+	Kernel driver in use: firewire_ohci
+	Kernel modules: firewire_ohci
+
+00:10.3 Mass storage controller [0180]: Texas Instruments PCIxx21/PCIxx11 Flash Media Controller [104c:8033]
+	Subsystem: Packard Bell B.V. Device [1631:c00a]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 128 (1750ns min, 1000ns max), Cache Line Size: 16 bytes
+	Interrupt: pin A routed to IRQ 17
+	Region 0: Memory at d0008000 (32-bit, non-prefetchable) [size=8K]
+	Capabilities: <access denied>
+	Kernel driver in use: tifm_7xx1
+	Kernel modules: tifm_7xx1
+
+00:10.4 SD Host controller [0805]: Texas Instruments PCIxx21/PCIxx11 SD Host Controller [104c:8034]
+	Subsystem: Packard Bell B.V. Device [1631:c00a]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 128 (1750ns min, 1000ns max), Cache Line Size: 16 bytes
+	Interrupt: pin A routed to IRQ 17
+	Region 0: Memory at d000a000 (32-bit, non-prefetchable) [size=256]
+	Region 1: Memory at d000a100 (32-bit, non-prefetchable) [size=256]
+	Region 2: Memory at d000a200 (32-bit, non-prefetchable) [size=256]
+	Capabilities: <access denied>
+	Kernel driver in use: sdhci-pci
+	Kernel modules: sdhci_pci
+
+00:11.0 Network controller [0280]: Ralink corp. RT2500 Wireless 802.11bg [1814:0201] (rev 01)
+	Subsystem: Ralink corp. RT2500 Wireless 802.11bg [1814:2560]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV+ VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=slow >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 64, Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 19
+	Region 0: Memory at ffffe000 (32-bit, non-prefetchable) [size=8K]
+	Capabilities: <access denied>
+	Kernel driver in use: rt2500pci
+	Kernel modules: rt2500pci
+
+00:18.0 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] K8 [Athlon64/Opteron] HyperTransport Technology Configuration [1022:1100]
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Capabilities: <access denied>
+
+00:18.1 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] K8 [Athlon64/Opteron] Address Map [1022:1101]
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+
+00:18.2 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] K8 [Athlon64/Opteron] DRAM Controller [1022:1102]
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+
+00:18.3 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] K8 [Athlon64/Opteron] Miscellaneous Control [1022:1103]
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Kernel driver in use: k8temp
+	Kernel modules: k8temp
+
+00:19.0 PCI bridge [0604]: ULi Electronics Inc. M5249 HTT to PCI Bridge [10b9:5249] (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort+ >SERR- <PERR- INTx-
+	Latency: 0
+	Bus: primary=00, secondary=02, subordinate=02, sec-latency=64
+	I/O behind bridge: 0000a000-0000bfff [size=8K]
+	Memory behind bridge: b8000000-bfffffff [size=128M]
+	Prefetchable memory behind bridge: 88000000-8fffffff [size=128M]
+	Secondary status: 66MHz- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort+ <SERR- <PERR+
+	BridgeCtl: Parity- SERR- NoISA+ VGA- VGA16- MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Capabilities: <access denied>
+	Kernel modules: shpchp
+
+00:1b.0 Ethernet controller [0200]: ULi Electronics Inc. ULi 1689,1573 integrated ethernet. [10b9:5263] (rev 50)
+	Subsystem: Packard Bell B.V. Device [1631:c00a]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 128 (5000ns min, 10000ns max)
+	Interrupt: pin A routed to IRQ 20
+	Region 0: I/O ports at e000 [size=256]
+	Region 1: Memory at d000a300 (32-bit, non-prefetchable) [size=256]
+	Capabilities: <access denied>
+	Kernel driver in use: uli526x
+	Kernel modules: uli526x
+
+00:1c.0 USB controller [0c03]: ULi Electronics Inc. USB 1.1 Controller [10b9:5237] (rev 03) (prog-if 10 [OHCI])
+	Subsystem: Packard Bell B.V. Device [1631:c00a]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx+
+	Latency: 64 (20000ns max), Cache Line Size: 32 bytes
+	Interrupt: pin A routed to IRQ 17
+	Region 0: Memory at f8002000 (32-bit, non-prefetchable) [size=4K]
+	Kernel driver in use: ohci-pci
+
+00:1c.1 USB controller [0c03]: ULi Electronics Inc. USB 1.1 Controller [10b9:5237] (rev 03) (prog-if 10 [OHCI])
+	Subsystem: Packard Bell B.V. Device [1631:c00a]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx+
+	Latency: 64 (20000ns max), Cache Line Size: 32 bytes
+	Interrupt: pin B routed to IRQ 18
+	Region 0: Memory at f8003000 (32-bit, non-prefetchable) [size=4K]
+	Kernel driver in use: ohci-pci
+
+00:1c.2 USB controller [0c03]: ULi Electronics Inc. USB 1.1 Controller [10b9:5237] (rev 03) (prog-if 10 [OHCI])
+	Subsystem: Packard Bell B.V. Device [1631:c00a]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx+
+	Latency: 64 (20000ns max), Cache Line Size: 32 bytes
+	Interrupt: pin C routed to IRQ 19
+	Region 0: Memory at f8004000 (32-bit, non-prefetchable) [size=4K]
+	Kernel driver in use: ohci-pci
+
+00:1c.3 USB controller [0c03]: ULi Electronics Inc. USB 2.0 Controller [10b9:5239] (rev 01) (prog-if 20 [EHCI])
+	Subsystem: Packard Bell B.V. Device [1631:c00a]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV+ VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 128 (4000ns min, 8000ns max), Cache Line Size: 64 bytes
+	Interrupt: pin D routed to IRQ 23
+	Region 0: Memory at 40001000 (32-bit, non-prefetchable) [size=256]
+	Capabilities: <access denied>
+	Kernel driver in use: ehci-pci
+
+00:1d.0 Audio device [0403]: ULi Electronics Inc. HD Audio Controller [10b9:5461]
+	Subsystem: Packard Bell B.V. Device [1631:c00a]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 128 (4000ns min, 20000ns max)
+	Interrupt: pin C routed to IRQ 22
+	Region 0: Memory at d000c000 (64-bit, non-prefetchable) [size=16K]
+	Capabilities: <access denied>
+	Kernel driver in use: snd_hda_intel
+	Kernel modules: snd_hda_intel
+
+00:1e.0 ISA bridge [0601]: ULi Electronics Inc. PCI to LPC Controller [10b9:1573] (rev 31)
+	Subsystem: Packard Bell B.V. Device [1631:c00a]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle+ MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0 (250ns min, 6000ns max)
+
+00:1e.1 Bridge [0680]: ULi Electronics Inc. M7101 Power Management Controller [PMU] [10b9:7101]
+	Subsystem: Packard Bell B.V. Device [1631:c00a]
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Kernel modules: i2c_ali1535, i2c_ali15x3, alim7101_wdt
+
+00:1f.0 IDE interface [0101]: ULi Electronics Inc. M5229 IDE [10b9:5229] (rev c7) (prog-if 8a [ISA Compatibility mode controller, supports both channels switched to PCI native mode, supports bus mastering])
+	Subsystem: Packard Bell B.V. Device [1631:c00a]
+	Control: I/O+ Mem- BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 192, Cache Line Size: 32 bytes
+	Interrupt: pin A routed to IRQ 21
+	Region 0: [virtual] Memory at 000001f0 (32-bit, non-prefetchable) [size=8]
+	Region 1: [virtual] Memory at 000003f0 (type 3, non-prefetchable)
+	Region 2: [virtual] Memory at 00000170 (32-bit, non-prefetchable) [size=8]
+	Region 3: [virtual] Memory at 00000370 (type 3, non-prefetchable)
+	Region 4: I/O ports at 1100 [size=16]
+	Capabilities: <access denied>
+	Kernel driver in use: pata_ali
+	Kernel modules: pata_ali, pata_acpi
+
+01:05.0 VGA compatible controller [0300]: Advanced Micro Devices, Inc. [AMD/ATI] RS480M [Mobility Radeon Xpress 200] [1002:5955] (prog-if 00 [VGA controller])
+	Subsystem: Packard Bell B.V. Device [1631:c00a]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 64 (2000ns min), Cache Line Size: 32 bytes
+	Interrupt: pin A routed to IRQ 17
+	Region 0: Memory at 90000000 (32-bit, prefetchable) [size=256M]
+	Region 1: I/O ports at c000 [size=256]
+	Region 2: Memory at c0000000 (32-bit, non-prefetchable) [size=64K]
+	[virtual] Expansion ROM at 000c0000 [disabled] [size=128K]
+	Capabilities: <access denied>
+	Kernel driver in use: radeon
+	Kernel modules: radeonfb, radeon
+

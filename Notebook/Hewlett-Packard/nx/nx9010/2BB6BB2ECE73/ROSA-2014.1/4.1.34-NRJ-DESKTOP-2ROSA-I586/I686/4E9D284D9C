@@ -1,0 +1,187 @@
+00:00.0 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD/ATI] RS200 Host Bridge [1002:cbb2] (rev 02)
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort+ >SERR- <PERR- INTx-
+	Latency: 64
+	Region 0: Memory at d8000000 (32-bit, prefetchable) [size=64M]
+	Region 1: Memory at d4009000 (32-bit, prefetchable) [size=4K]
+	Capabilities: [a0] AGP version 2.0
+		Status: RQ=16 Iso- ArqSz=0 Cal=0 SBA+ ITACoh- GART64- HTrans- 64bit- FW+ AGP3- Rate=x1,x2,x4
+		Command: RQ=1 ArqSz=0 Cal=0 SBA- AGP- GART64- 64bit- FW- Rate=<none>
+
+00:01.0 PCI bridge [0604]: Advanced Micro Devices, Inc. [AMD/ATI] RS200/RS250 AGP Bridge [1002:7010] (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz+ UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 99
+	Bus: primary=00, secondary=01, subordinate=01, sec-latency=68
+	I/O behind bridge: 00009000-00009fff
+	Memory behind bridge: d4300000-d43fffff
+	Prefetchable memory behind bridge: dc000000-dfffffff
+	Secondary status: 66MHz+ FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort+ <SERR- <PERR-
+	BridgeCtl: Parity- SERR- NoISA+ VGA+ MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Kernel modules: shpchp
+
+00:06.0 Multimedia audio controller [0401]: ULi Electronics Inc. M5451 PCI AC-Link Controller Audio Device [10b9:5451] (rev 02)
+	Subsystem: Hewlett-Packard Company Device [103c:0850]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR+ <PERR+ INTx-
+	Latency: 64 (500ns min, 6000ns max)
+	Interrupt: pin A routed to IRQ 5
+	Region 0: I/O ports at 1000 [size=256]
+	Region 1: Memory at d4000000 (32-bit, non-prefetchable) [size=4K]
+	Capabilities: [dc] Power Management version 2
+		Flags: PMEClk- DSI+ D1+ D2+ AuxCurrent=0mA PME(D0-,D1-,D2+,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: snd_ali5451
+	Kernel modules: snd_ali5451
+
+00:07.0 ISA bridge [0601]: ULi Electronics Inc. M1533/M1535/M1543 PCI to ISA Bridge [Aladdin IV/V/V+] [10b9:1533]
+	Subsystem: ULi Electronics Inc. ALi M1533 Aladdin IV/V ISA Bridge [10b9:1533]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle+ MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Capabilities: [a0] Power Management version 1
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel modules: alim1535_wdt, alim7101_wdt
+
+00:08.0 Modem [0703]: ULi Electronics Inc. M5457 AC'97 Modem Controller [10b9:5457] (prog-if 00 [Generic])
+	Subsystem: Hewlett-Packard Company Device [103c:0850]
+	Control: I/O+ Mem+ BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Interrupt: pin A routed to IRQ 10
+	Region 0: Memory at d4001000 (32-bit, non-prefetchable) [size=4K]
+	Region 1: I/O ports at 1400 [size=256]
+	Capabilities: [40] Power Management version 2
+		Flags: PMEClk- DSI+ D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+
+00:0a.0 CardBus bridge [0607]: O2 Micro, Inc. OZ601/6912/711E0 CardBus/SmartCardBus Controller [1217:6972]
+	Subsystem: Hewlett-Packard Company Device [103c:0850]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping+ SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=slow >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 168
+	Interrupt: pin A routed to IRQ 11
+	Region 0: Memory at d4002000 (32-bit, non-prefetchable) [size=4K]
+	Bus: primary=00, secondary=02, subordinate=05, sec-latency=176
+	Memory window 0: 20000000-23ffffff (prefetchable)
+	Memory window 1: 24000000-27ffffff
+	I/O window 0: 00001800-000018ff
+	I/O window 1: 00001c00-00001cff
+	BridgeCtl: Parity- SERR- ISA- VGA- MAbort- >Reset- 16bInt+ PostWrite+
+	16-bit legacy interface ports at 0001
+	Capabilities: [a0] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=2 PME-
+		Bridge: PM- B3+
+	Kernel driver in use: yenta_cardbus
+	Kernel modules: yenta_socket
+
+00:0b.0 USB controller [0c03]: VIA Technologies, Inc. VT82xx/62xx UHCI USB 1.1 Controller [1106:3038] (rev 50) (prog-if 00 [UHCI])
+	Subsystem: Hewlett-Packard Company Device [103c:0850]
+	Control: I/O+ Mem- BusMaster+ SpecCycle- MemWINV+ VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 64, Cache Line Size: 32 bytes
+	Interrupt: pin A routed to IRQ 10
+	Region 4: I/O ports at 2000 [size=32]
+	Capabilities: [80] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: uhci_hcd
+	Kernel modules: uhci_hcd
+
+00:0b.1 USB controller [0c03]: VIA Technologies, Inc. VT82xx/62xx UHCI USB 1.1 Controller [1106:3038] (rev 50) (prog-if 00 [UHCI])
+	Subsystem: Hewlett-Packard Company Device [103c:0850]
+	Control: I/O+ Mem- BusMaster+ SpecCycle- MemWINV+ VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 64, Cache Line Size: 32 bytes
+	Interrupt: pin B routed to IRQ 10
+	Region 4: I/O ports at 2020 [size=32]
+	Capabilities: [80] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: uhci_hcd
+	Kernel modules: uhci_hcd
+
+00:0b.2 USB controller [0c03]: VIA Technologies, Inc. USB 2.0 [1106:3104] (rev 51) (prog-if 20 [EHCI])
+	Subsystem: Hewlett-Packard Company Device [103c:0850]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV+ VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 64, Cache Line Size: 32 bytes
+	Interrupt: pin C routed to IRQ 11
+	Region 0: Memory at d4003000 (32-bit, non-prefetchable) [size=256]
+	Capabilities: [80] Power Management version 2
+		Flags: PMEClk+ DSI- D1- D2- AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: ehci-pci
+	Kernel modules: ehci_pci
+
+00:0c.0 FireWire (IEEE 1394) [0c00]: Texas Instruments TSB43AB21 IEEE-1394a-2000 Controller (PHY/Link) [104c:8026] (prog-if 10 [OHCI])
+	Subsystem: Hewlett-Packard Company Device [103c:0850]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV+ VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 64 (500ns min, 1000ns max), Cache Line Size: 32 bytes
+	Interrupt: pin A routed to IRQ 10
+	Region 0: Memory at d4003800 (32-bit, non-prefetchable) [size=2K]
+	Region 1: Memory at d4004000 (32-bit, non-prefetchable) [size=16K]
+	Capabilities: [44] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0+,D1+,D2+,D3hot+,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME+
+	Kernel driver in use: firewire_ohci
+	Kernel modules: firewire_ohci
+
+00:10.0 IDE interface [0101]: ULi Electronics Inc. M5229 IDE [10b9:5229] (rev c4) (prog-if fa)
+	Subsystem: Hewlett-Packard Company Device [103c:0850]
+	Control: I/O+ Mem- BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 32 (500ns min, 1000ns max)
+	Interrupt: pin A routed to IRQ 0
+	Region 0: [virtual] Memory at 000001f0 (32-bit, non-prefetchable) [size=8]
+	Region 1: [virtual] Memory at 000003f0 (type 3, non-prefetchable)
+	Region 2: [virtual] Memory at 00000170 (32-bit, non-prefetchable) [size=8]
+	Region 3: [virtual] Memory at 00000370 (type 3, non-prefetchable)
+	Region 4: I/O ports at 2040 [size=16]
+	Capabilities: [60] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: pata_ali
+	Kernel modules: pata_ali, pata_acpi, ata_generic, alim15x3, ide_pci_generic
+
+00:11.0 Bridge [0680]: ULi Electronics Inc. M7101 Power Management Controller [PMU] [10b9:7101]
+	Subsystem: Hewlett-Packard Company Device [103c:0850]
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Kernel modules: i2c_ali1535, i2c_ali15x3, alim7101_wdt
+
+00:12.0 Ethernet controller [0200]: National Semiconductor Corporation DP83815 (MacPhyter) Ethernet Controller [100b:0020]
+	Subsystem: Hewlett-Packard Company Device [103c:0850]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 90 (2750ns min, 13000ns max)
+	Interrupt: pin A routed to IRQ 10
+	Region 0: I/O ports at 2400 [size=256]
+	Region 1: Memory at d4008000 (32-bit, non-prefetchable) [size=4K]
+	[virtual] Expansion ROM at 1e000000 [disabled] [size=64K]
+	Capabilities: [40] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=320mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME+
+	Kernel driver in use: natsemi
+	Kernel modules: natsemi
+
+01:05.0 VGA compatible controller [0300]: Advanced Micro Devices, Inc. [AMD/ATI] RS200M [Radeon IGP 330M/340M/345M/350M] [1002:4337] (prog-if 00 [VGA controller])
+	Subsystem: Hewlett-Packard Company Radeon IGP 345M [103c:0850]
+	Control: I/O+ Mem+ BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping+ SERR- FastB2B+ DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Interrupt: pin A routed to IRQ 255
+	Region 0: Memory at dc000000 (32-bit, prefetchable) [size=64M]
+	Region 1: I/O ports at 9000 [size=256]
+	Region 2: Memory at d4300000 (32-bit, non-prefetchable) [size=64K]
+	[virtual] Expansion ROM at d4320000 [disabled] [size=128K]
+	Capabilities: [58] AGP version 2.0
+		Status: RQ=48 Iso- ArqSz=0 Cal=0 SBA+ ITACoh- GART64- HTrans- 64bit- FW- AGP3- Rate=x1,x2,x4
+		Command: RQ=1 ArqSz=0 Cal=0 SBA+ AGP- GART64- 64bit- FW- Rate=<none>
+	Capabilities: [50] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel modules: radeonfb, radeon
+

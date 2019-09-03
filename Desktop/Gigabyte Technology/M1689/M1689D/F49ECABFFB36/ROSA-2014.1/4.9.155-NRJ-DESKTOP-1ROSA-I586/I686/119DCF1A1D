@@ -1,0 +1,224 @@
+00:00.0 Host bridge [0600]: ULi Electronics Inc. M1689 K8 Northbridge [Super K8 Single Chip] [10b9:1689]
+	Subsystem: Gigabyte Technology Co., Ltd Device [1458:5000]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Region 0: Memory at e0000000 (32-bit, prefetchable) [size=128M]
+	Capabilities: [40] HyperTransport: Slave or Primary Interface
+		Command: BaseUnitID=0 UnitCnt=1 MastHost- DefDir- DUL+
+		Link Control 0: CFlE- CST- CFE- <LkFail- Init+ EOC- TXO- <CRCErr=0 IsocEn- LSEn- ExtCTL- 64b-
+		Link Config 0: MLWI=16bit DwFcIn- MLWO=8bit DwFcOut- LWI=16bit DwFcInEn- LWO=8bit DwFcOutEn-
+		Link Control 1: CFlE- CST- CFE- <LkFail+ Init- EOC+ TXO+ <CRCErr=0 IsocEn- LSEn- ExtCTL- 64b-
+		Link Config 1: MLWI=8bit DwFcIn- MLWO=8bit DwFcOut- LWI=8bit DwFcInEn- LWO=8bit DwFcOutEn-
+		Revision ID: 1.04
+		Link Frequency 0: 800MHz
+		Link Error 0: <Prot- <Ovfl- <EOC- CTLTm-
+		Link Frequency Capability 0: 200MHz+ 300MHz- 400MHz+ 500MHz- 600MHz+ 800MHz+ 1.0GHz- 1.2GHz- 1.4GHz- 1.6GHz- Vend-
+		Feature Capability: IsocFC- LDTSTOP+ CRCTM- ECTLT- 64bA- UIDRD-
+		Link Frequency 1: 200MHz
+		Link Error 1: <Prot- <Ovfl- <EOC- CTLTm-
+		Link Frequency Capability 1: 200MHz- 300MHz- 400MHz- 500MHz- 600MHz- 800MHz- 1.0GHz- 1.2GHz- 1.4GHz- 1.6GHz- Vend-
+		Error Handling: PFlE+ OFlE+ PFE- OFE- EOCFE- RFE- CRCFE- SERRFE- CF- RE- PNFE- ONFE- EOCNFE- RNFE- CRCNFE- SERRNFE-
+		Prefetchable memory behind bridge Upper: 00-00
+		Bus Number: 00
+	Capabilities: [60] HyperTransport: Interrupt Discovery and Configuration
+	Capabilities: [80] AGP version 3.0
+		Status: RQ=28 Iso- ArqSz=0 Cal=0 SBA+ ITACoh- GART64- HTrans- 64bit- FW+ AGP3+ Rate=x4,x8
+		Command: RQ=1 ArqSz=0 Cal=0 SBA+ AGP+ GART64- 64bit- FW- Rate=x8
+	Kernel driver in use: agpgart-amd64
+
+00:01.0 PCI bridge [0604]: ULi Electronics Inc. AGP8X Controller [10b9:5246] (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz+ UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Bus: primary=00, secondary=01, subordinate=01, sec-latency=32
+	I/O behind bridge: 00009000-00009fff
+	Memory behind bridge: f8000000-f9ffffff
+	Prefetchable memory behind bridge: e8000000-f7ffffff
+	Secondary status: 66MHz+ FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort+ <SERR- <PERR-
+	BridgeCtl: Parity- SERR- NoISA+ VGA+ MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Kernel modules: shpchp
+
+00:02.0 PCI bridge [0604]: ULi Electronics Inc. M5249 HTT to PCI Bridge [10b9:5249] (prog-if 01 [Subtractive decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Bus: primary=00, secondary=02, subordinate=02, sec-latency=32
+	I/O behind bridge: 0000a000-0000afff
+	Memory behind bridge: fa000000-fa0fffff
+	Secondary status: 66MHz- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort+ <SERR- <PERR-
+	BridgeCtl: Parity- SERR- NoISA+ VGA- MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+
+00:03.0 ISA bridge [0601]: ULi Electronics Inc. M1563 HyperTransport South Bridge [10b9:1563] (rev 70)
+	Subsystem: Gigabyte Technology Co., Ltd Device [1458:5001]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle+ MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 32 (250ns min, 6000ns max)
+	Kernel driver in use: ali1563_smbus
+	Kernel modules: i2c_ali1563
+
+00:03.1 Bridge [0680]: ULi Electronics Inc. M7101 Power Management Controller [PMU] [10b9:7101]
+	Subsystem: Gigabyte Technology Co., Ltd Device [1458:5003]
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Kernel modules: i2c_ali1535, i2c_ali15x3, alim7101_wdt
+
+00:04.0 Multimedia audio controller [0401]: ULi Electronics Inc. M5455 PCI AC-Link Controller Audio Device [10b9:5455] (rev 20)
+	Subsystem: Gigabyte Technology Co., Ltd Device [1458:ae01]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 32 (16000ns min), Cache Line Size: 32 bytes
+	Interrupt: pin A routed to IRQ 18
+	Region 0: I/O ports at b000 [size=256]
+	Region 1: Memory at fa100000 (32-bit, non-prefetchable) [size=4K]
+	Capabilities: [40] Power Management version 2
+		Flags: PMEClk- DSI+ D1+ D2+ AuxCurrent=0mA PME(D0-,D1-,D2+,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: snd_intel8x0
+	Kernel modules: snd_intel8x0
+
+00:0e.0 IDE interface [0101]: ULi Electronics Inc. M5229 IDE [10b9:5229] (rev c7) (prog-if fa)
+	Subsystem: Gigabyte Technology Co., Ltd Device [1458:5002]
+	Control: I/O+ Mem- BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 32
+	Interrupt: pin A routed to IRQ 19
+	Region 0: I/O ports at 01f0 [size=8]
+	Region 1: I/O ports at 03f4
+	Region 2: I/O ports at 0170 [size=8]
+	Region 3: I/O ports at 0374
+	Region 4: I/O ports at f000 [size=16]
+	Kernel driver in use: pata_ali
+	Kernel modules: pata_ali, pata_acpi, ata_generic, alim15x3, ide_pci_generic
+
+00:0e.1 Mass storage controller [0180]: ULi Electronics Inc. ULi 5289 SATA [10b9:5289] (rev 10) (prog-if 8f)
+	Subsystem: Gigabyte Technology Co., Ltd Device [1458:b003]
+	Control: I/O+ Mem- BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 128, Cache Line Size: 512 bytes
+	Interrupt: pin A routed to IRQ 19
+	Region 0: I/O ports at b400 [size=8]
+	Region 1: I/O ports at b800 [size=4]
+	Region 2: I/O ports at bc00 [size=8]
+	Region 3: I/O ports at c000 [size=4]
+	Region 4: I/O ports at c400 [size=16]
+	Kernel driver in use: sata_uli
+	Kernel modules: sata_uli
+
+00:0f.0 USB controller [0c03]: ULi Electronics Inc. USB 1.1 Controller [10b9:5237] (rev 03) (prog-if 10 [OHCI])
+	Subsystem: Gigabyte Technology Co., Ltd Device [1458:5004]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx+
+	Latency: 32 (20000ns max), Cache Line Size: 32 bytes
+	Interrupt: pin A routed to IRQ 20
+	Region 0: Memory at fa101000 (32-bit, non-prefetchable) [size=4K]
+	Kernel driver in use: ohci-pci
+	Kernel modules: ohci_pci
+
+00:0f.1 USB controller [0c03]: ULi Electronics Inc. USB 1.1 Controller [10b9:5237] (rev 03) (prog-if 10 [OHCI])
+	Subsystem: Gigabyte Technology Co., Ltd Device [1458:5004]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx+
+	Latency: 32 (20000ns max), Cache Line Size: 32 bytes
+	Interrupt: pin B routed to IRQ 21
+	Region 0: Memory at fa102000 (32-bit, non-prefetchable) [size=4K]
+	Kernel driver in use: ohci-pci
+	Kernel modules: ohci_pci
+
+00:0f.2 USB controller [0c03]: ULi Electronics Inc. USB 1.1 Controller [10b9:5237] (rev 03) (prog-if 10 [OHCI])
+	Subsystem: Gigabyte Technology Co., Ltd Device [1458:5004]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx+
+	Latency: 32 (20000ns max), Cache Line Size: 32 bytes
+	Interrupt: pin C routed to IRQ 22
+	Region 0: Memory at fa103000 (32-bit, non-prefetchable) [size=4K]
+	Kernel driver in use: ohci-pci
+	Kernel modules: ohci_pci
+
+00:0f.3 USB controller [0c03]: ULi Electronics Inc. USB 2.0 Controller [10b9:5239] (rev 01) (prog-if 20 [EHCI])
+	Subsystem: Gigabyte Technology Co., Ltd Device [1458:5004]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV+ VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 48 (4000ns min, 8000ns max), Cache Line Size: 64 bytes
+	Interrupt: pin D routed to IRQ 23
+	Region 0: Memory at fa104000 (32-bit, non-prefetchable) [size=256]
+	Capabilities: [50] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [58] Debug port: BAR=1 offset=0090
+	Kernel driver in use: ehci-pci
+	Kernel modules: ehci_pci
+
+00:18.0 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] K8 [Athlon64/Opteron] HyperTransport Technology Configuration [1022:1100]
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Capabilities: [80] HyperTransport: Host or Secondary Interface
+		Command: WarmRst+ DblEnd- DevNum=0 ChainSide- HostHide+ Slave- <EOCErr- DUL-
+		Link Control: CFlE- CST- CFE- <LkFail- Init+ EOC- TXO- <CRCErr=0 IsocEn- LSEn- ExtCTL- 64b-
+		Link Config: MLWI=16bit DwFcIn- MLWO=16bit DwFcOut- LWI=8bit DwFcInEn- LWO=16bit DwFcOutEn-
+		Revision ID: 1.02
+		Link Frequency: 800MHz
+		Link Error: <Prot- <Ovfl- <EOC- CTLTm-
+		Link Frequency Capability: 200MHz+ 300MHz- 400MHz+ 500MHz- 600MHz+ 800MHz+ 1.0GHz+ 1.2GHz- 1.4GHz- 1.6GHz- Vend-
+		Feature Capability: IsocFC- LDTSTOP+ CRCTM- ECTLT- 64bA- UIDRD- ExtRS- UCnfE-
+
+00:18.1 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] K8 [Athlon64/Opteron] Address Map [1022:1101]
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+
+00:18.2 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] K8 [Athlon64/Opteron] DRAM Controller [1022:1102]
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+
+00:18.3 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] K8 [Athlon64/Opteron] Miscellaneous Control [1022:1103]
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Kernel driver in use: k8temp
+	Kernel modules: k8temp
+
+01:00.0 VGA compatible controller [0300]: Advanced Micro Devices, Inc. [AMD/ATI] RV350 [Radeon 9550] [1002:4153] (prog-if 00 [VGA controller])
+	Subsystem: Gigabyte Technology Co., Ltd Device [1458:4050]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 32 (2000ns min), Cache Line Size: 32 bytes
+	Interrupt: pin A routed to IRQ 16
+	Region 0: Memory at e8000000 (32-bit, prefetchable) [size=128M]
+	Region 1: I/O ports at 9000 [size=256]
+	Region 2: Memory at f9000000 (32-bit, non-prefetchable) [size=64K]
+	[virtual] Expansion ROM at 000c0000 [disabled] [size=128K]
+	Capabilities: [58] AGP version 3.0
+		Status: RQ=256 Iso- ArqSz=0 Cal=0 SBA+ ITACoh- GART64- HTrans- 64bit- FW+ AGP3+ Rate=x4,x8
+		Command: RQ=28 ArqSz=0 Cal=0 SBA+ AGP+ GART64- 64bit- FW- Rate=x8
+	Capabilities: [50] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: radeon
+	Kernel modules: radeonfb, radeon
+
+01:00.1 Display controller [0380]: Advanced Micro Devices, Inc. [AMD/ATI] RV350 [Radeon 9550] (Secondary) [1002:4173]
+	Subsystem: Gigabyte Technology Co., Ltd Device [1458:4051]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 32 (2000ns min), Cache Line Size: 32 bytes
+	Region 0: Memory at f0000000 (32-bit, prefetchable) [size=128M]
+	Region 1: Memory at f9010000 (32-bit, non-prefetchable) [size=64K]
+	Capabilities: [50] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+
+02:0a.0 Ethernet controller [0200]: Realtek Semiconductor Co., Ltd. RTL-8100/8101L/8139 PCI Fast Ethernet Adapter [10ec:8139] (rev 10)
+	Subsystem: Gigabyte Technology Co., Ltd GA-7VM400M/7VT600 Motherboard [1458:e000]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 64 (8000ns min, 16000ns max)
+	Interrupt: pin A routed to IRQ 18
+	Region 0: I/O ports at a000 [size=256]
+	Region 1: Memory at fa000000 (32-bit, non-prefetchable) [size=256]
+	Capabilities: [50] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=375mA PME(D0-,D1+,D2+,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: 8139too
+	Kernel modules: 8139cp, 8139too
+

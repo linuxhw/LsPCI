@@ -1,0 +1,219 @@
+00:00.0 Host bridge [0600]: Silicon Integrated Systems [SiS] 645xx [1039:0648] (rev 03)
+	Subsystem: Sony Corporation Device [104d:814e]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort+ >SERR- <PERR- INTx-
+	Latency: 32
+	Region 0: Memory at d0000000 (32-bit, non-prefetchable) [size=64M]
+	Capabilities: [c0] AGP version 3.0
+		Status: RQ=32 Iso- ArqSz=2 Cal=3 SBA+ ITACoh- GART64- HTrans- 64bit- FW+ AGP3+ Rate=x4,x8
+		Command: RQ=1 ArqSz=0 Cal=0 SBA- AGP- GART64- 64bit- FW- Rate=<none>
+	Kernel driver in use: agpgart-sis
+
+00:01.0 PCI bridge [0604]: Silicon Integrated Systems [SiS] AGP Port (virtual PCI-to-PCI bridge) [1039:0002] (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 99
+	Bus: primary=00, secondary=01, subordinate=01, sec-latency=86
+	Memory behind bridge: d5000000-d5ffffff
+	Prefetchable memory behind bridge: e0000000-efffffff
+	Secondary status: 66MHz- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort+ <SERR- <PERR-
+	BridgeCtl: Parity- SERR- NoISA+ VGA+ MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Kernel modules: shpchp
+
+00:02.0 ISA bridge [0601]: Silicon Integrated Systems [SiS] SiS963 [MuTIOL Media IO] LPC Controller [1039:0963] (rev 14)
+	Control: I/O+ Mem+ BusMaster+ SpecCycle+ MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+
+00:02.1 SMBus [0c05]: Silicon Integrated Systems [SiS] SiS961/2/3 SMBus controller [1039:0016]
+	Control: I/O+ Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Interrupt: pin B routed to IRQ 0
+	Region 4: I/O ports at 8100 [size=32]
+	Kernel driver in use: sis96x_smbus
+	Kernel modules: i2c_sis96x
+
+00:02.5 IDE interface [0101]: Silicon Integrated Systems [SiS] 5513 IDE Controller [1039:5513] (prog-if 80 [Master])
+	Subsystem: Sony Corporation Device [104d:814e]
+	Control: I/O+ Mem- BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 128
+	Region 0: [virtual] Memory at 000001f0 (32-bit, non-prefetchable) [size=8]
+	Region 1: [virtual] Memory at 000003f0 (type 3, non-prefetchable)
+	Region 2: [virtual] Memory at 00000170 (32-bit, non-prefetchable) [size=8]
+	Region 3: [virtual] Memory at 00000370 (type 3, non-prefetchable)
+	Region 4: I/O ports at 1000 [size=16]
+	Kernel driver in use: pata_sis
+	Kernel modules: pata_sis, pata_acpi, ata_generic, sis5513, ide_pci_generic
+
+00:02.6 Modem [0703]: Silicon Integrated Systems [SiS] AC'97 Modem Controller [1039:7013] (rev a0) (prog-if 00 [Generic])
+	Subsystem: Sony Corporation Device [104d:814e]
+	Control: I/O+ Mem- BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 173 (13000ns min, 2750ns max)
+	Interrupt: pin C routed to IRQ 18
+	Region 0: I/O ports at 1800 [size=256]
+	Region 1: I/O ports at 1400 [size=128]
+	Capabilities: [48] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=55mA PME(D0-,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: snd_intel8x0m
+	Kernel modules: snd_intel8x0m
+
+00:02.7 Multimedia audio controller [0401]: Silicon Integrated Systems [SiS] SiS7012 AC'97 Sound Controller [1039:7012] (rev a0)
+	Subsystem: Sony Corporation Device [104d:814e]
+	Control: I/O+ Mem- BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 173 (13000ns min, 2750ns max)
+	Interrupt: pin C routed to IRQ 18
+	Region 0: I/O ports at 1c00 [size=256]
+	Region 1: I/O ports at 1480 [size=128]
+	Capabilities: [48] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=55mA PME(D0-,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: snd_intel8x0
+	Kernel modules: snd_intel8x0
+
+00:03.0 USB controller [0c03]: Silicon Integrated Systems [SiS] USB 1.1 Controller [1039:7001] (rev 0f) (prog-if 10 [OHCI])
+	Subsystem: Sony Corporation Device [104d:814e]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV+ VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 32 (20000ns max)
+	Interrupt: pin A routed to IRQ 20
+	Region 0: Memory at d4000000 (32-bit, non-prefetchable) [size=4K]
+	Kernel driver in use: ohci-pci
+	Kernel modules: ohci_pci
+
+00:03.1 USB controller [0c03]: Silicon Integrated Systems [SiS] USB 1.1 Controller [1039:7001] (rev 0f) (prog-if 10 [OHCI])
+	Subsystem: Sony Corporation Device [104d:814e]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV+ VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 32 (20000ns max)
+	Interrupt: pin B routed to IRQ 21
+	Region 0: Memory at d4001000 (32-bit, non-prefetchable) [size=4K]
+	Kernel driver in use: ohci-pci
+	Kernel modules: ohci_pci
+
+00:03.2 USB controller [0c03]: Silicon Integrated Systems [SiS] USB 1.1 Controller [1039:7001] (rev 0f) (prog-if 10 [OHCI])
+	Subsystem: Sony Corporation Device [104d:814e]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV+ VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 32 (20000ns max)
+	Interrupt: pin C routed to IRQ 22
+	Region 0: Memory at d4002000 (32-bit, non-prefetchable) [size=4K]
+	Kernel driver in use: ohci-pci
+	Kernel modules: ohci_pci
+
+00:03.3 USB controller [0c03]: Silicon Integrated Systems [SiS] USB 2.0 Controller [1039:7002] (prog-if 20 [EHCI])
+	Subsystem: Sony Corporation Device [104d:814e]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 32 (20000ns max)
+	Interrupt: pin D routed to IRQ 23
+	Region 0: Memory at d4003000 (32-bit, non-prefetchable) [size=4K]
+	Capabilities: [50] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=375mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: ehci-pci
+	Kernel modules: ehci_pci
+
+00:04.0 Ethernet controller [0200]: Silicon Integrated Systems [SiS] SiS900 PCI Fast Ethernet [1039:0900] (rev 90)
+	Subsystem: Sony Corporation Device [104d:814e]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 173 (13000ns min, 2750ns max)
+	Interrupt: pin A routed to IRQ 19
+	Region 0: I/O ports at 2000 [size=256]
+	Region 1: Memory at d4004000 (32-bit, non-prefetchable) [size=4K]
+	[virtual] Expansion ROM at 20020000 [disabled] [size=128K]
+	Capabilities: [40] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: sis900
+	Kernel modules: sis900
+
+00:07.0 Ethernet controller [0200]: Qualcomm Atheros AR5212/AR5213 Wireless Network Adapter [168c:0013] (rev 01)
+	Subsystem: AMBIT Microsystem Corp. Device [1468:0406]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV+ VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 168 (2500ns min, 7000ns max), Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 18
+	Region 0: Memory at d4010000 (32-bit, non-prefetchable) [size=64K]
+	Capabilities: [44] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=2 PME-
+	Kernel driver in use: ath5k
+	Kernel modules: ath5k
+
+00:0a.0 CardBus bridge [0607]: Ricoh Co Ltd RL5c476 II [1180:0476] (rev aa)
+	Subsystem: Sony Corporation VAIO GRZ390Z [104d:814e]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 168
+	Interrupt: pin A routed to IRQ 17
+	Region 0: Memory at 20000000 (32-bit, non-prefetchable) [size=4K]
+	Bus: primary=00, secondary=02, subordinate=05, sec-latency=176
+	Memory window 0: 24000000-27ffffff (prefetchable)
+	Memory window 1: 28000000-2bffffff
+	I/O window 0: 00002400-000024ff
+	I/O window 1: 00002800-000028ff
+	BridgeCtl: Parity- SERR- ISA- VGA- MAbort- >Reset- 16bInt+ PostWrite+
+	16-bit legacy interface ports at 0001
+	Capabilities: [dc] Power Management version 2
+		Flags: PMEClk+ DSI- D1+ D2+ AuxCurrent=0mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=2 PME-
+		Bridge: PM- B3+
+	Kernel driver in use: yenta_cardbus
+	Kernel modules: yenta_socket
+
+00:0a.1 CardBus bridge [0607]: Ricoh Co Ltd RL5c476 II [1180:0476] (rev aa)
+	Subsystem: Sony Corporation VAIO GRZ390Z [104d:814e]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 168
+	Interrupt: pin A routed to IRQ 17
+	Region 0: Memory at 2c000000 (32-bit, non-prefetchable) [size=4K]
+	Bus: primary=00, secondary=06, subordinate=09, sec-latency=176
+	Memory window 0: 30000000-33ffffff (prefetchable)
+	Memory window 1: 34000000-37ffffff
+	I/O window 0: 00002c00-00002cff
+	I/O window 1: 00003000-000030ff
+	BridgeCtl: Parity- SERR- ISA- VGA- MAbort- >Reset- 16bInt+ PostWrite+
+	16-bit legacy interface ports at 0001
+	Capabilities: [dc] Power Management version 2
+		Flags: PMEClk+ DSI- D1+ D2+ AuxCurrent=0mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=2 PME-
+		Bridge: PM- B3+
+	Kernel driver in use: yenta_cardbus
+	Kernel modules: yenta_socket
+
+00:0a.2 FireWire (IEEE 1394) [0c00]: Ricoh Co Ltd R5C552 IEEE 1394 Controller [1180:0552] (rev 02) (prog-if 10 [OHCI])
+	Subsystem: Sony Corporation Device [104d:814e]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 32 (500ns min, 1000ns max)
+	Interrupt: pin A routed to IRQ 17
+	Region 0: Memory at d4005000 (32-bit, non-prefetchable) [size=2K]
+	Capabilities: [dc] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=2 PME+
+	Kernel driver in use: firewire_ohci
+	Kernel modules: firewire_ohci
+
+01:00.0 VGA compatible controller [0300]: NVIDIA Corporation NV31M [GeForce FX Go5600] [10de:031a] (rev a1) (prog-if 00 [VGA controller])
+	Subsystem: Sony Corporation Device [104d:814f]
+	Control: I/O+ Mem+ BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Interrupt: pin A routed to IRQ 0
+	Region 0: Memory at d5000000 (32-bit, non-prefetchable) [size=16M]
+	Region 1: Memory at e0000000 (32-bit, prefetchable) [size=256M]
+	Expansion ROM at <unassigned> [disabled]
+	Capabilities: [60] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [44] AGP version 3.0
+		Status: RQ=32 Iso- ArqSz=0 Cal=3 SBA+ ITACoh- GART64- HTrans- 64bit- FW+ AGP3+ Rate=x4,x8
+		Command: RQ=1 ArqSz=0 Cal=0 SBA- AGP- GART64- 64bit- FW- Rate=<none>
+	Kernel modules: nvidiafb, nouveau
+

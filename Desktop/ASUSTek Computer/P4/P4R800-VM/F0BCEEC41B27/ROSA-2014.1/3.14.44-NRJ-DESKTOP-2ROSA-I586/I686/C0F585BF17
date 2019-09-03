@@ -1,0 +1,169 @@
+00:00.0 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD/ATI] RS300 Host Bridge [1002:5833] (rev 02)
+	Subsystem: ASUSTeK Computer Inc. Device [1043:8107]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 64
+	Region 0: Memory at f8000000 (32-bit, prefetchable) [size=64M]
+	Region 1: Memory at f7f00000 (32-bit, non-prefetchable) [size=4K]
+	Capabilities: [a0] AGP version 3.0
+		Status: RQ=32 Iso- ArqSz=0 Cal=0 SBA+ ITACoh- GART64- HTrans- 64bit- FW+ AGP3+ Rate=x4,x8
+		Command: RQ=1 ArqSz=0 Cal=0 SBA+ AGP- GART64- 64bit- FW- Rate=<none>
+	Kernel driver in use: agpgart-ati
+
+00:01.0 PCI bridge [0604]: Advanced Micro Devices, Inc. [AMD/ATI] RS300 AGP Bridge [1002:5838] (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap- 66MHz+ UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 160
+	Bus: primary=00, secondary=01, subordinate=01, sec-latency=160
+	I/O behind bridge: 0000d000-0000dfff
+	Memory behind bridge: fdb00000-fe0fffff
+	Prefetchable memory behind bridge: d7e00000-f7dfffff
+	Secondary status: 66MHz+ FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort+ <SERR- <PERR-
+	BridgeCtl: Parity- SERR+ NoISA- VGA+ MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Kernel modules: shpchp
+
+00:13.0 USB controller [0c03]: Advanced Micro Devices, Inc. [AMD/ATI] OHCI USB Controller #1 [1002:4347] (rev 01) (prog-if 10 [OHCI])
+	Subsystem: ASUSTeK Computer Inc. Device [1043:8108]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV+ VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap- 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 160, Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 19
+	Region 0: Memory at fe900000 (32-bit, non-prefetchable) [size=4K]
+	Kernel driver in use: ohci-pci
+	Kernel modules: ohci_pci
+
+00:13.1 USB controller [0c03]: Advanced Micro Devices, Inc. [AMD/ATI] OHCI USB Controller #2 [1002:4348] (rev 01) (prog-if 10 [OHCI])
+	Subsystem: ASUSTeK Computer Inc. Device [1043:8108]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV+ VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap- 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 160, Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 19
+	Region 0: Memory at fea00000 (32-bit, non-prefetchable) [size=4K]
+	Kernel driver in use: ohci-pci
+	Kernel modules: ohci_pci
+
+00:13.2 USB controller [0c03]: Advanced Micro Devices, Inc. [AMD/ATI] EHCI USB Controller [1002:4345] (rev 01) (prog-if 20 [EHCI])
+	Subsystem: ASUSTeK Computer Inc. Device [1043:8108]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV+ VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 160, Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 19
+	Region 0: Memory at feb00000 (32-bit, non-prefetchable) [size=4K]
+	Capabilities: [dc] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0+,D1+,D2+,D3hot+,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+		Bridge: PM- B3+
+	Kernel driver in use: ehci-pci
+	Kernel modules: ehci_pci
+
+00:14.0 SMBus [0c05]: Advanced Micro Devices, Inc. [AMD/ATI] SMBus [1002:4353] (rev 18)
+	Subsystem: ASUSTeK Computer Inc. Device [1043:8108]
+	Control: I/O+ Mem+ BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz+ UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Region 0: I/O ports at 0a00 [size=16]
+	Region 1: Memory at 40000000 (32-bit, non-prefetchable) [size=1K]
+	Kernel driver in use: piix4_smbus
+	Kernel modules: i2c_piix4
+
+00:14.1 IDE interface [0101]: Advanced Micro Devices, Inc. [AMD/ATI] Dual Channel Bus Master PCI IDE Controller [1002:4349] (prog-if 8a [Master SecP PriP])
+	Subsystem: ASUSTeK Computer Inc. Device [1043:8108]
+	Control: I/O+ Mem- BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort+ <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 64
+	Interrupt: pin A routed to IRQ 16
+	Region 0: I/O ports at 01f0 [size=8]
+	Region 1: I/O ports at 03f4
+	Region 2: I/O ports at 0170 [size=8]
+	Region 3: I/O ports at 0374
+	Region 4: I/O ports at ff00 [size=16]
+	Kernel driver in use: pata_atiixp
+	Kernel modules: pata_atiixp, pata_acpi, ata_generic, atiixp, ide_pci_generic
+
+00:14.3 ISA bridge [0601]: Advanced Micro Devices, Inc. [AMD/ATI] Device [1002:434c]
+	Subsystem: ASUSTeK Computer Inc. Device [1043:8108]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle+ MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz+ UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+
+00:14.4 PCI bridge [0604]: Advanced Micro Devices, Inc. [AMD/ATI] IXP200 3COM 3C920B Ethernet Controller [1002:4342] (prog-if 01 [Subtractive decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap- 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 160
+	Bus: primary=00, secondary=02, subordinate=02, sec-latency=160
+	Memory behind bridge: fe100000-fe4fffff
+	Secondary status: 66MHz- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort+ <SERR- <PERR-
+	BridgeCtl: Parity+ SERR+ NoISA- VGA- MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+
+01:05.0 VGA compatible controller [0300]: Advanced Micro Devices, Inc. [AMD/ATI] RV620 LE [Radeon HD 3450 AGP] [1002:95c6] (prog-if 00 [VGA controller])
+	Subsystem: ASUSTeK Computer Inc. Device [1043:0028]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 160 (2000ns min), Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 11
+	Region 0: Memory at e0000000 (32-bit, prefetchable) [size=256M]
+	Region 1: I/O ports at d000 [size=256]
+	Region 2: Memory at fe000000 (32-bit, non-prefetchable) [size=64K]
+	Expansion ROM at fdf00000 [disabled] [size=128K]
+	Capabilities: [50] Power Management version 3
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [58] AGP version 3.0
+		Status: RQ=256 Iso- ArqSz=0 Cal=0 SBA+ ITACoh- GART64- HTrans- 64bit- FW+ AGP3+ Rate=x4,x8
+		Command: RQ=1 ArqSz=0 Cal=0 SBA+ AGP- GART64- 64bit- FW- Rate=<none>
+	Kernel modules: radeon
+
+01:05.1 Audio device [0403]: Advanced Micro Devices, Inc. [AMD/ATI] RV620 HDMI Audio [Radeon HD 3400 Series] [1002:aa28]
+	Subsystem: ASUSTeK Computer Inc. Device [1043:aa28]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 160 (2000ns min), Cache Line Size: 64 bytes
+	Interrupt: pin B routed to IRQ 17
+	Region 0: Memory at fde00000 (32-bit, non-prefetchable) [size=16K]
+	Capabilities: [50] Power Management version 3
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: snd_hda_intel
+	Kernel modules: snd_hda_intel
+
+02:08.0 Ethernet controller [0200]: 3Com Corporation 3Com 3C920B-EMB-WNM Integrated Fast Ethernet Controller [10b7:9202] (rev 40)
+	Subsystem: ASUSTeK Computer Inc. Device [1043:8108]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV+ VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 160 (2500ns min, 2500ns max), Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 18
+	Region 0: I/O ports at ec00 [size=128]
+	Region 1: Memory at fe400000 (32-bit, non-prefetchable) [size=128]
+	Expansion ROM at fe300000 [disabled] [size=128K]
+	Capabilities: [dc] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=2 PME-
+	Kernel driver in use: 3c59x
+	Kernel modules: 3c59x
+
+02:09.0 Multimedia audio controller [0401]: Creative Labs SB Live! EMU10k1 [1102:0002] (rev 07)
+	Subsystem: Creative Labs SBLive! Player 5.1 [1102:8061]
+	Control: I/O+ Mem- BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 160 (500ns min, 5000ns max)
+	Interrupt: pin A routed to IRQ 16
+	Region 0: I/O ports at ef80 [size=32]
+	Capabilities: [dc] Power Management version 1
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: snd_emu10k1
+	Kernel modules: snd_emu10k1
+
+02:09.1 Input device controller [0980]: Creative Labs SB Live! Game Port [1102:7002] (rev 07)
+	Subsystem: Creative Labs Gameport Joystick [1102:0020]
+	Control: I/O+ Mem- BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 160
+	Region 0: I/O ports at eff0 [size=8]
+	Capabilities: [dc] Power Management version 1
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: Emu10k1_gameport
+	Kernel modules: emu10k1_gp
+
