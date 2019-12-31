@@ -1,0 +1,187 @@
+00:00.0 Host bridge [0600]: Intel Corporation 82845 845 [Brookdale] Chipset Host Bridge [8086:1a30] (rev 04)
+	Subsystem: Acer Incorporated [ALI] Device [1025:1027]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort+ >SERR- <PERR- INTx-
+	Latency: 0
+	Region 0: Memory at e0000000 (32-bit, prefetchable) [size=256M]
+	Capabilities: <access denied>
+	Kernel driver in use: agpgart-intel
+
+00:01.0 PCI bridge [0604]: Intel Corporation 82845 845 [Brookdale] Chipset AGP Bridge [8086:1a31] (rev 04) (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap- 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 64
+	Bus: primary=00, secondary=01, subordinate=01, sec-latency=64
+	I/O behind bridge: 0000a000-0000afff [size=4K]
+	Memory behind bridge: 80500000-805fffff [size=1M]
+	Prefetchable memory behind bridge: 80600000-900fffff [size=251M]
+	Secondary status: 66MHz+ FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort+ <SERR- <PERR-
+	BridgeCtl: Parity- SERR- NoISA+ VGA+ VGA16- MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Kernel modules: shpchp
+
+00:1e.0 PCI bridge [0604]: Intel Corporation 82801 PCI Bridge [8086:244e] (rev 05) (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Bus: primary=00, secondary=02, subordinate=0a, sec-latency=0
+	I/O behind bridge: 00007000-00007fff [size=4K]
+	Memory behind bridge: 80100000-801fffff [size=1M]
+	Prefetchable memory behind bridge: 30000000-3fffffff [size=256M]
+	Secondary status: 66MHz- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort+ <SERR- <PERR-
+	BridgeCtl: Parity- SERR- NoISA+ VGA- VGA16- MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Kernel modules: shpchp
+
+00:1f.0 ISA bridge [0601]: Intel Corporation 82801BA ISA Bridge (LPC) [8086:2440] (rev 05)
+	Control: I/O+ Mem+ BusMaster+ SpecCycle+ MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Kernel driver in use: lpc_ich
+	Kernel modules: intel_rng, lpc_ich
+
+00:1f.1 IDE interface [0101]: Intel Corporation 82801BA IDE U100 Controller [8086:244b] (rev 05) (prog-if 80 [ISA Compatibility mode-only controller, supports bus mastering])
+	Subsystem: Acer Incorporated [ALI] Device [1025:1027]
+	Control: I/O+ Mem- BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Region 0: [virtual] Memory at 000001f0 (32-bit, non-prefetchable) [size=8]
+	Region 1: [virtual] Memory at 000003f0 (type 3, non-prefetchable)
+	Region 2: [virtual] Memory at 00000170 (32-bit, non-prefetchable) [size=8]
+	Region 3: [virtual] Memory at 00000370 (type 3, non-prefetchable)
+	Region 4: I/O ports at bc90 [size=16]
+	Kernel driver in use: ata_piix
+	Kernel modules: pata_acpi
+
+00:1f.2 USB controller [0c03]: Intel Corporation 82801BA/BAM UHCI USB 1.1 Controller #1 [8086:2442] (rev 05) (prog-if 00 [UHCI])
+	Subsystem: Acer Incorporated [ALI] Device [1025:1027]
+	Control: I/O+ Mem- BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Interrupt: pin D routed to IRQ 11
+	Region 4: I/O ports at 8000 [size=32]
+	Kernel driver in use: uhci_hcd
+
+00:1f.3 SMBus [0c05]: Intel Corporation 82801BA/BAM SMBus Controller [8086:2443] (rev 05)
+	Subsystem: Acer Incorporated [ALI] Device [1025:1027]
+	Control: I/O+ Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Interrupt: pin B routed to IRQ 10
+	Region 4: I/O ports at f300 [size=16]
+	Kernel modules: i2c_i801
+
+00:1f.4 USB controller [0c03]: Intel Corporation 82801BA/BAM UHCI USB 1.1 Controller #2 [8086:2444] (rev 05) (prog-if 00 [UHCI])
+	Subsystem: Acer Incorporated [ALI] Device [1025:1027]
+	Control: I/O+ Mem- BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Interrupt: pin C routed to IRQ 11
+	Region 4: I/O ports at 8060 [size=32]
+	Kernel driver in use: uhci_hcd
+
+00:1f.5 Multimedia audio controller [0401]: Intel Corporation 82801BA/BAM AC'97 Audio Controller [8086:2445] (rev 05)
+	Subsystem: Acer Incorporated [ALI] Device [1025:1027]
+	Control: I/O+ Mem- BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Interrupt: pin B routed to IRQ 10
+	Region 0: I/O ports at b000 [size=256]
+	Region 1: I/O ports at b400 [size=64]
+	Kernel driver in use: snd_intel8x0
+	Kernel modules: snd_intel8x0
+
+00:1f.6 Modem [0703]: Intel Corporation 82801BA/BAM AC'97 Modem Controller [8086:2446] (rev 05) (prog-if 00 [Generic])
+	Subsystem: Acer Incorporated [ALI] Device [1025:1027]
+	Control: I/O+ Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Interrupt: pin B routed to IRQ 10
+	Region 0: I/O ports at b800 [size=256]
+	Region 1: I/O ports at bc00 [size=128]
+	Kernel modules: snd_intel8x0m
+
+01:00.0 VGA compatible controller [0300]: Advanced Micro Devices, Inc. [AMD/ATI] RV100/M6 [Rage/Radeon Mobility Series] [1002:4c59] (prog-if 00 [VGA controller])
+	Subsystem: Acer Incorporated [ALI] Device [1025:101d]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping+ SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 32 (2000ns min), Cache Line Size: 32 bytes
+	Interrupt: pin A routed to IRQ 11
+	Region 0: Memory at 88000000 (32-bit, prefetchable) [size=128M]
+	Region 1: I/O ports at a000 [size=256]
+	Region 2: Memory at 80500000 (32-bit, non-prefetchable) [size=64K]
+	Expansion ROM at 000c0000 [disabled] [size=128K]
+	Capabilities: <access denied>
+	Kernel driver in use: radeon
+	Kernel modules: radeonfb, radeon
+
+02:03.0 FireWire (IEEE 1394) [0c00]: Texas Instruments TSB43AB21 IEEE-1394a-2000 Controller (PHY/Link) [104c:8026] (prog-if 10 [OHCI])
+	Subsystem: Acer Incorporated [ALI] Device [1025:1027]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 32 (500ns min, 1000ns max), Cache Line Size: 32 bytes
+	Interrupt: pin A routed to IRQ 11
+	Region 0: Memory at 80100000 (32-bit, non-prefetchable) [size=2K]
+	Region 1: Memory at 80104000 (32-bit, non-prefetchable) [size=16K]
+	Capabilities: <access denied>
+	Kernel driver in use: firewire_ohci
+	Kernel modules: firewire_ohci
+
+02:05.0 Ethernet controller [0200]: Realtek Semiconductor Co., Ltd. RTL-8100/8101L/8139 PCI Fast Ethernet Adapter [10ec:8139] (rev 10)
+	Subsystem: Acer Incorporated [ALI] Device [1025:1027]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 66 (8000ns min, 16000ns max)
+	Interrupt: pin A routed to IRQ 10
+	Region 0: I/O ports at 7000 [size=256]
+	Region 1: Memory at 80100800 (32-bit, non-prefetchable) [size=256]
+	Expansion ROM at 80120000 [disabled] [size=64K]
+	Capabilities: <access denied>
+	Kernel driver in use: 8139too
+	Kernel modules: 8139cp, 8139too
+
+02:09.0 CardBus bridge [0607]: Texas Instruments PCI1520 PC card Cardbus Controller [104c:ac55] (rev 01)
+	Subsystem: Acer Incorporated [ALI] Device [1025:1027]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 168, Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 11
+	Region 0: Memory at 40000000 (32-bit, non-prefetchable) [size=4K]
+	Bus: primary=02, secondary=03, subordinate=06, sec-latency=176
+	Memory window 0: 30000000-33ffffff (prefetchable)
+	Memory window 1: 44000000-47ffffff
+	I/O window 0: 00007400-000074ff
+	I/O window 1: 00007800-000078ff
+	BridgeCtl: Parity- SERR- ISA- VGA- MAbort- >Reset+ 16bInt+ PostWrite+
+	16-bit legacy interface ports at 0001
+	Capabilities: <access denied>
+	Kernel driver in use: yenta_cardbus
+	Kernel modules: yenta_socket
+
+02:09.1 CardBus bridge [0607]: Texas Instruments PCI1520 PC card Cardbus Controller [104c:ac55] (rev 01)
+	Subsystem: Acer Incorporated [ALI] Device [1025:1027]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 168, Cache Line Size: 64 bytes
+	Interrupt: pin B routed to IRQ 11
+	Region 0: Memory at 48000000 (32-bit, non-prefetchable) [size=4K]
+	Bus: primary=02, secondary=07, subordinate=0a, sec-latency=176
+	Memory window 0: 34000000-37ffffff (prefetchable)
+	Memory window 1: 4c000000-4fffffff
+	I/O window 0: 00007c00-00007cff
+	I/O window 1: 00001000-000010ff
+	BridgeCtl: Parity- SERR- ISA- VGA- MAbort- >Reset- 16bInt- PostWrite+
+	16-bit legacy interface ports at 0001
+	Capabilities: <access denied>
+	Kernel driver in use: yenta_cardbus
+	Kernel modules: yenta_socket
+
+07:00.0 Ethernet controller [0200]: Qualcomm Atheros AR5212/5213/2414 Wireless Network Adapter [168c:0013] (rev 01)
+	Subsystem: Netgear WG511T 108 Mbps Wireless PC Card (rev.A/B) [1385:4b00]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 168 (2500ns min, 7000ns max), Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 11
+	Region 0: Memory at 4c000000 (32-bit, non-prefetchable) [size=64K]
+	Capabilities: <access denied>
+	Kernel driver in use: ath5k
+	Kernel modules: ath5k
+
