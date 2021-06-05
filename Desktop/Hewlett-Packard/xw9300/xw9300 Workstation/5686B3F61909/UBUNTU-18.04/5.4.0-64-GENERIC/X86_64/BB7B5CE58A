@@ -1,0 +1,334 @@
+00:00.0 Memory controller [0580]: NVIDIA Corporation CK804 Memory Controller [10de:005e] (rev a3)
+	Subsystem: Hewlett-Packard Company Device [103c:1500]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	NUMA node: 0
+	Capabilities: <access denied>
+
+00:01.0 ISA bridge [0601]: NVIDIA Corporation CK804 ISA Bridge [10de:0051] (rev a3)
+	Subsystem: Hewlett-Packard Company Device [103c:1500]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle+ MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	NUMA node: 0
+
+00:01.1 SMBus [0c05]: NVIDIA Corporation CK804 SMBus [10de:0052] (rev a2)
+	Subsystem: Hewlett-Packard Company Device [103c:1500]
+	Control: I/O+ Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Interrupt: pin A routed to IRQ 11
+	NUMA node: 0
+	Region 0: I/O ports at 2880 [size=32]
+	Region 4: I/O ports at 2800 [size=64]
+	Region 5: I/O ports at 2840 [size=64]
+	Capabilities: <access denied>
+	Kernel driver in use: nForce2_smbus
+	Kernel modules: i2c_nforce2
+
+00:02.0 USB controller [0c03]: NVIDIA Corporation CK804 USB Controller [10de:005a] (rev a2) (prog-if 10 [OHCI])
+	Subsystem: Hewlett-Packard Company Device [103c:1500]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0 (750ns min, 250ns max)
+	Interrupt: pin A routed to IRQ 22
+	NUMA node: 0
+	Region 0: Memory at f2100000 (32-bit, non-prefetchable) [size=4K]
+	Capabilities: <access denied>
+	Kernel driver in use: ohci-pci
+
+00:02.1 USB controller [0c03]: NVIDIA Corporation CK804 USB Controller [10de:005b] (rev a3) (prog-if 20 [EHCI])
+	Subsystem: Hewlett-Packard Company Device [103c:1500]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0 (750ns min, 250ns max)
+	Interrupt: pin B routed to IRQ 21
+	NUMA node: 0
+	Region 0: Memory at febf0000 (32-bit, non-prefetchable) [size=256]
+	Capabilities: <access denied>
+	Kernel driver in use: ehci-pci
+
+00:04.0 Multimedia audio controller [0401]: NVIDIA Corporation CK804 AC'97 Audio Controller [10de:0059] (rev a2)
+	Subsystem: Hewlett-Packard Company Device [103c:1500]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0 (500ns min, 1250ns max)
+	Interrupt: pin A routed to IRQ 20
+	NUMA node: 0
+	Region 0: I/O ports at 2000 [size=256]
+	Region 1: I/O ports at 2400 [size=256]
+	Region 2: Memory at f2101000 (32-bit, non-prefetchable) [size=4K]
+	Capabilities: <access denied>
+	Kernel driver in use: snd_intel8x0
+	Kernel modules: snd_intel8x0
+
+00:06.0 IDE interface [0101]: NVIDIA Corporation CK804 IDE [10de:0053] (rev a2) (prog-if 8a [ISA Compatibility mode controller, supports both channels switched to PCI native mode, supports bus mastering])
+	Subsystem: Hewlett-Packard Company Device [103c:1500]
+	Control: I/O+ Mem- BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0 (750ns min, 250ns max)
+	NUMA node: 0
+	Region 0: [virtual] Memory at 000001f0 (32-bit, non-prefetchable) [size=8]
+	Region 1: [virtual] Memory at 000003f0 (type 3, non-prefetchable)
+	Region 2: [virtual] Memory at 00000170 (32-bit, non-prefetchable) [size=8]
+	Region 3: [virtual] Memory at 00000370 (type 3, non-prefetchable)
+	Region 4: I/O ports at 28a0 [size=16]
+	Capabilities: <access denied>
+	Kernel driver in use: pata_amd
+	Kernel modules: pata_amd, pata_acpi
+
+00:07.0 IDE interface [0101]: NVIDIA Corporation CK804 Serial ATA Controller [10de:0054] (rev a3) (prog-if 85 [PCI native mode-only controller, supports bus mastering])
+	Subsystem: Hewlett-Packard Company Device [103c:1500]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0 (750ns min, 250ns max)
+	Interrupt: pin A routed to IRQ 22
+	NUMA node: 0
+	Region 0: I/O ports at 28d0 [size=8]
+	Region 1: I/O ports at 28f8 [size=4]
+	Region 2: I/O ports at 28d8 [size=8]
+	Region 3: I/O ports at 28fc [size=4]
+	Region 4: I/O ports at 28b0 [size=16]
+	Region 5: Memory at f2102000 (32-bit, non-prefetchable) [size=4K]
+	Capabilities: <access denied>
+	Kernel driver in use: sata_nv
+	Kernel modules: sata_nv, pata_acpi
+
+00:08.0 IDE interface [0101]: NVIDIA Corporation CK804 Serial ATA Controller [10de:0055] (rev a3) (prog-if 85 [PCI native mode-only controller, supports bus mastering])
+	Subsystem: Hewlett-Packard Company Device [103c:1500]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0 (750ns min, 250ns max)
+	Interrupt: pin A routed to IRQ 21
+	NUMA node: 0
+	Region 0: I/O ports at 28e0 [size=8]
+	Region 1: I/O ports at 2c00 [size=4]
+	Region 2: I/O ports at 28e8 [size=8]
+	Region 3: I/O ports at 2c04 [size=4]
+	Region 4: I/O ports at 28c0 [size=16]
+	Region 5: Memory at f2103000 (32-bit, non-prefetchable) [size=4K]
+	Capabilities: <access denied>
+	Kernel driver in use: sata_nv
+	Kernel modules: sata_nv, pata_acpi
+
+00:09.0 PCI bridge [0604]: NVIDIA Corporation CK804 PCI Bridge [10de:005c] (rev a2) (prog-if 01 [Subtractive decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap- 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	NUMA node: 0
+	Bus: primary=00, secondary=05, subordinate=05, sec-latency=64
+	I/O behind bridge: None
+	Memory behind bridge: f2000000-f20fffff [size=1M]
+	Prefetchable memory behind bridge: None
+	Secondary status: 66MHz- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort+ <SERR- <PERR+
+	BridgeCtl: Parity- SERR+ NoISA+ VGA- VGA16- MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr+ DiscTmrStat- DiscTmrSERREn-
+
+00:0a.0 Bridge [0680]: NVIDIA Corporation CK804 Ethernet Controller [10de:0057] (rev a3)
+	Subsystem: Hewlett-Packard Company Device [103c:1500]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx+
+	Latency: 0 (250ns min, 5000ns max)
+	Interrupt: pin A routed to IRQ 20
+	NUMA node: 0
+	Region 0: Memory at f2104000 (32-bit, non-prefetchable) [size=4K]
+	Region 1: I/O ports at 28f0 [size=8]
+	Capabilities: <access denied>
+	Kernel driver in use: forcedeth
+	Kernel modules: forcedeth
+
+00:0e.0 PCI bridge [0604]: NVIDIA Corporation CK804 PCIE Bridge [10de:005d] (rev a3) (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx+
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin ? routed to IRQ 24
+	NUMA node: 0
+	Bus: primary=00, secondary=0a, subordinate=0a, sec-latency=0
+	I/O behind bridge: None
+	Memory behind bridge: f0000000-f1ffffff [size=32M]
+	Prefetchable memory behind bridge: 00000000d0000000-00000000dfffffff [size=256M]
+	Secondary status: 66MHz- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- <SERR- <PERR-
+	BridgeCtl: Parity- SERR+ NoISA- VGA+ VGA16- MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Capabilities: <access denied>
+	Kernel driver in use: pcieport
+
+00:18.0 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] K8 [Athlon64/Opteron] HyperTransport Technology Configuration [1022:1100]
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	NUMA node: 0
+	Capabilities: <access denied>
+
+00:18.1 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] K8 [Athlon64/Opteron] Address Map [1022:1101]
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	NUMA node: 0
+
+00:18.2 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] K8 [Athlon64/Opteron] DRAM Controller [1022:1102]
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	NUMA node: 0
+
+00:18.3 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] K8 [Athlon64/Opteron] Miscellaneous Control [1022:1103]
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	NUMA node: 0
+	Kernel driver in use: k8temp
+	Kernel modules: k8temp
+
+00:19.0 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] K8 [Athlon64/Opteron] HyperTransport Technology Configuration [1022:1100]
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	NUMA node: 1
+	Capabilities: <access denied>
+
+00:19.1 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] K8 [Athlon64/Opteron] Address Map [1022:1101]
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	NUMA node: 1
+
+00:19.2 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] K8 [Athlon64/Opteron] DRAM Controller [1022:1102]
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	NUMA node: 1
+
+00:19.3 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] K8 [Athlon64/Opteron] Miscellaneous Control [1022:1103]
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	NUMA node: 1
+	Kernel driver in use: k8temp
+	Kernel modules: k8temp
+
+05:05.0 FireWire (IEEE 1394) [0c00]: Texas Instruments TSB43AB22A IEEE-1394a-2000 Controller (PHY/Link) [iOHCI-Lynx] [104c:8023] (prog-if 10 [OHCI])
+	Subsystem: Hewlett-Packard Company Device [103c:1500]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 66 (500ns min, 1000ns max), Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 19
+	NUMA node: 0
+	Region 0: Memory at f2004000 (32-bit, non-prefetchable) [size=2K]
+	Region 1: Memory at f2000000 (32-bit, non-prefetchable) [size=16K]
+	Capabilities: <access denied>
+	Kernel driver in use: firewire_ohci
+	Kernel modules: firewire_ohci
+
+0a:00.0 VGA compatible controller [0300]: NVIDIA Corporation NV45GL [Quadro FX 3400/4400] [10de:00f8] (rev a2) (prog-if 00 [VGA controller])
+	Subsystem: NVIDIA Corporation Device [10de:029b]
+	Physical Slot: 1
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 18
+	NUMA node: 0
+	Region 0: Memory at f0000000 (32-bit, non-prefetchable) [size=16M]
+	Region 1: Memory at d0000000 (32-bit, prefetchable) [size=256M]
+	Region 2: Memory at f1000000 (32-bit, non-prefetchable) [size=16M]
+	[virtual] Expansion ROM at 000c0000 [disabled] [size=128K]
+	Capabilities: <access denied>
+	Kernel driver in use: nouveau
+	Kernel modules: nvidiafb, nouveau
+
+40:01.0 PCI bridge [0604]: Advanced Micro Devices, Inc. [AMD] AMD-8131 PCI-X Bridge [1022:7450] (rev 12) (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 66
+	NUMA node: 0
+	Bus: primary=40, secondary=41, subordinate=41, sec-latency=64
+	I/O behind bridge: None
+	Memory behind bridge: None
+	Prefetchable memory behind bridge: None
+	Secondary status: 66MHz+ FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort+ <SERR- <PERR-
+	BridgeCtl: Parity- SERR+ NoISA+ VGA- VGA16- MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Capabilities: <access denied>
+
+40:01.1 PIC [0800]: Advanced Micro Devices, Inc. [AMD] AMD-8131 PCI-X IOAPIC [1022:7451] (rev 01) (prog-if 10 [IO-APIC])
+	Subsystem: Advanced Micro Devices, Inc. [AMD] Device [1022:7450]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	NUMA node: 0
+	Region 0: Memory at f2600000 (64-bit, non-prefetchable) [size=4K]
+
+40:02.0 PCI bridge [0604]: Advanced Micro Devices, Inc. [AMD] AMD-8131 PCI-X Bridge [1022:7450] (rev 12) (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 66
+	NUMA node: 0
+	Bus: primary=40, secondary=61, subordinate=61, sec-latency=64
+	I/O behind bridge: 00001000-00001fff [size=4K]
+	Memory behind bridge: f2200000-f25fffff [size=4M]
+	Prefetchable memory behind bridge: None
+	Secondary status: 66MHz+ FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort+ <SERR- <PERR-
+	BridgeCtl: Parity- SERR+ NoISA+ VGA- VGA16- MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Capabilities: <access denied>
+
+40:02.1 PIC [0800]: Advanced Micro Devices, Inc. [AMD] AMD-8131 PCI-X IOAPIC [1022:7451] (rev 01) (prog-if 10 [IO-APIC])
+	Subsystem: Advanced Micro Devices, Inc. [AMD] Device [1022:7450]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	NUMA node: 0
+	Region 0: Memory at f2601000 (64-bit, non-prefetchable) [size=4K]
+
+61:06.0 SCSI storage controller [0100]: Broadcom / LSI 53c1030 PCI-X Fusion-MPT Dual Ultra320 SCSI [1000:0030] (rev 07)
+	Subsystem: Hewlett-Packard Company Device [103c:1500]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 72 (4000ns min, 1500ns max), Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 26
+	NUMA node: 0
+	Region 0: I/O ports at 1000 [size=256]
+	Region 1: Memory at f2200000 (64-bit, non-prefetchable) [size=1M]
+	Region 3: Memory at f2300000 (64-bit, non-prefetchable) [size=1M]
+	Capabilities: <access denied>
+	Kernel driver in use: mptspi
+	Kernel modules: mptspi
+
+61:06.1 SCSI storage controller [0100]: Broadcom / LSI 53c1030 PCI-X Fusion-MPT Dual Ultra320 SCSI [1000:0030] (rev 07)
+	Subsystem: Hewlett-Packard Company Device [103c:1500]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 72 (4000ns min, 1500ns max), Cache Line Size: 64 bytes
+	Interrupt: pin B routed to IRQ 27
+	NUMA node: 0
+	Region 0: I/O ports at 1400 [size=256]
+	Region 1: Memory at f2400000 (64-bit, non-prefetchable) [size=1M]
+	Region 3: Memory at f2500000 (64-bit, non-prefetchable) [size=1M]
+	Capabilities: <access denied>
+	Kernel driver in use: mptspi
+	Kernel modules: mptspi
+
+80:00.0 Memory controller [0580]: NVIDIA Corporation CK804 Memory Controller [10de:005e] (rev a3)
+	Subsystem: Hewlett-Packard Company Device [103c:1500]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	NUMA node: 1
+	Capabilities: <access denied>
+
+80:01.0 Memory controller [0580]: NVIDIA Corporation CK804 Memory Controller [10de:00d3] (rev a3)
+	Subsystem: Hewlett-Packard Company Device [103c:1500]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle+ MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	NUMA node: 1
+	Region 1: Memory at f2700000 (32-bit, non-prefetchable) [size=4K]
+
+80:0e.0 PCI bridge [0604]: NVIDIA Corporation CK804 PCIE Bridge [10de:005d] (rev a3) (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx+
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin ? routed to IRQ 25
+	NUMA node: 1
+	Bus: primary=80, secondary=81, subordinate=81, sec-latency=0
+	I/O behind bridge: None
+	Memory behind bridge: None
+	Prefetchable memory behind bridge: None
+	Secondary status: 66MHz- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- <SERR- <PERR-
+	BridgeCtl: Parity- SERR+ NoISA+ VGA- VGA16- MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Capabilities: <access denied>
+	Kernel driver in use: pcieport
+

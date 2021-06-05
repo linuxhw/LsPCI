@@ -1,0 +1,416 @@
+00:00.0 Host bridge [0600]: Intel Corporation E7520 Memory Controller Hub [8086:3590] (rev 0c)
+	Subsystem: Compaq Computer Corporation Device [0e11:3200]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr+ Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Capabilities: [40] Vendor Specific Information: Len=05 <?>
+	Kernel modules: e752x_edac
+
+00:02.0 PCI bridge [0604]: Intel Corporation E7525/E7520/E7320 PCI Express Port A [8086:3595] (rev 0c) (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr+ Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 16
+	Bus: primary=00, secondary=0d, subordinate=0f, sec-latency=0
+	I/O behind bridge: None
+	Memory behind bridge: None
+	Prefetchable memory behind bridge: None
+	Secondary status: 66MHz- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort+ <SERR- <PERR-
+	BridgeCtl: Parity+ SERR+ NoISA- VGA- VGA16- MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Capabilities: [50] Power Management version 2
+		Flags: PMEClk- DSI+ D1- D2- AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [58] MSI: Enable- Count=1/2 Maskable- 64bit-
+		Address: fee00000  Data: 0000
+	Capabilities: [64] Express (v1) Root Port (Slot-), MSI 00
+		DevCap:	MaxPayload 256 bytes, PhantFunc 0
+			ExtTag- RBE-
+		DevCtl:	CorrErr- NonFatalErr+ FatalErr+ UnsupReq-
+			RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+			MaxPayload 256 bytes, MaxReadReq 128 bytes
+		DevSta:	CorrErr- NonFatalErr- FatalErr- UnsupReq- AuxPwr- TransPend-
+		LnkCap:	Port #2, Speed 2.5GT/s, Width x8, ASPM L0s, Exit Latency L0s <4us
+			ClockPM- Surprise- LLActRep- BwNot- ASPMOptComp-
+		LnkCtl:	ASPM Disabled; RCB 64 bytes Disabled+ CommClk-
+			ExtSynch- ClockPM- AutWidDis- BWInt- AutBWInt-
+		LnkSta:	Speed 2.5GT/s (ok), Width x0 (downgraded)
+			TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-
+		RootCtl: ErrCorrectable- ErrNon-Fatal+ ErrFatal+ PMEIntEna+ CRSVisible-
+		RootCap: CRSVisible-
+		RootSta: PME ReqID 0000, PMEStatus- PMEPending-
+	Kernel driver in use: pcieport
+	Kernel modules: shpchp
+
+00:04.0 PCI bridge [0604]: Intel Corporation E7525/E7520 PCI Express Port B [8086:3597] (rev 0c) (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr+ Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 16
+	Bus: primary=00, secondary=06, subordinate=0c, sec-latency=0
+	I/O behind bridge: 00004000-00004fff [size=4K]
+	Memory behind bridge: fdf00000-fdffffff [size=1M]
+	Prefetchable memory behind bridge: None
+	Secondary status: 66MHz- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort+ <SERR- <PERR-
+	BridgeCtl: Parity+ SERR+ NoISA- VGA- VGA16- MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Capabilities: [50] Power Management version 2
+		Flags: PMEClk- DSI+ D1- D2- AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [58] MSI: Enable- Count=1/2 Maskable- 64bit-
+		Address: fee00000  Data: 0000
+	Capabilities: [64] Express (v1) Root Port (Slot-), MSI 00
+		DevCap:	MaxPayload 256 bytes, PhantFunc 0
+			ExtTag- RBE-
+		DevCtl:	CorrErr- NonFatalErr+ FatalErr+ UnsupReq-
+			RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+			MaxPayload 256 bytes, MaxReadReq 128 bytes
+		DevSta:	CorrErr- NonFatalErr- FatalErr- UnsupReq- AuxPwr- TransPend-
+		LnkCap:	Port #4, Speed 2.5GT/s, Width x8, ASPM L0s, Exit Latency L0s <4us
+			ClockPM- Surprise- LLActRep- BwNot- ASPMOptComp-
+		LnkCtl:	ASPM Disabled; RCB 64 bytes Disabled- CommClk-
+			ExtSynch- ClockPM- AutWidDis- BWInt- AutBWInt-
+		LnkSta:	Speed 2.5GT/s (ok), Width x8 (ok)
+			TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-
+		RootCtl: ErrCorrectable- ErrNon-Fatal- ErrFatal- PMEIntEna- CRSVisible-
+		RootCap: CRSVisible-
+		RootSta: PME ReqID 0000, PMEStatus- PMEPending-
+	Kernel driver in use: pcieport
+	Kernel modules: shpchp
+
+00:06.0 PCI bridge [0604]: Intel Corporation E7520 PCI Express Port C [8086:3599] (rev 0c) (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr+ Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 16
+	Bus: primary=00, secondary=03, subordinate=05, sec-latency=0
+	I/O behind bridge: None
+	Memory behind bridge: None
+	Prefetchable memory behind bridge: None
+	Secondary status: 66MHz- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort+ <SERR- <PERR-
+	BridgeCtl: Parity+ SERR+ NoISA- VGA- VGA16- MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Capabilities: [50] Power Management version 2
+		Flags: PMEClk- DSI+ D1- D2- AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [58] MSI: Enable- Count=1/2 Maskable- 64bit-
+		Address: fee00000  Data: 0000
+	Capabilities: [64] Express (v1) Root Port (Slot-), MSI 00
+		DevCap:	MaxPayload 256 bytes, PhantFunc 0
+			ExtTag- RBE-
+		DevCtl:	CorrErr- NonFatalErr+ FatalErr+ UnsupReq-
+			RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+			MaxPayload 256 bytes, MaxReadReq 128 bytes
+		DevSta:	CorrErr- NonFatalErr- FatalErr- UnsupReq- AuxPwr- TransPend-
+		LnkCap:	Port #6, Speed 2.5GT/s, Width x8, ASPM L0s, Exit Latency L0s <4us
+			ClockPM- Surprise- LLActRep- BwNot- ASPMOptComp-
+		LnkCtl:	ASPM Disabled; RCB 64 bytes Disabled+ CommClk-
+			ExtSynch- ClockPM- AutWidDis- BWInt- AutBWInt-
+		LnkSta:	Speed 2.5GT/s (ok), Width x0 (downgraded)
+			TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-
+		RootCtl: ErrCorrectable- ErrNon-Fatal+ ErrFatal+ PMEIntEna+ CRSVisible-
+		RootCap: CRSVisible-
+		RootSta: PME ReqID 0000, PMEStatus- PMEPending-
+	Kernel driver in use: pcieport
+	Kernel modules: shpchp
+
+00:1c.0 PCI bridge [0604]: Intel Corporation 6300ESB 64-bit PCI-X Bridge [8086:25ae] (rev 02) (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr+ Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 64, Cache Line Size: 64 bytes
+	Bus: primary=00, secondary=02, subordinate=02, sec-latency=64
+	I/O behind bridge: None
+	Memory behind bridge: fde00000-fdefffff [size=1M]
+	Prefetchable memory behind bridge: None
+	Secondary status: 66MHz+ FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort+ <SERR- <PERR-
+	BridgeCtl: Parity+ SERR+ NoISA- VGA- VGA16- MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Capabilities: [50] PCI-X bridge device
+		Secondary Status: 64bit+ 133MHz- SCD- USC- SCO- SRD- Freq=66MHz
+		Status: Dev=00:1c.0 64bit+ 133MHz- SCD- USC- SCO- SRD-
+		Upstream: Capacity=65535 CommitmentLimit=0
+		Downstream: Capacity=65535 CommitmentLimit=0
+	Kernel modules: shpchp
+
+00:1d.0 USB controller [0c03]: Intel Corporation 6300ESB USB Universal Host Controller [8086:25a9] (rev 02) (prog-if 00 [UHCI])
+	Subsystem: Compaq Computer Corporation Device [0e11:3201]
+	Control: I/O+ Mem- BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Interrupt: pin A routed to IRQ 16
+	Region 4: I/O ports at 3000 [size=32]
+	Kernel driver in use: uhci_hcd
+
+00:1d.1 USB controller [0c03]: Intel Corporation 6300ESB USB Universal Host Controller [8086:25aa] (rev 02) (prog-if 00 [UHCI])
+	Subsystem: Compaq Computer Corporation Device [0e11:3201]
+	Control: I/O+ Mem- BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Interrupt: pin B routed to IRQ 19
+	Region 4: I/O ports at 3020 [size=32]
+	Kernel driver in use: uhci_hcd
+
+00:1d.4 System peripheral [0880]: Intel Corporation 6300ESB Watchdog Timer [8086:25ab] (rev 02)
+	Subsystem: Compaq Computer Corporation Device [0e11:3201]
+	Control: I/O- Mem+ BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Region 0: Memory at fbef0000 (32-bit, non-prefetchable) [size=16]
+	Kernel modules: i6300esb
+
+00:1d.5 PIC [0800]: Intel Corporation 6300ESB I/O Advanced Programmable Interrupt Controller [8086:25ac] (rev 02) (prog-if 20 [IO(X)-APIC])
+	Subsystem: Compaq Computer Corporation Device [0e11:3201]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr+ Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Capabilities: [50] PCI-X non-bridge device
+		Command: DPERE- ERO- RBC=512 OST=1
+		Status: Dev=00:1d.5 64bit+ 133MHz- SCD- USC- DC=simple DMMRBC=512 DMOST=1 DMCRS=8 RSCEM- 266MHz- 533MHz-
+
+00:1d.7 USB controller [0c03]: Intel Corporation 6300ESB USB2 Enhanced Host Controller [8086:25ad] (rev 02) (prog-if 20 [EHCI])
+	Subsystem: Compaq Computer Corporation Device [0e11:3201]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Interrupt: pin D routed to IRQ 23
+	Region 0: Memory at fbee0000 (32-bit, non-prefetchable) [size=1K]
+	Capabilities: [50] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=375mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [58] Debug port: BAR=1 offset=0080
+	Kernel driver in use: ehci-pci
+
+00:1e.0 PCI bridge [0604]: Intel Corporation 82801 PCI Bridge [8086:244e] (rev 0a) (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr+ Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Bus: primary=00, secondary=01, subordinate=01, sec-latency=32
+	I/O behind bridge: 00001000-00002fff [size=8K]
+	Memory behind bridge: fbf00000-fcffffff [size=17M]
+	Prefetchable memory behind bridge: f0000000-f00fffff [size=1M]
+	Secondary status: 66MHz- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort+ <SERR- <PERR-
+	BridgeCtl: Parity+ SERR+ NoISA- VGA- VGA16- MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Kernel modules: shpchp
+
+00:1f.0 ISA bridge [0601]: Intel Corporation 6300ESB LPC Interface Controller [8086:25a1] (rev 02)
+	Control: I/O+ Mem+ BusMaster+ SpecCycle+ MemWINV- VGASnoop- ParErr+ Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Kernel driver in use: lpc_ich
+	Kernel modules: intel_rng, lpc_ich
+
+00:1f.1 IDE interface [0101]: Intel Corporation 6300ESB PATA Storage Controller [8086:25a2] (rev 02) (prog-if 8a [ISA Compatibility mode controller, supports both channels switched to PCI native mode, supports bus mastering])
+	Subsystem: Compaq Computer Corporation Device [0e11:3201]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx+
+	Latency: 0
+	Interrupt: pin A routed to IRQ 18
+	Region 0: I/O ports at 01f0 [size=8]
+	Region 1: I/O ports at 03f4
+	Region 2: I/O ports at 0170 [size=8]
+	Region 3: I/O ports at 0374
+	Region 4: I/O ports at 0500 [size=16]
+	Region 5: Memory at f0100000 (32-bit, non-prefetchable) [size=1K]
+	Kernel driver in use: ata_piix
+	Kernel modules: pata_acpi
+
+01:03.0 VGA compatible controller [0300]: Advanced Micro Devices, Inc. [AMD/ATI] Rage 3 [Rage XL PCI] [1002:4752] (rev 27) (prog-if 00 [VGA controller])
+	Subsystem: Compaq Computer Corporation Proliant Rage XL [0e11:001e]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping+ SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 64 (2000ns min), Cache Line Size: 64 bytes
+	Region 0: Memory at fc000000 (32-bit, non-prefetchable) [size=16M]
+	Region 1: I/O ports at 2000 [size=256]
+	Region 2: Memory at fbff0000 (32-bit, non-prefetchable) [size=4K]
+	[virtual] Expansion ROM at f0000000 [disabled] [size=128K]
+	Capabilities: [5c] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel modules: atyfb
+
+01:04.0 System peripheral [0880]: Compaq Computer Corporation Integrated Lights Out Controller [0e11:b203] (rev 01)
+	Subsystem: Compaq Computer Corporation Device [0e11:b206]
+	Control: I/O+ Mem+ BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Interrupt: pin A routed to IRQ 5
+	Region 0: I/O ports at 1800 [size=256]
+	Region 1: Memory at fbfe0000 (32-bit, non-prefetchable) [size=512]
+	Capabilities: [f0] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel modules: hpwdt
+
+01:04.2 System peripheral [0880]: Compaq Computer Corporation Integrated Lights Out  Processor [0e11:b204] (rev 01)
+	Subsystem: Compaq Computer Corporation Device [0e11:b206]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV+ VGASnoop- ParErr- Stepping+ SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 64, Cache Line Size: 64 bytes
+	Interrupt: pin B routed to IRQ 22
+	Region 0: I/O ports at 2400 [size=256]
+	Region 1: Memory at fbfd0000 (32-bit, non-prefetchable) [size=2K]
+	Region 2: Memory at fbfc0000 (32-bit, non-prefetchable) [size=8K]
+	Region 3: Memory at fbf00000 (32-bit, non-prefetchable) [size=512K]
+	[virtual] Expansion ROM at f0020000 [disabled] [size=64K]
+	Capabilities: [f0] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: hpilo
+	Kernel modules: hpilo
+
+02:02.0 Ethernet controller [0200]: Broadcom Inc. and subsidiaries NetXtreme BCM5704 Gigabit Ethernet [14e4:1648] (rev 10)
+	Subsystem: Compaq Computer Corporation NC7782 Gigabit Server Adapter (PCI-X, 10,100,1000-T) [0e11:00d0]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr+ Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 64 (16000ns min), Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 24
+	Region 0: Memory at fdef0000 (64-bit, non-prefetchable) [size=64K]
+	Expansion ROM at <ignored> [disabled]
+	Capabilities: [40] PCI-X non-bridge device
+		Command: DPERE- ERO- RBC=2048 OST=1
+		Status: Dev=02:02.0 64bit+ 133MHz+ SCD- USC- DC=simple DMMRBC=2048 DMOST=1 DMCRS=16 RSCEM- 266MHz- 533MHz-
+	Capabilities: [48] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable+ DSel=0 DScale=1 PME-
+	Capabilities: [50] Vital Product Data
+		Product Name: HP NC7782 Gigabit Server Adapter
+		Read-only fields:
+			[PN] Part number: 349321-001
+			[EC] Engineering changes: N/A
+			[SN] Serial number: ...
+			[MN] Manufacture ID: ...
+			[RV] Reserved: checksum bad, 46 byte(s) reserved
+		Read/write fields:
+			[YA] Asset tag: N/A
+			[RW] Read-write area: 115 byte(s) free
+		End
+	Capabilities: [58] MSI: Enable- Count=1/8 Maskable- 64bit+
+		Address: fffbfff5bfdfedfc  Data: 6dfb
+	Kernel driver in use: tg3
+	Kernel modules: tg3
+
+02:02.1 Ethernet controller [0200]: Broadcom Inc. and subsidiaries NetXtreme BCM5704 Gigabit Ethernet [14e4:1648] (rev 10)
+	Subsystem: Compaq Computer Corporation NC7782 Gigabit Server Adapter (PCI-X, 10,100,1000-T) [0e11:00d0]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr+ Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 64 (16000ns min), Cache Line Size: 64 bytes
+	Interrupt: pin B routed to IRQ 25
+	Region 0: Memory at fdee0000 (64-bit, non-prefetchable) [size=64K]
+	Expansion ROM at <ignored> [disabled]
+	Capabilities: [40] PCI-X non-bridge device
+		Command: DPERE- ERO- RBC=2048 OST=1
+		Status: Dev=02:02.1 64bit+ 133MHz+ SCD- USC- DC=simple DMMRBC=2048 DMOST=1 DMCRS=16 RSCEM- 266MHz- 533MHz-
+	Capabilities: [48] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable+ DSel=0 DScale=1 PME-
+	Capabilities: [50] Vital Product Data
+		Product Name: HP NC7782 Gigabit Server Adapter
+		Read-only fields:
+			[PN] Part number: 349321-001
+			[EC] Engineering changes: N/A
+			[SN] Serial number: ...
+			[MN] Manufacture ID: ...
+			[RV] Reserved: checksum bad, 46 byte(s) reserved
+		Read/write fields:
+			[YA] Asset tag: N/A
+			[RW] Read-write area: 115 byte(s) free
+		End
+	Capabilities: [58] MSI: Enable- Count=1/8 Maskable- 64bit+
+		Address: 5fff7ffdfffffffc  Data: feff
+	Kernel driver in use: tg3
+	Kernel modules: tg3
+
+06:00.0 PCI bridge [0604]: Intel Corporation 6700PXH PCI Express-to-PCI Bridge A [8086:0329] (rev 09) (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr+ Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 64 bytes
+	Bus: primary=06, secondary=07, subordinate=09, sec-latency=64
+	I/O behind bridge: None
+	Memory behind bridge: None
+	Prefetchable memory behind bridge: None
+	Secondary status: 66MHz+ FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort+ <SERR- <PERR-
+	BridgeCtl: Parity+ SERR+ NoISA- VGA- VGA16- MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Capabilities: [44] Express (v1) PCI-Express to PCI/PCI-X Bridge, MSI 00
+		DevCap:	MaxPayload 256 bytes, PhantFunc 0
+			ExtTag- AttnBtn- AttnInd- PwrInd- RBE- SlotPowerLimit 0.000W
+		DevCtl:	CorrErr- NonFatalErr+ FatalErr+ UnsupReq-
+			RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop- BrConfRtry-
+			MaxPayload 256 bytes, MaxReadReq 512 bytes
+		DevSta:	CorrErr- NonFatalErr- FatalErr+ UnsupReq+ AuxPwr- TransPend-
+		LnkCap:	Port #0, Speed 2.5GT/s, Width x8, ASPM L0s, Exit Latency L0s unlimited
+			ClockPM- Surprise- LLActRep- BwNot- ASPMOptComp-
+		LnkCtl:	ASPM Disabled; RCB 64 bytes Disabled- CommClk-
+			ExtSynch- ClockPM- AutWidDis- BWInt- AutBWInt-
+		LnkSta:	Speed 2.5GT/s (ok), Width x8 (ok)
+			TrErr- Train- SlotClk- DLActive- BWMgmt- ABWMgmt-
+	Capabilities: [5c] MSI: Enable- Count=1/1 Maskable- 64bit+
+		Address: 0000000000000000  Data: 0000
+	Capabilities: [6c] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [d8] PCI-X bridge device
+		Secondary Status: 64bit+ 133MHz+ SCD- USC- SCO- SRD- Freq=133MHz
+		Status: Dev=06:00.0 64bit- 133MHz- SCD- USC- SCO- SRD-
+		Upstream: Capacity=65535 CommitmentLimit=65535
+		Downstream: Capacity=65535 CommitmentLimit=65535
+	Kernel modules: shpchp
+
+06:00.2 PCI bridge [0604]: Intel Corporation 6700PXH PCI Express-to-PCI Bridge B [8086:032a] (rev 09) (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr+ Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 64 bytes
+	Bus: primary=06, secondary=0a, subordinate=0c, sec-latency=64
+	I/O behind bridge: 0000pcilib: sysfs_read_vpd: read failed: Input/output error
+4000-00004fff [size=4K]
+	Memory behind bridge: fdf00000-fdffffff [size=1M]
+	Prefetchable memory behind bridge: None
+	Secondary status: 66MHz+ FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort+ <SERR- <PERR-
+	BridgeCtl: Parity+ SERR+ NoISA- VGA- VGA16- MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Capabilities: [44] Express (v1) PCI-Express to PCI/PCI-X Bridge, MSI 00
+		DevCap:	MaxPayload 256 bytes, PhantFunc 0
+			ExtTag- AttnBtn- AttnInd- PwrInd- RBE- SlotPowerLimit 0.000W
+		DevCtl:	CorrErr- NonFatalErr+ FatalErr+ UnsupReq-
+			RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop- BrConfRtry-
+			MaxPayload 256 bytes, MaxReadReq 512 bytes
+		DevSta:	CorrErr- NonFatalErr- FatalErr+ UnsupReq+ AuxPwr- TransPend-
+		LnkCap:	Port #0, Speed 2.5GT/s, Width x8, ASPM L0s, Exit Latency L0s unlimited
+			ClockPM- Surprise- LLActRep- BwNot- ASPMOptComp-
+		LnkCtl:	ASPM Disabled; RCB 64 bytes Disabled- CommClk-
+			ExtSynch- ClockPM- AutWidDis- BWInt- AutBWInt-
+		LnkSta:	Speed 2.5GT/s (ok), Width x8 (ok)
+			TrErr- Train- SlotClk- DLActive- BWMgmt- ABWMgmt-
+	Capabilities: [5c] MSI: Enable- Count=1/1 Maskable- 64bit+
+		Address: 0000000000000000  Data: 0000
+	Capabilities: [6c] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [d8] PCI-X bridge device
+		Secondary Status: 64bit+ 133MHz+ SCD- USC- SCO- SRD- Freq=133MHz
+		Status: Dev=06:00.2 64bit- 133MHz- SCD- USC- SCO- SRD-
+		Upstream: Capacity=65535 CommitmentLimit=65535
+		Downstream: Capacity=65535 CommitmentLimit=65535
+	Kernel modules: shpchp
+
+0a:01.0 RAID bus controller [0104]: Hewlett-Packard Company Smart Array P600 [103c:3220]
+	Subsystem: Hewlett-Packard Company 3 Gb/s SAS RAID [103c:3225]
+	Physical Slot: 2
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV+ VGASnoop- ParErr+ Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 64, Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 16
+	Region 0: Memory at fdff0000 (64-bit, non-prefetchable) [size=8K]
+	Region 2: I/O ports at 4000 [size=256]
+	Region 3: Memory at fdf80000 (64-bit, non-prefetchable) [size=256K]
+	[virtual] Expansion ROM at fdf00000 [disabled] [size=256K]
+	Capabilities: [d0] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [dc] PCI-X non-bridge device
+		Command: DPERE- ERO+ RBC=512 OST=4
+		Status: Dev=0a:01.0 64bit+ 133MHz+ SCD- USC- DC=simple DMMRBC=2048 DMOST=4 DMCRS=16 RSCEM- 266MHz+ 533MHz-
+	Capabilities: [48] Vital Product Data
+		Not readable
+	Kernel driver in use: hpsa
+	Kernel modules: hpsa
+
