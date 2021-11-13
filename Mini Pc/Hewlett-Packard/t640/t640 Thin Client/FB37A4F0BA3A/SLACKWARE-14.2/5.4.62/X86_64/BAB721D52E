@@ -321,8 +321,7 @@
 01:00.0 Ethernet controller [0200]: Realtek Semiconductor Co., Ltd. RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller [10ec:8168] (rev 0e)
 	Subsystem: Hewlett-Packard Company Device [103c:8523]
 	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx+
-	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAborpcilib: sysfs_read_vpd: read failed: Input/output error
-t- <MAbort- >SERR- <PERR- INTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
 	Latency: 0, Cache Line Size: 64 bytes
 	Interrupt: pin A routed to IRQ 33
 	Region 0: I/O ports at fc00 [size=256]
@@ -397,8 +396,7 @@ t- <MAbort- >SERR- <PERR- INTx-
 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
 	Interrupt: pin B routed to IRQ 30
 	Region 0: I/O ports at f800 [size=256]
-	Regpcilib: sysfs_read_vpd: read failed: Input/output error
-ion 2: Memory at fea17000 (64-bit, non-prefetchable) [size=4K]
+	Region 2: Memory at fea17000 (64-bit, non-prefetchable) [size=4K]
 	Region 4: Memory at fea0c000 (64-bit, non-prefetchable) [size=16K]
 	Capabilities: [40] Power Management version 3
 		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=375mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
@@ -467,8 +465,7 @@ ion 2: Memory at fea17000 (64-bit, non-prefetchable) [size=4K]
 			ExtTag- AttnBtn- AttnInd- PwrInd- RBE+ FLReset- SlotPowerLimit 0.000W
 		DevCtl:	CorrErr- NonFatalErr- FatalErr- UnsupReq-
 			RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
-			MaxPayload 128 bytes, MaxReadpcilib: sysfs_read_vpd: read failed: Input/output error
-Req 512 bytes
+			MaxPayload 128 bytes, MaxReadReq 512 bytes
 		DevSta:	CorrErr+ NonFatalErr- FatalErr- UnsupReq+ AuxPwr+ TransPend-
 		LnkCap:	Port #0, Speed 2.5GT/s, Width x1, ASPM L0s L1, Exit Latency L0s unlimited, L1 <64us
 			ClockPM+ Surprise- LLActRep- BwNot- ASPMOptComp+
@@ -537,9 +534,7 @@ Req 512 bytes
 			 AtomicOpsCap: 32bit- 64bit- 128bitCAS-
 		DevCtl2: Completion Timeout: 50us to 50ms, TimeoutDis-, LTR-, OBFF Disabled
 			 AtomicOpsCtl: ReqEn-
-		LnkSta2: Current De-emphasis Level: -6dB, Equalizatpcilib: sysfs_read_vpd: read failed: Input/output error
-pcilib: sysfs_read_vpd: read failed: Input/output error
-ionComplete-, EqualizationPhase1-
+		LnkSta2: Current De-emphasis Level: -6dB, EqualizationComplete-, EqualizationPhase1-
 			 EqualizationPhase2-, EqualizationPhase3-, LinkEqualizationRequest-
 	Capabilities: [b0] MSI-X: Enable- Count=4 Masked-
 		Vector table: BAR=4 offset=00000000

@@ -519,8 +519,7 @@
 		LnkSta2: Current De-emphasis Level: -6dB, EqualizationComplete-, EqualizationPhase1-
 			 EqualizationPhase2-, EqualizationPhase3-, LinkEqualizationRequest-
 	Capabilities: [100 v2] Advanced Error Reporting
-		UESta:	DLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt- UnxCmplt- RxOF- MalfTLP- ECRCpcilib: sysfs_read_vpd: read failed: Input/output error
-- UnsupReq- ACSViol-
+		UESta:	DLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt- UnxCmplt- RxOF- MalfTLP- ECRC- UnsupReq- ACSViol-
 		UEMsk:	DLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt- UnxCmplt- RxOF- MalfTLP- ECRC- UnsupReq- ACSViol-
 		UESvrt:	DLP+ SDES+ TLP- FCP+ CmpltTO- CmpltAbrt- UnxCmplt- RxOF+ MalfTLP+ ECRC- UnsupReq- ACSViol-
 		CESta:	RxErr- BadTLP- BadDLLP- Rollover- Timeout- AdvNonFatalErr-
@@ -587,8 +586,7 @@
 		CEMsk:	RxErr- BadTLP- BadDLLP- Rollover- Timeout- AdvNonFatalErr+
 		AERCap:	First Error Pointer: 00, ECRCGenCap+ ECRCGenEn- ECRCChkCap+ ECRCChkEn-
 			MultHdrRecCap- MultHdrRecEn- TLPPfxPres- HdrLogCap-
-		pcilib: sysfs_read_vpd: read failed: Input/output error
-HeaderLog: 00000000 00000000 00000000 00000000
+		HeaderLog: 00000000 00000000 00000000 00000000
 	Capabilities: [140 v1] Virtual Channel
 		Caps:	LPEVC=0 RefClk=100ns PATEntryBits=1
 		Arb:	Fixed- WRR32- WRR64- WRR128-
@@ -662,8 +660,7 @@ HeaderLog: 00000000 00000000 00000000 00000000
 		Max snoop latency: 1048576ns
 		Max no snoop latency: 1048576ns
 	Capabilities: [178 v1] L1 PM Substates
-		L1SubCap: PCI-PM_L1.2+ PCI-PM_L1.1+ ASPM_L1.2pcilib: sysfs_read_vpd: read failed: Input/output error
-+ ASPM_L1.1+ L1_PM_Substates+
+		L1SubCap: PCI-PM_L1.2+ PCI-PM_L1.1+ ASPM_L1.2+ ASPM_L1.1+ L1_PM_Substates+
 			  PortCommonModeRestoreTime=150us PortTPowerOnTime=150us
 		L1SubCtl1: PCI-PM_L1.2- PCI-PM_L1.1- ASPM_L1.2- ASPM_L1.1-
 			   T_CommonMode=0us LTR1.2_Threshold=0ns
@@ -732,8 +729,7 @@ HeaderLog: 00000000 00000000 00000000 00000000
 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
 	Interrupt: pin D routed to IRQ 255
 	Region 0: I/O ports at 3000 [disabled] [size=256]
-	Region 2: Memory at e0a17000 (64-bit, non-prefetchpcilib: sysfs_read_vpd: read failed: Input/output error
-able) [disabled] [size=4K]
+	Region 2: Memory at e0a17000 (64-bit, non-prefetchable) [disabled] [size=4K]
 	Region 4: Memory at e0a0c000 (64-bit, non-prefetchable) [disabled] [size=16K]
 	Capabilities: [40] Power Management version 3
 		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=375mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
@@ -803,8 +799,7 @@ able) [disabled] [size=4K]
 			ExtTag- AttnBtn- AttnInd- PwrInd- RBE+ FLReset- SlotPowerLimit 0.000W
 		DevCtl:	CorrErr- NonFatalErr- FatalErr- UnsupReq-
 			RlxdOrd+ ExtTag- PhantFunc- AuxPwr- NoSnoop-
-			MaxPayload 128 bytepcilib: sysfs_read_vpd: read failed: Input/output error
-s, MaxReadReq 512 bytes
+			MaxPayload 128 bytes, MaxReadReq 512 bytes
 		DevSta:	CorrErr+ NonFatalErr- FatalErr- UnsupReq+ AuxPwr+ TransPend-
 		LnkCap:	Port #0, Speed 2.5GT/s, Width x1, ASPM L0s L1, Exit Latency L0s unlimited, L1 <64us
 			ClockPM+ Surprise- LLActRep- BwNot- ASPMOptComp+

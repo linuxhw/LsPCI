@@ -801,8 +801,7 @@
 		UESta:	DLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt- UnxCmplt- RxOF- MalfTLP- ECRC- UnsupReq- ACSViol-
 		UEMsk:	DLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt- UnxCmplt- RxOF- MalfTLP- ECRC- UnsupReq- ACSViol-
 		UESvrt:	DLP+ SDES+ TLP- FCP+ CmpltTO- CmpltAbrt- UnxCmplt- RxOF+ MalfTLP+ ECRC- UnsupReq- ACSViol-
-		CESta:	RxErr- Badpcilib: sysfs_read_vpd: read failed: Input/output error
-TLP- BadDLLP- Rollover- Timeout- AdvNonFatalErr-
+		CESta:	RxErr- BadTLP- BadDLLP- Rollover- Timeout- AdvNonFatalErr-
 		CEMsk:	RxErr- BadTLP- BadDLLP- Rollover- Timeout- AdvNonFatalErr+
 		AERCap:	First Error Pointer: 00, ECRCGenCap+ ECRCGenEn- ECRCChkCap- ECRCChkEn-
 			MultHdrRecCap- MultHdrRecEn- TLPPfxPres- HdrLogCap-
@@ -873,8 +872,7 @@ TLP- BadDLLP- Rollover- Timeout- AdvNonFatalErr-
 		Ctrl:	ArbSelect=Fixed
 		Status:	InProgress-
 		VC0:	Caps:	PATOffset=00 MaxTimeSlots=1 RejSnoopTrans-
-			Arb:	Fixed- WRR32- WRR64- WRR1pcilib: sysfs_read_vpd: read failed: Input/output error
-28- TWRR128- WRR256-
+			Arb:	Fixed- WRR32- WRR64- WRR128- TWRR128- WRR256-
 			Ctrl:	Enable+ ID=0 ArbSelect=Fixed TC/VC=ff
 			Status:	NegoPending- InProgress-
 	Capabilities: [160 v1] Device Serial Number ...
@@ -947,8 +945,7 @@ TLP- BadDLLP- Rollover- Timeout- AdvNonFatalErr-
 			   T_CommonMode=0us LTR1.2_Threshold=0ns
 		L1SubCtl2: T_PwrOn=10us
 
-05:00.2 Serial controller [0700]: Realtek Semiconductor Co., Ltd. Device [10ec:816b] (rev 0e) (prog-if pcilib: sysfs_read_vpd: read failed: Input/output error
-02 [16550])
+05:00.2 Serial controller [0700]: Realtek Semiconductor Co., Ltd. Device [10ec:816b] (rev 0e) (prog-if 02 [16550])
 	Subsystem: Hewlett-Packard Company Device [103c:8461]
 	Control: I/O+ Mem+ BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
@@ -1016,8 +1013,7 @@ TLP- BadDLLP- Rollover- Timeout- AdvNonFatalErr-
 	Capabilities: [40] Power Management version 3
 		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=375mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
 		Status: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-
-	Capabilities: [50] MSI: Enable- Count=1/1 Maskapcilib: sysfs_read_vpd: read failed: Input/output error
-ble- 64bit+
+	Capabilities: [50] MSI: Enable- Count=1/1 Maskable- 64bit+
 		Address: 0000000000000000  Data: 0000
 	Capabilities: [70] Express (v2) Endpoint, MSI 01
 		DevCap:	MaxPayload 128 bytes, PhantFunc 0, Latency L0s unlimited, L1 <64us
@@ -1087,8 +1083,7 @@ ble- 64bit+
 		LnkCap:	Port #0, Speed 2.5GT/s, Width x1, ASPM L0s L1, Exit Latency L0s unlimited, L1 <64us
 			ClockPM+ Surprise- LLActRep- BwNot- ASPMOptComp+
 		LnkCtl:	ASPM L0s Enabled; RCB 64 bytes Disabled- CommClk+
-			ExtSynch- ClockPM- AutWidDis- BWInt- AutBWIpcilib: sysfs_read_vpd: read failed: Input/output error
-nt-
+			ExtSynch- ClockPM- AutWidDis- BWInt- AutBWInt-
 		LnkSta:	Speed 2.5GT/s (ok), Width x1 (ok)
 			TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-
 		DevCap2: Completion Timeout: Range ABCD, TimeoutDis+, LTR+, OBFF Via message/WAKE#

@@ -529,8 +529,7 @@
 		CEMsk:	RxErr- BadTLP- BadDLLP- Rollover- Timeout- AdvNonFatalErr+
 		AERCap:	First Error Pointer: 00, ECRCGenCap+ ECRCGenEn- ECRCChkCap+ ECRCChkEn-
 			MultHdrRecCap- MultHdrRecEn- TLPPfxPres- HdrLogCap-
-		HeaderLog: 00000000 00000000 00000pcilib: sysfs_read_vpd: read failed: Input/output error
-000 00000000
+		HeaderLog: 00000000 00000000 00000000 00000000
 	Capabilities: [158 v1] Secondary PCI Express <?>
 	Capabilities: [178 v1] Latency Tolerance Reporting
 		Max snoop latency: 1048576ns
@@ -604,8 +603,7 @@
 			Ctrl:	Enable+ ID=0 ArbSelect=Fixed TC/VC=ff
 			Status:	NegoPending- InProgress-
 	Capabilities: [160 v1] Device Serial Number ...
-	Capabilities: [170 v1]pcilib: sysfs_read_vpd: read failed: Input/output error
- Latency Tolerance Reporting
+	Capabilities: [170 v1] Latency Tolerance Reporting
 		Max snoop latency: 1048576ns
 		Max no snoop latency: 1048576ns
 	Capabilities: [178 v1] L1 PM Substates
@@ -677,8 +675,7 @@
 03:00.2 Serial controller [0700]: Realtek Semiconductor Co., Ltd. Device [10ec:816b] (rev 0e) (prog-if 02 [16550])
 	Subsystem: Lenovo Device [17aa:5126]
 	Control: I/O+ Mem+ BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
-	Status: Cap+ 66MHz- UDF- FastB2B- Ppcilib: sysfs_read_vpd: read failed: Input/output error
-arErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
 	Interrupt: pin C routed to IRQ 31
 	Region 0: I/O ports at 2100 [size=256]
 	Region 2: Memory at d0716000 (64-bit, non-prefetchable) [size=4K]
@@ -747,8 +744,7 @@ arErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
 		Address: 0000000000000000  Data: 0000
 	Capabilities: [70] Express (v2) Endpoint, MSI 01
 		DevCap:	MaxPayload 128 bytes, PhantFunc 0, Latency L0s unlimited, L1 <64us
-			ExtTag- AttnBtn- AttnInd- PwrInd- RBE+ FLReset- SlotPowerLimit 0pcilib: sysfs_read_vpd: read failed: Input/output error
-.000W
+			ExtTag- AttnBtn- AttnInd- PwrInd- RBE+ FLReset- SlotPowerLimit 0.000W
 		DevCtl:	CorrErr- NonFatalErr- FatalErr- UnsupReq-
 			RlxdOrd+ ExtTag- PhantFunc- AuxPwr- NoSnoop-
 			MaxPayload 128 bytes, MaxReadReq 512 bytes
@@ -819,8 +815,7 @@ arErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
 			TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-
 		DevCap2: Completion Timeout: Range ABCD, TimeoutDis+, LTR+, OBFF Via message/WAKE#
 			 AtomicOpsCap: 32bit- 64bit- 128bitCAS-
-		DevCtl2: Completion Timpcilib: sysfs_read_vpd: read failed: Input/output error
-eout: 50us to 50ms, TimeoutDis-, LTR-, OBFF Disabled
+		DevCtl2: Completion Timeout: 50us to 50ms, TimeoutDis-, LTR-, OBFF Disabled
 			 AtomicOpsCtl: ReqEn-
 		LnkSta2: Current De-emphasis Level: -6dB, EqualizationComplete-, EqualizationPhase1-
 			 EqualizationPhase2-, EqualizationPhase3-, LinkEqualizationRequest-

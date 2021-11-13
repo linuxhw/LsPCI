@@ -770,8 +770,7 @@
 		DevCtl:	Report errors: Correctable- Non-Fatal- Fatal- Unsupported-
 			RlxdOrd+ ExtTag- PhantFunc- AuxPwr- NoSnoop-
 			MaxPayload 128 bytes, MaxReadReq 4096 bytes
-		DevSta:	CorrErr+ UncorrErr- FatalErr- UnsuppReq+ AuxPwr+ Tranpcilib: sysfs_read_vpd: read failed: Input/output error
-sPend-
+		DevSta:	CorrErr+ UncorrErr- FatalErr- UnsuppReq+ AuxPwr+ TransPend-
 		LnkCap:	Port #0, Speed 2.5GT/s, Width x1, ASPM L0s L1, Exit Latency L0s <512ns, L1 <64us
 			ClockPM+ Surprise- LLActRep- BwNot- ASPMOptComp-
 		LnkCtl:	ASPM Disabled; RCB 64 bytes Disabled- CommClk+
@@ -841,9 +840,7 @@ sPend-
 		DevCap2: Completion Timeout: Not Supported, TimeoutDis+, LTR-, OBFF Not Supported
 			 AtomicOpsCap: 32bit- 64bit- 128bitCAS-
 		DevCtl2: Completion Timeout: 50us to 50ms, TimeoutDis-, LTR-, OBFF Disabled
-			 AtomicOpsCtl: ReqEpcilib: sysfs_read_vpd: read failed: Input/output error
-pcilib: sysfs_read_vpd: read failed: Input/output error
-n-
+			 AtomicOpsCtl: ReqEn-
 		LnkSta2: Current De-emphasis Level: -6dB, EqualizationComplete-, EqualizationPhase1-
 			 EqualizationPhase2-, EqualizationPhase3-, LinkEqualizationRequest-
 	Capabilities: [b0] MSI-X: Enable- Count=4 Masked-
@@ -909,8 +906,7 @@ n-
 
 05:00.3 IPMI Interface [0c07]: Realtek Semiconductor Co., Ltd. Device [10ec:816c] (rev 01) (prog-if 01 [KCS])
 	Subsystem: Realtek Semiconductor Co., Ltd. Device [10ec:816c]
-	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- pcilib: sysfs_read_vpd: read failed: Input/output error
-ParErr+ Stepping- SERR+ FastB2B- DisINTx-
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr+ Stepping- SERR+ FastB2B- DisINTx-
 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
 	Latency: 0, Cache Line Size: 32 bytes
 	Interrupt: pin D routed to IRQ 10

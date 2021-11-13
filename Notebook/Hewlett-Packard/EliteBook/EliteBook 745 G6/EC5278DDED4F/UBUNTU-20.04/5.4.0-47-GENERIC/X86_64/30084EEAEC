@@ -386,8 +386,7 @@
 			RlxdOrd+ ExtTag- PhantFunc- AuxPwr- NoSnoop-
 			MaxPayload 128 bytes, MaxReadReq 4096 bytes
 		DevSta:	CorrErr- NonFatalErr- FatalErr- UnsupReq- AuxPwr+ TransPend-
-		LnkCap:	Port #0, Speed 2.5GT/s,pcilib: sysfs_read_vpd: read failed: Input/output error
- Width x1, ASPM L0s L1, Exit Latency L0s unlimited, L1 <64us
+		LnkCap:	Port #0, Speed 2.5GT/s, Width x1, ASPM L0s L1, Exit Latency L0s unlimited, L1 <64us
 			ClockPM+ Surprise- LLActRep- BwNot- ASPMOptComp+
 		LnkCtl:	ASPM L1 Enabled; RCB 64 bytes Disabled- CommClk+
 			ExtSynch- ClockPM+ AutWidDis- BWInt- AutBWInt-
@@ -460,8 +459,7 @@
 		DevCtl:	CorrErr- NonFatalErr- FatalErr- UnsupReq-
 			RlxdOrd+ ExtTag- PhantFunc- AuxPwr- NoSnoop-
 			MaxPayload 128 bytes, MaxReadReq 512 bytes
-		DevSta:	CorrErr- NonFatalErr- FatalErr- UnsupReq- AuxPwr+ TransPpcilib: sysfs_read_vpd: read failed: Input/output error
-end-
+		DevSta:	CorrErr- NonFatalErr- FatalErr- UnsupReq- AuxPwr+ TransPend-
 		LnkCap:	Port #0, Speed 2.5GT/s, Width x1, ASPM L0s L1, Exit Latency L0s unlimited, L1 <64us
 			ClockPM+ Surprise- LLActRep- BwNot- ASPMOptComp+
 		LnkCtl:	ASPM L1 Enabled; RCB 64 bytes Disabled- CommClk+
@@ -530,9 +528,7 @@ end-
 			TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-
 		DevCap2: Completion Timeout: Range ABCD, TimeoutDis+, NROPrPrP-, LTR+
 			 10BitTagComp-, 10BitTagReq-, OBFF Via message/WAKE#, ExtFmt-, EETLPPrefix-
-			 EmergencyPowerReduction Not Supported, Emergepcilib: sysfs_read_vpd: read failed: Input/output error
-pcilib: sysfs_read_vpd: read failed: Input/output error
-ncyPowerReductionInit-
+			 EmergencyPowerReduction Not Supported, EmergencyPowerReductionInit-
 			 FRS-, TPHComp-, ExtTPHComp-
 			 AtomicOpsCap: 32bit- 64bit- 128bitCAS-
 		DevCtl2: Completion Timeout: 50us to 50ms, TimeoutDis-, LTR-, OBFF Disabled
@@ -603,8 +599,7 @@ ncyPowerReductionInit-
 		Vector table: BAR=4 offset=00000000
 		PBA: BAR=4 offset=00000800
 	Capabilities: [d0] Vital Product Data
-		Not readabpcilib: sysfs_read_vpd: read failed: Input/output error
-le
+		Not readable
 	Capabilities: [100 v2] Advanced Error Reporting
 		UESta:	DLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt- UnxCmplt- RxOF- MalfTLP- ECRC- UnsupReq- ACSViol-
 		UEMsk:	DLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt- UnxCmplt- RxOF- MalfTLP- ECRC- UnsupReq- ACSViol-

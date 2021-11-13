@@ -680,7 +680,6 @@
 	Subsystem: ASUSTeK Computer Inc. JMB363 SATA/IDE Controller [1043:824f]
 	Control: I/O+ Mem- BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
-pcilib: sysfs_read_vpd: read failed: Input/output error
 	Latency: 0
 	Interrupt: pin B routed to IRQ 19
 	Region 0: I/O ports at bc00 [size=8]
@@ -754,8 +753,7 @@ pcilib: sysfs_read_vpd: read failed: Input/output error
 		Arb:	Fixed- WRR32- WRR64- WRR128-
 		Ctrl:	ArbSelect=Fixed
 		Status:	InProgress-
-		VC0:	Caps:	PATOffset=00 MaxTimeSlotpcilib: sysfs_read_vpd: read failed: Input/output error
-s=1 RejSnoopTrans-
+		VC0:	Caps:	PATOffset=00 MaxTimeSlots=1 RejSnoopTrans-
 			Arb:	Fixed- WRR32- WRR64- WRR128- TWRR128- WRR256-
 			Ctrl:	Enable+ ID=0 ArbSelect=Fixed TC/VC=ff
 			Status:	NegoPending- InProgress-

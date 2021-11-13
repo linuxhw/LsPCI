@@ -875,8 +875,7 @@
 		UESta:	DLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt- UnxCmplt- RxOF- MalfTLP- ECRC- UnsupReq- ACSViol-
 		UEMsk:	DLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt+ UnxCmplt+ RxOF- MalfTLP- ECRC- UnsupReq- ACSViol-
 		UESvrt:	DLP+ SDES+ TLP+ FCP+ CmpltTO+ CmpltAbrt- UnxCmplt- RxOF+ MalfTLP+ ECRC+ UnsupReq- ACSViol-
-		CESta:	RxErr- BadTLP- Bpcilib: sysfs_read_vpd: read failed: Input/output error
-adDLLP- Rollover- Timeout- NonFatalErr+
+		CESta:	RxErr- BadTLP- BadDLLP- Rollover- Timeout- NonFatalErr+
 		CEMsk:	RxErr- BadTLP+ BadDLLP+ Rollover+ Timeout+ NonFatalErr+
 		AERCap:	First Error Pointer: 00, GenCap+ CGenEn- ChkCap+ ChkEn-
 	Capabilities: [13c v1] Device Serial Number ...
@@ -946,8 +945,7 @@ adDLLP- Rollover- Timeout- NonFatalErr+
 05:00.0 Serial Attached SCSI controller [0107]: LSI Logic / Symbios Logic SAS2008 PCI-Express Fusion-MPT SAS-2 [Falcon] [1000:0072] (rev 03)
 	Subsystem: Dell 6Gbps SAS HBA Adapter [1028:1f1c]
 	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
-	Status: Cap+ 66MHz- UDF- FastB2B- Ppcilib: sysfs_read_vpd: read failed: Input/output error
-arErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
 	Latency: 0, Cache Line Size: 64 bytes
 	Interrupt: pin A routed to IRQ 42
 	Region 0: I/O ports at ec00 [size=256]
@@ -1663,8 +1661,7 @@ arErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
 	Latency: 0, Cache Line Size: 64 bytes
 	Interrupt: pin A routed to IRQ 44
-	Region 0: I/O pcilib: sysfs_read_vpd: read failed: Input/output error
-ports at bc00 [size=256]
+	Region 0: I/O ports at bc00 [size=256]
 	Region 1: Memory at d0ff0000 (64-bit, non-prefetchable) [size=64K]
 	Region 3: Memory at d0f80000 (64-bit, non-prefetchable) [size=256K]
 	Expansion ROM at d0000000 [disabled] [size=1M]

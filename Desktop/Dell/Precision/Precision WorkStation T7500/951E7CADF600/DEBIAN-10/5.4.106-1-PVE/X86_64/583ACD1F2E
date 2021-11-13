@@ -560,8 +560,7 @@
 		UESta:	DLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt- UnxCmplt- RxOF- MalfTLP- ECRC- UnsupReq- ACSViol-
 		UEMsk:	DLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt- UnxCmplt- RxOF- MalfTLP- ECRC- UnsupReq- ACSViol-
 		UESvrt:	DLP+ SDES- TLP- FCP+ CmpltTO- CmpltAbrt- UnxCmplt- RxOF+ MalfTLP+ ECRC- UnsupReq- ACSViol-
-		CESta:	RxErr- BadTLP- BadDLLP- Rollover- Timpcilib: sysfs_read_vpd: read failed: Input/output error
-eout- NonFatalErr-
+		CESta:	RxErr- BadTLP- BadDLLP- Rollover- Timeout- NonFatalErr-
 		CEMsk:	RxErr- BadTLP- BadDLLP- Rollover- Timeout- NonFatalErr+
 		AERCap:	First Error Pointer: 00, GenCap+ CGenEn- ChkCap+ ChkEn-
 	Capabilities: [150 v1] Virtual Channel
@@ -631,8 +630,7 @@ eout- NonFatalErr-
 		Initial VFs: 64, Total VFs: 64, Number of VFs: 0, Function Dependency Link: 00
 		VF offset: 128, stride: 2, Device ID: 10ed
 		Supported Page Size: 00000553, System Page Size: 00000001
-		Region 0: Memory at 00pcilib: sysfs_read_vpd: read failed: Input/output error
-000000f7e00000 (64-bit, prefetchable)
+		Region 0: Memory at 00000000f7e00000 (64-bit, prefetchable)
 		Region 3: Memory at 0000000000000000 (64-bit, prefetchable)
 		VF Migration: offset: 00000000, BIR: 0
 	Kernel driver in use: ixgbe

@@ -597,8 +597,7 @@
 		PBA: BAR=0 offset=00002000
 	Capabilities: [100 v2] Advanced Error Reporting
 		UESta:	DLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt- UnxCmplt- RxOF- MalfTLP- ECRC- UnsupReq- ACSViol-
-		UEMsk:	DLP- SDES- TLP- FCP- CmpltTOpcilib: sysfs_read_vpd: read failed: Input/output error
-- CmpltAbrt- UnxCmplt- RxOF- MalfTLP- ECRC- UnsupReq- ACSViol-
+		UEMsk:	DLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt- UnxCmplt- RxOF- MalfTLP- ECRC- UnsupReq- ACSViol-
 		UESvrt:	DLP+ SDES+ TLP- FCP+ CmpltTO- CmpltAbrt- UnxCmplt- RxOF+ MalfTLP+ ECRC- UnsupReq- ACSViol-
 		CESta:	RxErr- BadTLP- BadDLLP- Rollover- Timeout- AdvNonFatalErr-
 		CEMsk:	RxErr- BadTLP- BadDLLP- Rollover- Timeout- AdvNonFatalErr+
@@ -667,8 +666,7 @@
 		UESvrt:	DLP+ SDES+ TLP- FCP+ CmpltTO- CmpltAbrt- UnxCmplt- RxOF+ MalfTLP+ ECRC- UnsupReq- ACSViol-
 		CESta:	RxErr- BadTLP- BadDLLP- Rollover- Timeout- AdvNonFatalErr+
 		CEMsk:	RxErr- BadTLP- BadDLLP- Rollover- Timeout- AdvNonFatalErr+
-		AERCap:	First Error Pointer: 00, ECRCGenCap+ ECRCpcilib: sysfs_read_vpd: read failed: Input/output error
-GenEn- ECRCChkCap+ ECRCChkEn-
+		AERCap:	First Error Pointer: 00, ECRCGenCap+ ECRCGenEn- ECRCChkCap+ ECRCChkEn-
 			MultHdrRecCap- MultHdrRecEn- TLPPfxPres- HdrLogCap-
 		HeaderLog: 00000000 00000000 00000000 00000000
 	Capabilities: [140 v1] Virtual Channel
@@ -743,8 +741,7 @@ GenEn- ECRCChkCap+ ECRCChkEn-
 	Capabilities: [170 v1] Latency Tolerance Reporting
 		Max snoop latency: 1048576ns
 		Max no snoop latency: 1048576ns
-	Capabilities: [1pcilib: sysfs_read_vpd: read failed: Input/output error
-78 v1] L1 PM Substates
+	Capabilities: [178 v1] L1 PM Substates
 		L1SubCap: PCI-PM_L1.2+ PCI-PM_L1.1+ ASPM_L1.2+ ASPM_L1.1+ L1_PM_Substates+
 			  PortCommonModeRestoreTime=150us PortTPowerOnTime=150us
 		L1SubCtl1: PCI-PM_L1.2+ PCI-PM_L1.1+ ASPM_L1.2+ ASPM_L1.1+
@@ -814,8 +811,7 @@ GenEn- ECRCChkCap+ ECRCChkEn-
 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
 	Interrupt: pin D routed to IRQ 255
 	Region 0: I/O ports at 3000 [disabled] [size=256]
-	Region 2: Memopcilib: sysfs_read_vpd: read failed: Input/output error
-ry at d0817000 (64-bit, non-prefetchable) [disabled] [size=4K]
+	Region 2: Memory at d0817000 (64-bit, non-prefetchable) [disabled] [size=4K]
 	Region 4: Memory at d080c000 (64-bit, non-prefetchable) [disabled] [size=16K]
 	Capabilities: [40] Power Management version 3
 		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=375mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
@@ -885,8 +881,7 @@ ry at d0817000 (64-bit, non-prefetchable) [disabled] [size=4K]
 			ExtTag- AttnBtn- AttnInd- PwrInd- RBE+ FLReset- SlotPowerLimit 0.000W
 		DevCtl:	CorrErr- NonFatalErr- FatalErr- UnsupReq-
 			RlxdOrd+ ExtTag- PhantFunc- AuxPwr- NoSnoop-
-			pcilib: sysfs_read_vpd: read failed: Input/output error
-MaxPayload 128 bytes, MaxReadReq 512 bytes
+			MaxPayload 128 bytes, MaxReadReq 512 bytes
 		DevSta:	CorrErr+ NonFatalErr- FatalErr- UnsupReq+ AuxPwr+ TransPend-
 		LnkCap:	Port #0, Speed 2.5GT/s, Width x1, ASPM L0s L1, Exit Latency L0s unlimited, L1 <64us
 			ClockPM+ Surprise- LLActRep- BwNot- ASPMOptComp+
@@ -955,8 +950,7 @@ MaxPayload 128 bytes, MaxReadReq 512 bytes
 			TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-
 		DevCap2: Completion Timeout: Range ABCD, TimeoutDis+, LTR+, OBFF Via message/WAKE#
 			 AtomicOpsCap: 32bit- 64bit- 128bitCAS-
-		DevCtl2: Completion Timeout: 50us to 50ms, TimeoutDpcilib: sysfs_read_vpd: read failed: Input/output error
-is-, LTR+, OBFF Disabled
+		DevCtl2: Completion Timeout: 50us to 50ms, TimeoutDis-, LTR+, OBFF Disabled
 			 AtomicOpsCtl: ReqEn-
 		LnkCtl2: Target Link Speed: 2.5GT/s, EnterCompliance- SpeedDis-
 			 Transmit Margin: Normal Operating Range, EnterModifiedCompliance- ComplianceSOS-

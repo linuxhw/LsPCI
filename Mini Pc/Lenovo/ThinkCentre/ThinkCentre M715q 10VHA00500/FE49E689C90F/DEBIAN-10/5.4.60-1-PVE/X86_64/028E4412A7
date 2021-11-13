@@ -377,8 +377,7 @@
 		DevSta:	CorrErr+ UncorrErr- FatalErr- UnsuppReq+ AuxPwr+ TransPend-
 		LnkCap:	Port #0, Speed 2.5GT/s, Width x1, ASPM L0s L1, Exit Latency L0s unlimited, L1 <64us
 			ClockPM+ Surprise- LLActRep- BwNot- ASPMOptComp+
-		Lpcilib: sysfs_read_vpd: read failed: Input/output error
-nkCtl:	ASPM L1 Enabled; RCB 64 bytes Disabled- CommClk+
+		LnkCtl:	ASPM L1 Enabled; RCB 64 bytes Disabled- CommClk+
 			ExtSynch- ClockPM- AutWidDis- BWInt- AutBWInt-
 		LnkSta:	Speed 2.5GT/s, Width x1, TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-
 		DevCap2: Completion Timeout: Range ABCD, TimeoutDis+, LTR+, OBFF Via message/WAKE#
@@ -449,9 +448,7 @@ nkCtl:	ASPM L1 Enabled; RCB 64 bytes Disabled- CommClk+
 			ExtSynch- ClockPM+ AutWidDis- BWInt- AutBWInt-
 		LnkSta:	Speed 2.5GT/s, Width x1, TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-
 		DevCap2: Completion Timeout: Range ABCD, TimeoutDis+, LTR+, OBFF Via message/WAKE#
-		DevCtl2: Completion Tipcilib: sysfs_read_vpd: read failed: Input/output error
-pcilib: sysfs_read_vpd: read failed: Input/output error
-meout: 50us to 50ms, TimeoutDis-, LTR-, OBFF Disabled
+		DevCtl2: Completion Timeout: 50us to 50ms, TimeoutDis-, LTR-, OBFF Disabled
 		LnkSta2: Current De-emphasis Level: -6dB, EqualizationComplete-, EqualizationPhase1-
 			 EqualizationPhase2-, EqualizationPhase3-, LinkEqualizationRequest-
 	Capabilities: [b0] MSI-X: Enable- Count=4 Masked-
@@ -518,8 +515,7 @@ meout: 50us to 50ms, TimeoutDis-, LTR-, OBFF Disabled
 		UESvrt:	DLP+ SDES+ TLP- FCP+ CmpltTO- CmpltAbrt- UnxCmplt- RxOF+ MalfTLP+ ECRC- UnsupReq- ACSViol-
 		CESta:	RxErr- BadTLP+ BadDLLP+ Rollover- Timeout+ NonFatalErr+
 		CEMsk:	RxErr- BadTLP- BadDLLP- Rollover- Timeout- NonFatalErr+
-		AERCap:	First Error Pointer: pcilib: sysfs_read_vpd: read failed: Input/output error
-00, GenCap+ CGenEn- ChkCap+ ChkEn-
+		AERCap:	First Error Pointer: 00, GenCap+ CGenEn- ChkCap+ ChkEn-
 	Capabilities: [160 v1] Device Serial Number ...
 	Capabilities: [170 v1] Latency Tolerance Reporting
 		Max snoop latency: 1048576ns
@@ -588,8 +584,7 @@ meout: 50us to 50ms, TimeoutDis-, LTR-, OBFF Disabled
 01:00.4 USB controller [0c03]: Realtek Semiconductor Co., Ltd. Device [10ec:816d] (rev 0e) (prog-if 20 [EHCI])
 	Subsystem: Lenovo Device [17aa:3130]
 	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
-	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PEpcilib: sysfs_read_vpd: read failed: Input/output error
-RR- INTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
 	Latency: 0, Cache Line Size: 64 bytes
 	Interrupt: pin D routed to IRQ 50
 	Region 0: Memory at fe914000 (32-bit, non-prefetchable) [size=4K]

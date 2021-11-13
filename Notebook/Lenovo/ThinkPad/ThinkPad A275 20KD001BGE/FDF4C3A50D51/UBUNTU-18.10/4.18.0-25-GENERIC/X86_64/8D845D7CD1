@@ -410,8 +410,7 @@
 	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
 	Latency: 0, Cache Line Size: 32 bytes
-	Interrupcilib: sysfs_read_vpd: read failed: Input/output error
-pt: pin A routed to IRQ 35
+	Interrupt: pin A routed to IRQ 35
 	Region 0: I/O ports at 2400 [size=256]
 	Region 2: Memory at f0d14000 (64-bit, non-prefetchable) [size=4K]
 	Region 4: Memory at f0d00000 (64-bit, non-prefetchable) [size=16K]
@@ -485,8 +484,7 @@ pt: pin A routed to IRQ 35
 	Interrupt: pin B routed to IRQ 29
 	Region 0: I/O ports at 2200 [size=256]
 	Region 2: Memory at f0d15000 (64-bit, non-prefetchable) [size=4K]
-	Region 4: Memory at f0d040pcilib: sysfs_read_vpd: read failed: Input/output error
-00 (64-bit, non-prefetchable) [size=16K]
+	Region 4: Memory at f0d04000 (64-bit, non-prefetchable) [size=16K]
 	Capabilities: [40] Power Management version 3
 		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=375mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
 		Status: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-
@@ -556,8 +554,7 @@ pt: pin A routed to IRQ 35
 			RlxdOrd+ ExtTag- PhantFunc- AuxPwr- NoSnoop-
 			MaxPayload 128 bytes, MaxReadReq 512 bytes
 		DevSta:	CorrErr+ NonFatalErr- FatalErr- UnsupReq+ AuxPwr+ TransPend-
-		LnkCap:	Port #pcilib: sysfs_read_vpd: read failed: Input/output error
-0, Speed 2.5GT/s, Width x1, ASPM L0s L1, Exit Latency L0s unlimited, L1 <64us
+		LnkCap:	Port #0, Speed 2.5GT/s, Width x1, ASPM L0s L1, Exit Latency L0s unlimited, L1 <64us
 			ClockPM+ Surprise- LLActRep- BwNot- ASPMOptComp+
 		LnkCtl:	ASPM L0s L1 Enabled; RCB 64 bytes Disabled- CommClk+
 			ExtSynch- ClockPM+ AutWidDis- BWInt- AutBWInt-
@@ -625,9 +622,7 @@ pt: pin A routed to IRQ 35
 		DevCtl2: Completion Timeout: 50us to 50ms, TimeoutDis-, LTR-, OBFF Disabled
 			 AtomicOpsCtl: ReqEn-
 		LnkSta2: Current De-emphasis Level: -6dB, EqualizationComplete-, EqualizationPhase1-
-			 EqualizationPhase2-, EqualizationPhase3-, LinkEqualizationRequest-pcilib: sysfs_read_vpd: read failed: Input/output error
-pcilib: sysfs_read_vpd: read failed: Input/output error
-
+			 EqualizationPhase2-, EqualizationPhase3-, LinkEqualizationRequest-
 	Capabilities: [b0] MSI-X: Enable- Count=4 Masked-
 		Vector table: BAR=4 offset=00000000
 		PBA: BAR=4 offset=00000800

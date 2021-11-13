@@ -781,8 +781,7 @@
 			 EqualizationPhase2-, EqualizationPhase3-, LinkEqualizationRequest-
 	Capabilities: [c0] Subsystem: ASMedia Technology Inc. Device [1b21:118f]
 	Capabilities: [100 v1] Virtual Channel
-		Caps:	LPEVC=0 RefClk=100ns PATEntryBitspcilib: sysfs_read_vpd: read failed: Input/output error
-=1
+		Caps:	LPEVC=0 RefClk=100ns PATEntryBits=1
 		Arb:	Fixed- WRR32- WRR64- WRR128-
 		Ctrl:	ArbSelect=Fixed
 		Status:	InProgress-
@@ -851,8 +850,7 @@
 		CEMsk:	RxErr- BadTLP- BadDLLP- Rollover- Timeout- AdvNonFatalErr+
 		AERCap:	First Error Pointer: 00, ECRCGenCap+ ECRCGenEn- ECRCChkCap+ ECRCChkEn-
 			MultHdrRecCap- MultHdrRecEn- TLPPfxPres- HdrLogCap-
-		HeaderLog: 00000pcilib: sysfs_read_vpd: read failed: Input/output error
-000 00000000 00000000 00000000
+		HeaderLog: 00000000 00000000 00000000 00000000
 	Capabilities: [140 v1] Virtual Channel
 		Caps:	LPEVC=0 RefClk=100ns PATEntryBits=1
 		Arb:	Fixed- WRR32- WRR64- WRR128-
@@ -1137,7 +1135,6 @@
 	Capabilities: [40] Power Management version 3
 		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=375mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
 		Status: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-
-pcilib: sysfs_read_vpd: read failed: Input/output error
 	Capabilities: [50] MSI: Enable- Count=1/1 Maskable- 64bit+
 		Address: 0000000000000000  Data: 0000
 	Capabilities: [70] Express (v2) Endpoint, MSI 01
@@ -1209,8 +1206,7 @@ pcilib: sysfs_read_vpd: read failed: Input/output error
 		DevCtl:	CorrErr- NonFatalErr- FatalErr- UnsupReq-
 			RlxdOrd+ ExtTag- PhantFunc- AuxPwr- NoSnoop-
 			MaxPayload 128 bytes, MaxReadReq 4096 bytes
-		DevSta:	CorrErr- NonFatalErr- FatalErr- UnsupRepcilib: sysfs_read_vpd: read failed: Input/output error
-q- AuxPwr+ TransPend-
+		DevSta:	CorrErr- NonFatalErr- FatalErr- UnsupReq- AuxPwr+ TransPend-
 		LnkCap:	Port #0, Speed 2.5GT/s, Width x1, ASPM L0s L1, Exit Latency L0s unlimited, L1 <64us
 			ClockPM+ Surprise- LLActRep- BwNot- ASPMOptComp-
 		LnkCtl:	ASPM Disabled; RCB 64 bytes Disabled- CommClk+

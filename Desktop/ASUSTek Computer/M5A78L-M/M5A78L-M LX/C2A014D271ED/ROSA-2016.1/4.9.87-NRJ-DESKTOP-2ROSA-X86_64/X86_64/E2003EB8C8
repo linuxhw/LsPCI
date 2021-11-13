@@ -404,8 +404,7 @@
 		DevCtl:	Report errors: Correctable- Non-Fatal- Fatal- Unsupported-
 			RlxdOrd+ ExtTag+ PhantFunc- AuxPwr- NoSnoop+
 			MaxPayload 128 bytes, MaxReadReq 512 bytes
-		DevSta:	CorrErr- UncorrErr- FatalErr- UnsuppReq- AuxPwr- Trapcilib: sysfs_read_vpd: read failed: Input/output error
-nsPend-
+		DevSta:	CorrErr- UncorrErr- FatalErr- UnsuppReq- AuxPwr- TransPend-
 		LnkCap:	Port #0, Speed 2.5GT/s, Width x16, ASPM L0s L1, Latency L0 <512ns, L1 <1us
 			ClockPM- Surprise- LLActRep- BwNot-
 		LnkCtl:	ASPM Disabled; RCB 128 bytes Disabled- Retrain- CommClk+
@@ -477,8 +476,7 @@ nsPend-
 		Status:	InProgress-
 		VC0:	Caps:	PATOffset=00 MaxTimeSlots=1 RejSnoopTrans-
 			Arb:	Fixed- WRR32- WRR64- WRR128- TWRR128- WRR256-
-			Ctrl:	Enable+ ID=0 Apcilib: sysfs_read_vpd: read failed: Input/output error
-rbSelect=Fixed TC/VC=ff
+			Ctrl:	Enable+ ID=0 ArbSelect=Fixed TC/VC=ff
 			Status:	NegoPending- InProgress-
 	Capabilities: [160 v1] Device Serial Number ...
 	Kernel driver in use: r8169

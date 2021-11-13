@@ -483,8 +483,7 @@
 		DevCtl:	CorrErr- NonFatalErr- FatalErr- UnsupReq-
 			RlxdOrd+ ExtTag+ PhantFunc- AuxPwr- NoSnoop+
 			MaxPayload 128 bytes, MaxReadReq 512 bytes
-		DevSta:	CorrErr+ NonFatalErr- Fatapcilib: sysfs_read_vpd: read failed: Input/output error
-lErr- UnsupReq+ AuxPwr- TransPend-
+		DevSta:	CorrErr+ NonFatalErr- FatalErr- UnsupReq+ AuxPwr- TransPend-
 		LnkCap:	Port #0, Speed 8GT/s, Width x8, ASPM L0s L1, Exit Latency L0s <64ns, L1 <1us
 			ClockPM- Surprise- LLActRep- BwNot- ASPMOptComp+
 		LnkCtl:	ASPM Disabled; RCB 64 bytes Disabled- CommClk+
@@ -550,8 +549,7 @@ lErr- UnsupReq+ AuxPwr- TransPend-
 			MultHdrRecCap- MultHdrRecEn- TLPPfxPres- HdrLogCap-
 		HeaderLog: 04000001 0000010f 05010000 00000000
 	Capabilities: [200 v1] Virtual Channel
-		Caps:	LPEVC=1 RefClk=100ns PATpcilib: sysfs_read_vpd: read failed: Input/output error
-EntryBits=1
+		Caps:	LPEVC=1 RefClk=100ns PATEntryBits=1
 		Arb:	Fixed+ WRR32+ WRR64+ WRR128-
 		Ctrl:	ArbSelect=WRR64
 		Status:	InProgress-

@@ -616,8 +616,7 @@
 	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
 	Latency: 0, Cache Line Size: 32 bytes
-	Interrupt: pin A routed to IRQ pcilib: sysfs_read_vpd: read failed: Input/output error
-74
+	Interrupt: pin A routed to IRQ 74
 	IOMMU group: 11
 	Region 0: I/O ports at 2400 [size=256]
 	Region 2: Memory at d0714000 (64-bit, non-prefetchable) [size=4K]
@@ -692,8 +691,7 @@
 
 03:00.1 Serial controller [0700]: Realtek Semiconductor Co., Ltd. Device [10ec:816a] (rev 0e) (prog-if 02 [16550])
 	Subsystem: Lenovo Device [17aa:5126]
-	Control: I/O+ Mem+ BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERRpcilib: sysfs_read_vpd: read failed: Input/output error
-- FastB2B- DisINTx-
+	Control: I/O+ Mem+ BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
 	Interrupt: pin B routed to IRQ 31
 	IOMMU group: 11
@@ -765,8 +763,7 @@
 	Region 4: Memory at d0708000 (64-bit, non-prefetchable) [size=16K]
 	Capabilities: [40] Power Management version 3
 		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=375mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
-		Status: D0 NoSpcilib: sysfs_read_vpd: read failed: Input/output error
-oftRst+ PME-Enable- DSel=0 DScale=0 PME-
+		Status: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-
 	Capabilities: [50] MSI: Enable- Count=1/1 Maskable- 64bit+
 		Address: 0000000000000000  Data: 0000
 	Capabilities: [70] Express (v2) Endpoint, MSI 01
@@ -837,8 +834,7 @@ oftRst+ PME-Enable- DSel=0 DScale=0 PME-
 			ExtTag- AttnBtn- AttnInd- PwrInd- RBE+ FLReset- SlotPowerLimit 0.000W
 		DevCtl:	CorrErr- NonFatalErr- FatalErr- UnsupReq-
 			RlxdOrd+ ExtTag- PhantFunc- AuxPwr- NoSnoop-
-			MaxPayload 128 bytpcilib: sysfs_read_vpd: read failed: Input/output error
-es, MaxReadReq 512 bytes
+			MaxPayload 128 bytes, MaxReadReq 512 bytes
 		DevSta:	CorrErr+ NonFatalErr- FatalErr- UnsupReq+ AuxPwr+ TransPend-
 		LnkCap:	Port #0, Speed 2.5GT/s, Width x1, ASPM L0s L1, Exit Latency L0s unlimited, L1 <64us
 			ClockPM+ Surprise- LLActRep- BwNot- ASPMOptComp+
@@ -909,8 +905,7 @@ es, MaxReadReq 512 bytes
 			ExtSynch- ClockPM+ AutWidDis- BWInt- AutBWInt-
 		LnkSta:	Speed 2.5GT/s (ok), Width x1 (ok)
 			TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-
-		DevCap2: Completion Timeout: Range ABCD, TimeoutDipcilib: sysfs_read_vpd: read failed: Input/output error
-s+ NROPrPrP- LTR+
+		DevCap2: Completion Timeout: Range ABCD, TimeoutDis+ NROPrPrP- LTR+
 			 10BitTagComp- 10BitTagReq- OBFF Via message/WAKE#, ExtFmt- EETLPPrefix-
 			 EmergencyPowerReduction Not Supported, EmergencyPowerReductionInit-
 			 FRS- TPHComp- ExtTPHComp-

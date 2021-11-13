@@ -595,7 +595,6 @@
 			 EqualizationPhase2+, EqualizationPhase3+, LinkEqualizationRequest-
 	Capabilities: [b0] MSI-X: Enable+ Count=33 Masked-
 		Vector table: BAR=0 offset=00003000
-pcilib: sysfs_read_vpd: read failed: Input/output error
 		PBA: BAR=0 offset=00002000
 	Capabilities: [100 v2] Advanced Error Reporting
 		UESta:	DLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt- UnxCmplt- RxOF- MalfTLP- ECRC- UnsupReq- ACSViol-
@@ -664,8 +663,7 @@ pcilib: sysfs_read_vpd: read failed: Input/output error
 	Capabilities: [100 v2] Advanced Error Reporting
 		UESta:	DLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt- UnxCmplt- RxOF- MalfTLP- ECRC- UnsupReq- ACSViol-
 		UEMsk:	DLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt- UnxCmplt- RxOF- MalfTLP- ECRC- UnsupReq- ACSViol-
-		UESvrt:	DLP+ SDES+ TLP- FCP+ CmpltTO- Cmplpcilib: sysfs_read_vpd: read failed: Input/output error
-tAbrt- UnxCmplt- RxOF+ MalfTLP+ ECRC- UnsupReq- ACSViol-
+		UESvrt:	DLP+ SDES+ TLP- FCP+ CmpltTO- CmpltAbrt- UnxCmplt- RxOF+ MalfTLP+ ECRC- UnsupReq- ACSViol-
 		CESta:	RxErr- BadTLP- BadDLLP- Rollover- Timeout- AdvNonFatalErr+
 		CEMsk:	RxErr- BadTLP- BadDLLP- Rollover- Timeout- AdvNonFatalErr+
 		AERCap:	First Error Pointer: 00, ECRCGenCap+ ECRCGenEn- ECRCChkCap+ ECRCChkEn-
@@ -738,8 +736,7 @@ tAbrt- UnxCmplt- RxOF+ MalfTLP+ ECRC- UnsupReq- ACSViol-
 		CEMsk:	RxErr- BadTLP- BadDLLP- Rollover- Timeout- AdvNonFatalErr+
 		AERCap:	First Error Pointer: 00, ECRCGenCap+ ECRCGenEn- ECRCChkCap+ ECRCChkEn-
 			MultHdrRecCap- MultHdrRecEn- TLPPfxPres- HdrLogCap-
-		Headerpcilib: sysfs_read_vpd: read failed: Input/output error
-Log: 00000000 00000000 00000000 00000000
+		HeaderLog: 00000000 00000000 00000000 00000000
 	Capabilities: [160 v1] Device Serial Number ...
 	Capabilities: [170 v1] Latency Tolerance Reporting
 		Max snoop latency: 1048576ns
@@ -810,8 +807,7 @@ Log: 00000000 00000000 00000000 00000000
 
 03:00.3 IPMI Interface [0c07]: Realtek Semiconductor Co., Ltd. Device [10ec:816c] (rev 0e) (prog-if 01 [KCS])
 	Subsystem: Lenovo Device [17aa:5125]
-	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- Papcilib: sysfs_read_vpd: read failed: Input/output error
-rErr- Stepping- SERR- FastB2B- DisINTx-
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
 	Interrupt: pin D routed to IRQ 255
 	Region 0: I/O ports at 3000 [disabled] [size=256]
@@ -881,8 +877,7 @@ rErr- Stepping- SERR- FastB2B- DisINTx-
 	Capabilities: [50] MSI: Enable- Count=1/1 Maskable- 64bit+
 		Address: 0000000000000000  Data: 0000
 	Capabilities: [70] Express (v2) Endpoint, MSI 01
-		DevCap:pcilib: sysfs_read_vpd: read failed: Input/output error
-	MaxPayload 128 bytes, PhantFunc 0, Latency L0s unlimited, L1 <64us
+		DevCap:	MaxPayload 128 bytes, PhantFunc 0, Latency L0s unlimited, L1 <64us
 			ExtTag- AttnBtn- AttnInd- PwrInd- RBE+ FLReset- SlotPowerLimit 0.000W
 		DevCtl:	CorrErr- NonFatalErr- FatalErr- UnsupReq-
 			RlxdOrd+ ExtTag- PhantFunc- AuxPwr- NoSnoop-
@@ -951,8 +946,7 @@ rErr- Stepping- SERR- FastB2B- DisINTx-
 		LnkCap:	Port #0, Speed 2.5GT/s, Width x1, ASPM L0s L1, Exit Latency L0s unlimited, L1 <64us
 			ClockPM+ Surprise- LLActRep- BwNot- ASPMOptComp+
 		LnkCtl:	ASPM L1 Enabled; RCB 64 bytes Disabled- CommClk+
-			ExtSpcilib: sysfs_read_vpd: read failed: Input/output error
-ynch- ClockPM+ AutWidDis- BWInt- AutBWInt-
+			ExtSynch- ClockPM+ AutWidDis- BWInt- AutBWInt-
 		LnkSta:	Speed 2.5GT/s (ok), Width x1 (ok)
 			TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-
 		DevCap2: Completion Timeout: Range ABCD, TimeoutDis+, LTR+, OBFF Via message/WAKE#

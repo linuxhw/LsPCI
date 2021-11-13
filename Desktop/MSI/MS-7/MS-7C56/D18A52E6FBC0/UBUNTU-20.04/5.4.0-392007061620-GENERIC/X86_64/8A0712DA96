@@ -859,8 +859,7 @@
 		UESta:	DLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt- UnxCmplt- RxOF- MalfTLP- ECRC- UnsupReq- ACSViol-
 		UEMsk:	DLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt- UnxCmplt- RxOF- MalfTLP- ECRC- UnsupReq- ACSViol-
 		UESvrt:	DLP+ SDES+ TLP- FCP+ CmpltTO- CmpltAbrt- UnxCmplt- RxOF+ MalfTLP+ ECRC- UnsupReq- ACSViol-
-		CESta:	RxErr- BadTLP- BadDLLP- Rollover- Tipcilib: sysfs_read_vpd: read failed: Input/output error
-meout- AdvNonFatalErr-
+		CESta:	RxErr- BadTLP- BadDLLP- Rollover- Timeout- AdvNonFatalErr-
 		CEMsk:	RxErr- BadTLP- BadDLLP- Rollover- Timeout- AdvNonFatalErr+
 		AERCap:	First Error Pointer: 00, ECRCGenCap+ ECRCGenEn- ECRCChkCap- ECRCChkEn-
 			MultHdrRecCap- MultHdrRecEn- TLPPfxPres- HdrLogCap-
@@ -1073,8 +1072,7 @@ meout- AdvNonFatalErr-
 		HeaderLog: 00000000 00000000 00000000 00000000
 	Capabilities: [140 v1] Virtual Channel
 		Caps:	LPEVC=0 RefClk=100ns PATEntryBits=4
-		Arb:pcilib: sysfs_read_vpd: read failed: Input/output error
-	Fixed- WRR32- WRR64- WRR128-
+		Arb:	Fixed- WRR32- WRR64- WRR128-
 		Ctrl:	ArbSelect=Fixed
 		Status:	InProgress-
 		VC0:	Caps:	PATOffset=04 MaxTimeSlots=64 RejSnoopTrans-
@@ -1145,7 +1143,6 @@ meout- AdvNonFatalErr-
 	Subsystem: Hauppauge computer works Inc. CX23887/8 PCIe Broadcast Audio and Video Decoder with 3D Comb [0070:6b28]
 	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
-pcilib: sysfs_read_vpd: read failed: Input/output error
 	Latency: 0, Cache Line Size: 64 bytes
 	Interrupt: pin A routed to IRQ 39
 	Region 0: Memory at fc600000 (64-bit, non-prefetchable) [size=2M]

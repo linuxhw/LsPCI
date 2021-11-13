@@ -521,8 +521,7 @@
 		DevCap:	MaxPayload 128 bytes, PhantFunc 0, Latency L0s unlimited, L1 <64us
 			ExtTag- AttnBtn- AttnInd- PwrInd- RBE+ FLReset- SlotPowerLimit 0.000W
 		DevCtl:	CorrErr- NonFatalErr- FatalErr- UnsupReq-
-			RlxdOrd+ ExtTag- PhantFunc- Auxpcilib: sysfs_read_vpd: read failed: Input/output error
-Pwr- NoSnoop-
+			RlxdOrd+ ExtTag- PhantFunc- AuxPwr- NoSnoop-
 			MaxPayload 128 bytes, MaxReadReq 4096 bytes
 		DevSta:	CorrErr+ NonFatalErr- FatalErr- UnsupReq+ AuxPwr+ TransPend-
 		LnkCap:	Port #0, Speed 2.5GT/s, Width x1, ASPM L0s L1, Exit Latency L0s unlimited, L1 <64us
@@ -595,8 +594,7 @@ Pwr- NoSnoop-
 	Capabilities: [70] Express (v2) Endpoint, MSI 01
 		DevCap:	MaxPayload 128 bytes, PhantFunc 0, Latency L0s unlimited, L1 <64us
 			ExtTag- AttnBtn- AttnInd- PwrInd- RBE+ FLReset- SlotPowerLimit 0.000W
-		DevCtl:	CorrErr- NonFatalErr- FatalErr- Unsuppcilib: sysfs_read_vpd: read failed: Input/output error
-Req-
+		DevCtl:	CorrErr- NonFatalErr- FatalErr- UnsupReq-
 			RlxdOrd+ ExtTag- PhantFunc- AuxPwr- NoSnoop-
 			MaxPayload 128 bytes, MaxReadReq 512 bytes
 		DevSta:	CorrErr+ NonFatalErr- FatalErr- UnsupReq+ AuxPwr+ TransPend-
@@ -667,8 +665,7 @@ Req-
 			ExtSynch- ClockPM+ AutWidDis- BWInt- AutBWInt-
 		LnkSta:	Speed 2.5GT/s (ok), Width x1 (ok)
 			TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-
-		Devpcilib: sysfs_read_vpd: read failed: Input/output error
-Cap2: Completion Timeout: Range ABCD, TimeoutDis+, NROPrPrP-, LTR+
+		DevCap2: Completion Timeout: Range ABCD, TimeoutDis+, NROPrPrP-, LTR+
 			 10BitTagComp-, 10BitTagReq-, OBFF Via message/WAKE#, ExtFmt-, EETLPPrefix-
 			 EmergencyPowerReduction Not Supported, EmergencyPowerReductionInit-
 			 FRS-, TPHComp-, ExtTPHComp-
@@ -737,9 +734,7 @@ Cap2: Completion Timeout: Range ABCD, TimeoutDis+, NROPrPrP-, LTR+
 		DevCtl2: Completion Timeout: 50us to 50ms, TimeoutDis-, LTR-, OBFF Disabled
 			 AtomicOpsCtl: ReqEn-
 		LnkSta2: Current De-emphasis Level: -6dB, EqualizationComplete-, EqualizationPhase1-
-			 Equalizatiopcilib: sysfs_read_vpd: read failed: Input/output error
-pcilib: sysfs_read_vpd: read failed: Input/output error
-nPhase2-, EqualizationPhase3-, LinkEqualizationRequest-
+			 EqualizationPhase2-, EqualizationPhase3-, LinkEqualizationRequest-
 	Capabilities: [b0] MSI-X: Enable- Count=4 Masked-
 		Vector table: BAR=4 offset=00000000
 		PBA: BAR=4 offset=00000800

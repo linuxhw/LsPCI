@@ -693,8 +693,7 @@
 	Subsystem: Lenovo RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller [17aa:5081]
 	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
-	Latency: 0, Cache Line Sipcilib: sysfs_read_vpd: read failed: Input/output error
-ze: 32 bytes
+	Latency: 0, Cache Line Size: 32 bytes
 	Interrupt: pin A routed to IRQ 38
 	IOMMU group: 12
 	Region 0: I/O ports at 3400 [size=256]
@@ -770,8 +769,7 @@ ze: 32 bytes
 
 02:00.1 Serial controller [0700]: Realtek Semiconductor Co., Ltd. RTL8111xP UART #1 [10ec:816a] (rev 0e) (prog-if 02 [16550])
 	Subsystem: Lenovo Device [17aa:5081]
-	Control: I/O+ Mem+ Bupcilib: sysfs_read_vpd: read failed: Input/output error
-sMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Control: I/O+ Mem+ BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
 	Interrupt: pin B routed to IRQ 33
 	IOMMU group: 12
@@ -842,8 +840,7 @@ sMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
 	Region 2: Memory at fd816000 (64-bit, non-prefetchable) [size=4K]
 	Region 4: Memory at fd808000 (64-bit, non-prefetchable) [size=16K]
 	Capabilities: [40] Power Management version 3
-		Flags: PMEClk- Dpcilib: sysfs_read_vpd: read failed: Input/output error
-SI- D1+ D2+ AuxCurrent=375mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=375mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
 		Status: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-
 	Capabilities: [50] MSI: Enable- Count=1/1 Maskable- 64bit+
 		Address: 0000000000000000  Data: 0000
@@ -913,8 +910,7 @@ SI- D1+ D2+ AuxCurrent=375mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
 	Capabilities: [70] Express (v2) Endpoint, MSI 01
 		DevCap:	MaxPayload 128 bytes, PhantFunc 0, Latency L0s unlimited, L1 <64us
 			ExtTag- AttnBtn- AttnInd- PwrInd- RBE+ FLReset- SlotPowerLimit 0.000W
-		DevCtl:	CorrErr- Nopcilib: sysfs_read_vpd: read failed: Input/output error
-nFatalErr- FatalErr- UnsupReq-
+		DevCtl:	CorrErr- NonFatalErr- FatalErr- UnsupReq-
 			RlxdOrd+ ExtTag- PhantFunc- AuxPwr- NoSnoop-
 			MaxPayload 128 bytes, MaxReadReq 512 bytes
 		DevSta:	CorrErr+ NonFatalErr- FatalErr- UnsupReq+ AuxPwr+ TransPend-
@@ -985,8 +981,7 @@ nFatalErr- FatalErr- UnsupReq-
 			ClockPM+ Surprise- LLActRep- BwNot- ASPMOptComp+
 		LnkCtl:	ASPM L1 Enabled; RCB 64 bytes, Disabled- CommClk+
 			ExtSynch- ClockPM+ AutWidDis- BWInt- AutBWInt-
-		LnkSta:	Speed 2.5GT/pcilib: sysfs_read_vpd: read failed: Input/output error
-s (ok), Width x1 (ok)
+		LnkSta:	Speed 2.5GT/s (ok), Width x1 (ok)
 			TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-
 		DevCap2: Completion Timeout: Range ABCD, TimeoutDis+ NROPrPrP- LTR+
 			 10BitTagComp- 10BitTagReq- OBFF Via message/WAKE#, ExtFmt- EETLPPrefix-

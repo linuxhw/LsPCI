@@ -337,8 +337,7 @@
 		PBA: BAR=4 offset=00002000
 	Capabilities: [a0] Express (v2) Endpoint, MSI 00
 		DevCap:	MaxPayload 512 bytes, PhantFunc 0, Latency L0s <512ns, L1 <64us
-			ExtTag- AttnBtn- AttnInd- PwrInd- RBE+ FLReset+ SlotPowerLipcilib: sysfs_read_vpd: read failed: Input/output error
-mit 0.000W
+			ExtTag- AttnBtn- AttnInd- PwrInd- RBE+ FLReset+ SlotPowerLimit 0.000W
 		DevCtl:	Report errors: Correctable+ Non-Fatal+ Fatal+ Unsupported+
 			RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop+ FLReset-
 			MaxPayload 512 bytes, MaxReadReq 512 bytes
@@ -406,8 +405,6 @@ mit 0.000W
 		DevCap2: Completion Timeout: Range ABCD, TimeoutDis+, LTR+, OBFF Not Supported
 		DevCtl2: Completion Timeout: 50us to 50ms, TimeoutDis-, LTR-, OBFF Disabled
 		LnkSta2: Current De-emphasis Level: -6dB, EqualizationComplete-, EqualizationPhase1-
-pcilib: sysfs_read_vpd: read failed: Input/output error
-pcilib: sysfs_read_vpd: read failed: Input/output error
 			 EqualizationPhase2-, EqualizationPhase3-, LinkEqualizationRequest-
 	Capabilities: [e0] Vital Product Data
 		Not readable
@@ -476,7 +473,6 @@ pcilib: sysfs_read_vpd: read failed: Input/output error
 
 01:00.3 Ethernet controller [0200]: Intel Corporation 82580 Gigabit Network Connection [8086:150e] (rev 01)
 	Subsystem: Hewlett-Packard Company NC365T 4-port Ethernet Server Adapter [103c:1780]
-pcilib: sysfs_read_vpd: read failed: Input/output error
 	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx+
 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
 	Latency: 0, Cache Line Size: 64 bytes
@@ -544,8 +540,7 @@ pcilib: sysfs_read_vpd: read failed: Input/output error
 		DevCtl:	Report errors: Correctable- Non-Fatal- Fatal- Unsupported-
 			RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
 			MaxPayload 128 bytes, MaxReadReq 4096 bytes
-		DevSta:	Copcilib: sysfs_read_vpd: read failed: Input/output error
-rrErr- UncorrErr- FatalErr- UnsuppReq- AuxPwr+ TransPend-
+		DevSta:	CorrErr- UncorrErr- FatalErr- UnsuppReq- AuxPwr+ TransPend-
 		LnkCap:	Port #0, Speed 2.5GT/s, Width x1, ASPM L0s L1, Exit Latency L0s unlimited, L1 <64us
 			ClockPM+ Surprise- LLActRep- BwNot- ASPMOptComp+
 		LnkCtl:	ASPM Disabled; RCB 64 bytes Disabled- CommClk+

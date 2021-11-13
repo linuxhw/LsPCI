@@ -764,8 +764,7 @@
 			  PortCommonModeRestoreTime=24us PortTPowerOnTime=50us
 		L1SubCtl1: PCI-PM_L1.2+ PCI-PM_L1.1+ ASPM_L1.2+ ASPM_L1.1+
 			   T_CommonMode=0us LTR1.2_Threshold=32768ns
-		L1SubCtl2: Tpcilib: sysfs_read_vpd: read failed: Input/output error
-_PwrOn=150us
+		L1SubCtl2: T_PwrOn=150us
 	Kernel driver in use: nvme
 	Kernel modules: nvme
 
@@ -838,8 +837,7 @@ _PwrOn=150us
 	Capabilities: [170 v1] Latency Tolerance Reporting
 		Max snoop latency: 1048576ns
 		Max no snoop latency: 1048576ns
-	Capabilities: [178 v1pcilib: sysfs_read_vpd: read failed: Input/output error
-] L1 PM Substates
+	Capabilities: [178 v1] L1 PM Substates
 		L1SubCap: PCI-PM_L1.2+ PCI-PM_L1.1+ ASPM_L1.2+ ASPM_L1.1+ L1_PM_Substates+
 			  PortCommonModeRestoreTime=150us PortTPowerOnTime=150us
 		L1SubCtl1: PCI-PM_L1.2+ PCI-PM_L1.1+ ASPM_L1.2+ ASPM_L1.1+
@@ -912,8 +910,7 @@ _PwrOn=150us
 	Kernel driver in use: serial
 
 02:00.2 Serial controller [0700]: Realtek Semiconductor Co., Ltd. Device [10ec:816b] (rev 0e) (prog-if 02 [16550])
-	Subsystem: Lenovo Device [1pcilib: sysfs_read_vpd: read failed: Input/output error
-7aa:5081]
+	Subsystem: Lenovo Device [17aa:5081]
 	Control: I/O+ Mem+ BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
 	Interrupt: pin C routed to IRQ 35
@@ -984,8 +981,7 @@ _PwrOn=150us
 	Region 0: I/O ports at 3000 [disabled] [size=256]
 	Region 2: Memory at fd917000 (64-bit, non-prefetchable) [disabled] [size=4K]
 	Region 4: Memory at fd90c000 (64-bit, non-prefetchable) [disabled] [size=16K]
-	Capabilities: [pcilib: sysfs_read_vpd: read failed: Input/output error
-40] Power Management version 3
+	Capabilities: [40] Power Management version 3
 		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=375mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
 		Status: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-
 	Capabilities: [50] MSI: Enable- Count=1/1 Maskable- 64bit+
@@ -1056,8 +1052,7 @@ _PwrOn=150us
 	Capabilities: [70] Express (v2) Endpoint, MSI 01
 		DevCap:	MaxPayload 128 bytes, PhantFunc 0, Latency L0s unlimited, L1 <64us
 			ExtTag- AttnBtn- AttnInd- PwrInd- RBE+ FLReset- SlotPowerLimit 0.000W
-		DevCtl:	CorrErr- NonFatalErrpcilib: sysfs_read_vpd: read failed: Input/output error
-- FatalErr- UnsupReq-
+		DevCtl:	CorrErr- NonFatalErr- FatalErr- UnsupReq-
 			RlxdOrd+ ExtTag- PhantFunc- AuxPwr- NoSnoop-
 			MaxPayload 128 bytes, MaxReadReq 512 bytes
 		DevSta:	CorrErr+ NonFatalErr- FatalErr- UnsupReq+ AuxPwr+ TransPend-
