@@ -1,5 +1,5 @@
 Most popular PCI devices in Phones
-==================================
+----------------------------------
 
 See more info in the [README](https://github.com/linuxhw/LsPCI).
 
@@ -22,7 +22,7 @@ Probe  - latest probe ID of this device.
 | ID        | Subsystem | MFG              | Name                                 | Count | Driver     | Probe |
 |-----------|-----------|------------------|--------------------------------------|-------|------------|-------|
 | 17cb:0300 |           | Qualcomm         | MDM9x35 LTE Modem [Snapdragon X7]    | 3     |            | [D8266AEABE](<Phone/LGE/MSM8992/MSM8992 BULLHEAD rev-1.01/20C223135E53/ANDROID/3.10.75-GEA25E2DA97C/ARMV8L/D8266AEABE>) |
-| 144d:a575 |           | Samsung Elect... | Electronics PCI bridge               | 1     | pcieport   | [BE53B9C57D](<Phone/Others/Others/Others/B44599977B84/ANDROID/3.10.108-HYPER-FLX-G20A9023/ARMV8L/BE53B9C57D>) |
+| 144d:a575 |           | Samsung Elect... | Exynos 7420 PCIe Root Complex        | 1     | pcieport   | [BE53B9C57D](<Phone/Others/Others/Others/B44599977B84/ANDROID/3.10.108-HYPER-FLX-G20A9023/ARMV8L/BE53B9C57D>) |
 | 144d:ecec |           | Samsung Elect... | Exynos 8895 PCIe Root Complex        | 1     | pcieport   | [6F31AB4962](<Phone/Others/Others/Others/FCE945DC2231/ANDROID/4.4.111-GABD876B3B5FC/ARMV8L/6F31AB4962>) |
 
 ### Net/wireless (PCI)
