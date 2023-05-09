@@ -1,0 +1,72 @@
+00:00.0 Host bridge [0600]: Intel Corporation 440BX/ZX/DX - 82443BX/ZX/DX Host bridge (AGP disabled) [8086:7192] (rev 03)
+	Subsystem: Intel Corporation Dell PowerEdge 350 [8086:7190]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort+ >SERR- <PERR- INTx-
+	Latency: 64
+	Region 0: Memory at <unassigned> (32-bit, prefetchable) [virtual] [size=4M]
+
+00:07.0 ISA bridge [0601]: Intel Corporation 82371AB/EB/MB PIIX4 ISA [8086:7110] (rev 02)
+	Control: I/O+ Mem+ BusMaster+ SpecCycle+ MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+
+00:07.1 IDE interface [0101]: Intel Corporation 82371AB/EB/MB PIIX4 IDE [8086:7111] (rev 01) (prog-if 80 [ISA Compatibility mode-only controller, supports bus mastering])
+	Control: I/O+ Mem- BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 64
+	Region 0: Memory at 000001f0 (32-bit, non-prefetchable) [virtual] [size=8]
+	Region 1: Memory at 000003f0 (type 3, non-prefetchable) [virtual]
+	Region 2: Memory at 00000170 (32-bit, non-prefetchable) [virtual] [size=8]
+	Region 3: Memory at 00000370 (type 3, non-prefetchable) [virtual]
+	Region 4: I/O ports at ffa0 [virtual] [size=16]
+	Kernel driver in use: ata_piix
+	Kernel modules: ata_piix, ata_generic
+
+00:07.2 USB controller [0c03]: Intel Corporation 82371AB/EB/MB PIIX4 USB [8086:7112] (rev 01) (prog-if 00 [UHCI])
+	Control: I/O+ Mem- BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 64
+	Interrupt: pin D routed to IRQ 11
+	Region 4: I/O ports at ef80 [size=32]
+	Kernel driver in use: uhci_hcd
+	Kernel modules: uhci_hcd
+
+00:07.3 Bridge [0680]: Intel Corporation 82371AB/EB/MB PIIX4 ACPI [8086:7113] (rev 02)
+	Control: I/O+ Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Interrupt: pin ? routed to IRQ 9
+	Kernel driver in use: piix4_smbus
+	Kernel modules: i2c_piix4
+
+00:0c.0 Ethernet controller [0200]: Intel Corporation 82557/8/9/0/1 Ethernet Pro 100 [8086:1229] (rev 08)
+	Subsystem: Intel Corporation 82559 Fast Ethernet LAN on Motherboard [8086:3000]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV+ VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 64 (2000ns min, 14000ns max), Cache Line Size: 32 bytes
+	Interrupt: pin A routed to IRQ 10
+	Region 0: Memory at ffaff000 (32-bit, non-prefetchable) [size=4K]
+	Region 1: I/O ports at ef00 [size=64]
+	Region 2: Memory at ff900000 (32-bit, non-prefetchable) [size=1M]
+	Expansion ROM at ff800000 [disabled] [size=1M]
+	Capabilities: [dc] Power Management version 2
+		Flags: PMEClk- DSI+ D1+ D2+ AuxCurrent=0mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=2 PME-
+	Kernel driver in use: e100
+	Kernel modules: e100
+
+00:0d.0 Ethernet controller [0200]: Intel Corporation 82557/8/9/0/1 Ethernet Pro 100 [8086:1229] (rev 08)
+	Subsystem: Intel Corporation 82559 Fast Ethernet LAN on Motherboard [8086:3000]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV+ VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 64 (2000ns min, 14000ns max), Cache Line Size: 32 bytes
+	Interrupt: pin A routed to IRQ 10
+	Region 0: Memory at ffafe000 (32-bit, non-prefetchable) [size=4K]
+	Region 1: I/O ports at ee80 [size=64]
+	Region 2: Memory at ff700000 (32-bit, non-prefetchable) [size=1M]
+	Expansion ROM at ff600000 [disabled] [size=1M]
+	Capabilities: [dc] Power Management version 2
+		Flags: PMEClk- DSI+ D1+ D2+ AuxCurrent=0mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=2 PME-
+	Kernel driver in use: e100
+	Kernel modules: e100
+

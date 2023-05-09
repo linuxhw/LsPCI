@@ -1,0 +1,285 @@
+00:00.0 Host bridge [0600]: Intel Corporation 2nd Generation Core Processor Family DRAM Controller [8086:0100] (rev 09)
+	Subsystem: Intel Corporation 2nd Generation Core Processor Family DRAM Controller [8086:2013]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort+ >SERR- <PERR- INTx-
+	Latency: 0
+	Capabilities: [e0] Vendor Specific Information: Len=0c <?>
+	Kernel driver in use: snb_uncore
+
+00:02.0 VGA compatible controller [0300]: Intel Corporation 2nd Generation Core Processor Family Integrated Graphics Controller [8086:0102] (rev 09) (prog-if 00 [VGA controller])
+	Subsystem: Intel Corporation 2nd Generation Core Processor Family Integrated Graphics Controller [8086:2013]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Interrupt: pin A routed to IRQ 34
+	Region 0: Memory at fe000000 (64-bit, non-prefetchable) [size=4M]
+	Region 2: Memory at e0000000 (64-bit, prefetchable) [size=256M]
+	Region 4: I/O ports at f000 [size=64]
+	[virtual] Expansion ROM at 000c0000 [disabled] [size=128K]
+	Capabilities: [90] MSI: Enable+ Count=1/1 Maskable- 64bit-
+		Address: fee01004  Data: 4024
+	Capabilities: [d0] Power Management version 2
+		Flags: PMEClk- DSI+ D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [a4] PCI Advanced Features
+		AFCap: TP+ FLR+
+		AFCtrl: FLR-
+		AFStatus: TP-
+	Kernel driver in use: i915
+	Kernel modules: i915
+
+00:16.0 Communication controller [0780]: Intel Corporation 6 Series/C200 Series Chipset Family MEI Controller #1 [8086:1c3a] (rev 04)
+	Subsystem: Intel Corporation 6 Series/C200 Series Chipset Family MEI Controller [8086:2013]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Interrupt: pin A routed to IRQ 33
+	Region 0: Memory at fe525000 (64-bit, non-prefetchable) [size=16]
+	Capabilities: [50] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [8c] MSI: Enable+ Count=1/1 Maskable- 64bit+
+		Address: 00000000fee08004  Data: 4024
+	Kernel driver in use: mei_me
+	Kernel modules: mei_me
+
+00:19.0 Ethernet controller [0200]: Intel Corporation 82579V Gigabit Network Connection [8086:1503] (rev 05)
+	Subsystem: Intel Corporation 82579V Gigabit Network Connection [8086:2013]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Interrupt: pin A routed to IRQ 26
+	Region 0: Memory at fe500000 (32-bit, non-prefetchable) [size=128K]
+	Region 1: Memory at fe524000 (32-bit, non-prefetchable) [size=4K]
+	Region 2: I/O ports at f080 [size=32]
+	Capabilities: [c8] Power Management version 2
+		Flags: PMEClk- DSI+ D1- D2- AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=1 PME-
+	Capabilities: [d0] MSI: Enable+ Count=1/1 Maskable- 64bit+
+		Address: 00000000fee08004  Data: 4022
+	Capabilities: [e0] PCI Advanced Features
+		AFCap: TP+ FLR+
+		AFCtrl: FLR-
+		AFStatus: TP-
+	Kernel driver in use: e1000e
+	Kernel modules: e1000e
+
+00:1a.0 USB controller [0c03]: Intel Corporation 6 Series/C200 Series Chipset Family USB Enhanced Host Controller #2 [8086:1c2d] (rev 05) (prog-if 20 [EHCI])
+	Subsystem: Intel Corporation 6 Series/C200 Series Chipset Family USB Enhanced Host Controller [8086:2013]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Interrupt: pin A routed to IRQ 16
+	Region 0: Memory at fe523000 (32-bit, non-prefetchable) [size=1K]
+	Capabilities: [50] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=375mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [58] Debug port: BAR=1 offset=00a0
+	Capabilities: [98] PCI Advanced Features
+		AFCap: TP+ FLR+
+		AFCtrl: FLR-
+		AFStatus: TP-
+	Kernel driver in use: ehci-pci
+	Kernel modules: ehci_pci
+
+00:1c.0 PCI bridge [0604]: Intel Corporation 6 Series/C200 Series Chipset Family PCI Express Root Port 1 [8086:1c10] (rev b5) (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 24
+	Bus: primary=00, secondary=01, subordinate=01, sec-latency=0
+	Secondary status: 66MHz- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort+ <SERR- <PERR-
+	BridgeCtl: Parity- SERR- NoISA- VGA- MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Capabilities: [40] Express (v2) Root Port (Slot+), MSI 00
+		DevCap:	MaxPayload 128 bytes, PhantFunc 0
+			ExtTag- RBE+
+		DevCtl:	Report errors: Correctable- Non-Fatal- Fatal- Unsupported-
+			RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+			MaxPayload 128 bytes, MaxReadReq 128 bytes
+		DevSta:	CorrErr- UncorrErr- FatalErr- UnsuppReq- AuxPwr+ TransPend-
+		LnkCap:	Port #1, Speed 5GT/s, Width x1, ASPM L0s L1, Exit Latency L0s <1us, L1 <4us
+			ClockPM- Surprise- LLActRep+ BwNot- ASPMOptComp-
+		LnkCtl:	ASPM Disabled; RCB 64 bytes Disabled- CommClk-
+			ExtSynch- ClockPM- AutWidDis- BWInt- AutBWInt-
+		LnkSta:	Speed 2.5GT/s, Width x0, TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-
+		SltCap:	AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug- Surprise-
+			Slot #0, PowerLimit 10.000W; Interlock- NoCompl+
+		SltCtl:	Enable: AttnBtn- PwrFlt- MRL- PresDet- CmdCplt- HPIrq- LinkChg-
+			Control: AttnInd Unknown, PwrInd Unknown, Power- Interlock-
+		SltSta:	Status: AttnBtn- PowerFlt- MRL- CmdCplt- PresDet- Interlock-
+			Changed: MRL- PresDet- LinkState-
+		RootCtl: ErrCorrectable- ErrNon-Fatal- ErrFatal- PMEIntEna+ CRSVisible-
+		RootCap: CRSVisible-
+		RootSta: PME ReqID 0000, PMEStatus- PMEPending-
+		DevCap2: Completion Timeout: Range BC, TimeoutDis+, LTR-, OBFF Not Supported ARIFwd-
+		DevCtl2: Completion Timeout: 50us to 50ms, TimeoutDis-, LTR-, OBFF Disabled ARIFwd-
+		LnkCtl2: Target Link Speed: 2.5GT/s, EnterCompliance- SpeedDis-
+			 Transmit Margin: Normal Operating Range, EnterModifiedCompliance- ComplianceSOS-
+			 Compliance De-emphasis: -6dB
+		LnkSta2: Current De-emphasis Level: -3.5dB, EqualizationComplete-, EqualizationPhase1-
+			 EqualizationPhase2-, EqualizationPhase3-, LinkEqualizationRequest-
+	Capabilities: [80] MSI: Enable+ Count=1/1 Maskable- 64bit-
+		Address: fee04004  Data: 4021
+	Capabilities: [90] Subsystem: Intel Corporation 6 Series/C200 Series Chipset Family PCI Express Root Port 1 [8086:2013]
+	Capabilities: [a0] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: pcieport
+
+00:1c.1 PCI bridge [0604]: Intel Corporation 6 Series/C200 Series Chipset Family PCI Express Root Port 2 [8086:1c12] (rev b5) (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin B routed to IRQ 25
+	Bus: primary=00, secondary=02, subordinate=02, sec-latency=0
+	Memory behind bridge: fe400000-fe4fffff
+	Secondary status: 66MHz- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort+ <SERR- <PERR-
+	BridgeCtl: Parity- SERR- NoISA- VGA- MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Capabilities: [40] Express (v2) Root Port (Slot+), MSI 00
+		DevCap:	MaxPayload 128 bytes, PhantFunc 0
+			ExtTag- RBE+
+		DevCtl:	Report errors: Correctable- Non-Fatal- Fatal- Unsupported-
+			RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+			MaxPayload 128 bytes, MaxReadReq 128 bytes
+		DevSta:	CorrErr- UncorrErr- FatalErr- UnsuppReq- AuxPwr+ TransPend-
+		LnkCap:	Port #2, Speed 5GT/s, Width x1, ASPM L1, Exit Latency L0s <512ns, L1 <4us
+			ClockPM- Surprise- LLActRep+ BwNot- ASPMOptComp-
+		LnkCtl:	ASPM Disabled; RCB 64 bytes Disabled- CommClk+
+			ExtSynch- ClockPM- AutWidDis- BWInt- AutBWInt-
+		LnkSta:	Speed 5GT/s, Width x1, TrErr- Train- SlotClk+ DLActive+ BWMgmt+ ABWMgmt-
+		SltCap:	AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug- Surprise-
+			Slot #1, PowerLimit 10.000W; Interlock- NoCompl+
+		SltCtl:	Enable: AttnBtn- PwrFlt- MRL- PresDet- CmdCplt- HPIrq- LinkChg-
+			Control: AttnInd Unknown, PwrInd Unknown, Power- Interlock-
+		SltSta:	Status: AttnBtn- PowerFlt- MRL- CmdCplt- PresDet+ Interlock-
+			Changed: MRL- PresDet- LinkState+
+		RootCtl: ErrCorrectable- ErrNon-Fatal- ErrFatal- PMEIntEna+ CRSVisible-
+		RootCap: CRSVisible-
+		RootSta: PME ReqID 0000, PMEStatus- PMEPending-
+		DevCap2: Completion Timeout: Range BC, TimeoutDis+, LTR-, OBFF Not Supported ARIFwd-
+		DevCtl2: Completion Timeout: 50us to 50ms, TimeoutDis-, LTR-, OBFF Disabled ARIFwd-
+		LnkCtl2: Target Link Speed: 5GT/s, EnterCompliance- SpeedDis-
+			 Transmit Margin: Normal Operating Range, EnterModifiedCompliance- ComplianceSOS-
+			 Compliance De-emphasis: -6dB
+		LnkSta2: Current De-emphasis Level: -6dB, EqualizationComplete-, EqualizationPhase1-
+			 EqualizationPhase2-, EqualizationPhase3-, LinkEqualizationRequest-
+	Capabilities: [80] MSI: Enable+ Count=1/1 Maskable- 64bit-
+		Address: fee08004  Data: 4021
+	Capabilities: [90] Subsystem: Intel Corporation 6 Series/C200 Series Chipset Family PCI Express Root Port 2 [8086:2013]
+	Capabilities: [a0] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: pcieport
+
+00:1d.0 USB controller [0c03]: Intel Corporation 6 Series/C200 Series Chipset Family USB Enhanced Host Controller #1 [8086:1c26] (rev 05) (prog-if 20 [EHCI])
+	Subsystem: Intel Corporation 6 Series/C200 Series Chipset Family USB Enhanced Host Controller [8086:2013]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Interrupt: pin A routed to IRQ 23
+	Region 0: Memory at fe522000 (32-bit, non-prefetchable) [size=1K]
+	Capabilities: [50] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=375mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [58] Debug port: BAR=1 offset=00a0
+	Capabilities: [98] PCI Advanced Features
+		AFCap: TP+ FLR+
+		AFCtrl: FLR-
+		AFStatus: TP-
+	Kernel driver in use: ehci-pci
+	Kernel modules: ehci_pci
+
+00:1f.0 ISA bridge [0601]: Intel Corporation H61 Express Chipset Family LPC Controller [8086:1c5c] (rev 05)
+	Subsystem: Intel Corporation H61 Express Chipset LPC Controller [8086:2013]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Capabilities: [e0] Vendor Specific Information: Len=0c <?>
+	Kernel driver in use: lpc_ich
+	Kernel modules: lpc_ich
+
+00:1f.2 SATA controller [0106]: Intel Corporation 6 Series/C200 Series Chipset Family SATA AHCI Controller [8086:1c02] (rev 05) (prog-if 01 [AHCI 1.0])
+	Subsystem: Intel Corporation 6 Series/C200 Series Chipset Family 6 port Desktop SATA AHCI Controller [8086:2013]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Interrupt: pin B routed to IRQ 32
+	Region 0: I/O ports at f0d0 [size=8]
+	Region 1: I/O ports at f0c0 [size=4]
+	Region 2: I/O ports at f0b0 [size=8]
+	Region 3: I/O ports at f0a0 [size=4]
+	Region 4: I/O ports at f060 [size=32]
+	Region 5: Memory at fe521000 (32-bit, non-prefetchable) [size=2K]
+	Capabilities: [80] MSI: Enable+ Count=1/1 Maskable- 64bit-
+		Address: fee02004  Data: 4024
+	Capabilities: [70] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot+,D3cold-)
+		Status: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [a8] SATA HBA v1.0 BAR4 Offset=00000004
+	Capabilities: [b0] PCI Advanced Features
+		AFCap: TP+ FLR+
+		AFCtrl: FLR-
+		AFStatus: TP-
+	Kernel driver in use: ahci
+	Kernel modules: ahci
+
+00:1f.3 SMBus [0c05]: Intel Corporation 6 Series/C200 Series Chipset Family SMBus Controller [8086:1c22] (rev 05)
+	Subsystem: Intel Corporation 6 Series/C200 Series Chipset Family SMBus Controller [8086:2013]
+	Control: I/O+ Mem+ BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Interrupt: pin C routed to IRQ 18
+	Region 0: Memory at fe520000 (64-bit, non-prefetchable) [size=256]
+	Region 4: I/O ports at f040 [size=32]
+	Kernel driver in use: i801_smbus
+	Kernel modules: i2c_i801
+
+02:00.0 USB controller [0c03]: NEC Corporation uPD720200 USB 3.0 Host Controller [1033:0194] (rev 03) (prog-if 30 [XHCI])
+	Subsystem: Intel Corporation uPD720200 USB 3.0 Host Controller [8086:2013]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 17
+	Region 0: Memory at fe400000 (64-bit, non-prefetchable) [size=8K]
+	Capabilities: [50] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=375mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [70] MSI: Enable- Count=1/8 Maskable- 64bit+
+		Address: 0000000000000000  Data: 0000
+	Capabilities: [90] MSI-X: Enable+ Count=8 Masked-
+		Vector table: BAR=0 offset=00001000
+		PBA: BAR=0 offset=00001080
+	Capabilities: [a0] Express (v2) Endpoint, MSI 00
+		DevCap:	MaxPayload 128 bytes, PhantFunc 0, Latency L0s unlimited, L1 unlimited
+			ExtTag- AttnBtn- AttnInd- PwrInd- RBE+ FLReset- SlotPowerLimit 0.000W
+		DevCtl:	Report errors: Correctable- Non-Fatal- Fatal- Unsupported-
+			RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop+
+			MaxPayload 128 bytes, MaxReadReq 512 bytes
+		DevSta:	CorrErr+ UncorrErr- FatalErr- UnsuppReq+ AuxPwr+ TransPend-
+		LnkCap:	Port #0, Speed 5GT/s, Width x1, ASPM L0s L1, Exit Latency L0s <4us, L1 unlimited
+			ClockPM+ Surprise- LLActRep- BwNot- ASPMOptComp-
+		LnkCtl:	ASPM Disabled; RCB 64 bytes Disabled- CommClk+
+			ExtSynch- ClockPM+ AutWidDis- BWInt- AutBWInt-
+		LnkSta:	Speed 5GT/s, Width x1, TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-
+		DevCap2: Completion Timeout: Not Supported, TimeoutDis+, LTR+, OBFF Not Supported
+		DevCtl2: Completion Timeout: 50us to 50ms, TimeoutDis-, LTR-, OBFF Disabled
+		LnkCtl2: Target Link Speed: 5GT/s, EnterCompliance- SpeedDis-
+			 Transmit Margin: Normal Operating Range, EnterModifiedCompliance- ComplianceSOS-
+			 Compliance De-emphasis: -6dB
+		LnkSta2: Current De-emphasis Level: -6dB, EqualizationComplete-, EqualizationPhase1-
+			 EqualizationPhase2-, EqualizationPhase3-, LinkEqualizationRequest-
+	Capabilities: [100 v1] Advanced Error Reporting
+		UESta:	DLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt- UnxCmplt- RxOF- MalfTLP- ECRC- UnsupReq- ACSViol-
+		UEMsk:	DLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt- UnxCmplt- RxOF- MalfTLP- ECRC- UnsupReq- ACSViol-
+		UESvrt:	DLP+ SDES+ TLP- FCP+ CmpltTO- CmpltAbrt- UnxCmplt- RxOF+ MalfTLP+ ECRC- UnsupReq- ACSViol-
+		CESta:	RxErr- BadTLP- BadDLLP- Rollover- Timeout- NonFatalErr-
+		CEMsk:	RxErr- BadTLP- BadDLLP- Rollover- Timeout- NonFatalErr+
+		AERCap:	First Error Pointer: 00, GenCap- CGenEn- ChkCap- ChkEn-
+	Capabilities: [140 v1] Device Serial Number ...
+	Capabilities: [150 v1] Latency Tolerance Reporting
+		Max snoop latency: 0ns
+		Max no snoop latency: 0ns
+	Kernel driver in use: xhci_hcd
+	Kernel modules: xhci_pci
+
