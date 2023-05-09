@@ -1,0 +1,626 @@
+00:00.0 Host bridge [0600]: NVIDIA Corporation MCP79 Host Bridge [10de:0a82] (rev b1)
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+
+00:00.1 RAM memory [0500]: NVIDIA Corporation MCP79 Memory Controller [10de:0a88] (rev b1)
+	Control: I/O- Mem- BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+
+00:03.0 ISA bridge [0601]: NVIDIA Corporation MCP79 LPC Bridge [10de:0aae] (rev b2)
+	Subsystem: Mitac MCP79 LPC Bridge [1071:9072]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle+ MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Region 0: I/O ports at 1c00 [size=256]
+
+00:03.1 RAM memory [0500]: NVIDIA Corporation MCP79 Memory Controller [10de:0aa4] (rev b1)
+	Subsystem: Mitac MCP79 Memory Controller [1071:9072]
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
+	Status: Cap- 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+
+00:03.2 SMBus [0c05]: NVIDIA Corporation MCP79 SMBus [10de:0aa2] (rev b1)
+	Subsystem: Mitac MCP79 SMBus [1071:9072]
+	Control: I/O+ Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Interrupt: pin A routed to IRQ 10
+	Region 0: I/O ports at 3080 [size=64]
+	Region 4: I/O ports at 3040 [size=64]
+	Region 5: I/O ports at 2000 [size=64]
+	Capabilities: [44] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: nForce2_smbus
+	Kernel modules: i2c_nforce2, nv_tco
+
+00:03.3 RAM memory [0500]: NVIDIA Corporation MCP79 Memory Controller [10de:0a89] (rev b1)
+	Subsystem: Mitac MCP79 Memory Controller [1071:9072]
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz+ UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+
+00:03.5 Co-processor [0b40]: NVIDIA Corporation MCP79 Co-processor [10de:0aa3] (rev b1)
+	Subsystem: Mitac MCP79 Co-processor [1071:9072]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0 (750ns min, 250ns max)
+	Interrupt: pin B routed to IRQ 11
+	Region 0: Memory at f0700000 (32-bit, non-prefetchable) [size=512K]
+
+00:04.0 USB controller [0c03]: NVIDIA Corporation MCP79 OHCI USB 1.1 Controller [10de:0aa5] (rev b1) (prog-if 10 [OHCI])
+	Subsystem: Mitac MCP79 OHCI USB 1.1 Controller [1071:9072]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0 (750ns min, 250ns max)
+	Interrupt: pin A routed to IRQ 23
+	Region 0: Memory at f0786000 (32-bit, non-prefetchable) [size=4K]
+	Capabilities: [44] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: ohci-pci
+	Kernel modules: ohci_pci
+
+00:04.1 USB controller [0c03]: NVIDIA Corporation MCP79 EHCI USB 2.0 Controller [10de:0aa6] (rev b1) (prog-if 20 [EHCI])
+	Subsystem: Mitac MCP79 EHCI USB 2.0 Controller [1071:9072]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0 (750ns min, 250ns max)
+	Interrupt: pin B routed to IRQ 22
+	Region 0: Memory at f0789000 (32-bit, non-prefetchable) [size=256]
+	Capabilities: [44] Debug port: BAR=1 offset=00a0
+	Capabilities: [80] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME+
+	Kernel driver in use: ehci-pci
+	Kernel modules: ehci_pci
+
+00:06.0 USB controller [0c03]: NVIDIA Corporation MCP79 OHCI USB 1.1 Controller [10de:0aa7] (rev b1) (prog-if 10 [OHCI])
+	Subsystem: Mitac MCP79 OHCI USB 1.1 Controller [1071:9072]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0 (750ns min, 250ns max)
+	Interrupt: pin A routed to IRQ 21
+	Region 0: Memory at f0787000 (32-bit, non-prefetchable) [size=4K]
+	Capabilities: [44] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: ohci-pci
+	Kernel modules: ohci_pci
+
+00:06.1 USB controller [0c03]: NVIDIA Corporation MCP79 EHCI USB 2.0 Controller [10de:0aa9] (rev b1) (prog-if 20 [EHCI])
+	Subsystem: Mitac MCP79 EHCI USB 2.0 Controller [1071:9072]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0 (750ns min, 250ns max)
+	Interrupt: pin B routed to IRQ 20
+	Region 0: Memory at f0789400 (32-bit, non-prefetchable) [size=256]
+	Capabilities: [44] Debug port: BAR=1 offset=00a0
+	Capabilities: [80] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: ehci-pci
+	Kernel modules: ehci_pci
+
+00:08.0 Audio device [0403]: NVIDIA Corporation MCP79 High Definition Audio [10de:0ac0] (rev b1)
+	Subsystem: Mitac MCP79 High Definition Audio [1071:9072]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0 (500ns min, 1250ns max)
+	Interrupt: pin A routed to IRQ 17
+	Region 0: Memory at f0780000 (32-bit, non-prefetchable) [size=16K]
+	Capabilities: [44] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: snd_hda_intel
+	Kernel modules: snd_hda_intel
+
+00:09.0 PCI bridge [0604]: NVIDIA Corporation MCP79 PCI Bridge [10de:0aab] (rev b1) (prog-if 01 [Subtractive decode])
+	Subsystem: NVIDIA Corporation Apple iMac 9,1 [10de:cb79]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Bus: primary=00, secondary=01, subordinate=01, sec-latency=0
+	I/O behind bridge: [disabled] [16-bit]
+	Memory behind bridge: [disabled] [32-bit]
+	Prefetchable memory behind bridge: [disabled] [32-bit]
+	Secondary status: 66MHz- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort+ <SERR- <PERR-
+	BridgeCtl: Parity- SERR+ NoISA+ VGA- VGA16- MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr+ DiscTmrStat- DiscTmrSERREn-
+	Capabilities: [b8] Subsystem: NVIDIA Corporation Apple iMac 9,1 [10de:cb79]
+
+00:0a.0 Ethernet controller [0200]: NVIDIA Corporation MCP79 Ethernet [10de:0ab0] (rev b1)
+	Subsystem: Mitac MCP79 Ethernet [1071:9072]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0 (250ns min, 5000ns max)
+	Interrupt: pin A routed to IRQ 18
+	Region 0: Memory at f0788000 (32-bit, non-prefetchable) [size=4K]
+	Region 1: I/O ports at 30d0 [size=8]
+	Region 2: Memory at f0789c00 (32-bit, non-prefetchable) [size=256]
+	Region 3: Memory at f0789800 (32-bit, non-prefetchable) [size=16]
+	Capabilities: [44] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable+ DSel=0 DScale=0 PME-
+	Kernel driver in use: forcedeth
+	Kernel modules: forcedeth
+
+00:0b.0 SATA controller [0106]: NVIDIA Corporation MCP79 AHCI Controller [10de:0ab9] (rev b1) (prog-if 01 [AHCI 1.0])
+	Subsystem: Mitac MCP79 AHCI Controller [1071:9072]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx+
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0 (750ns min, 250ns max)
+	Interrupt: pin A routed to IRQ 29
+	Region 0: I/O ports at 30e8 [size=8]
+	Region 1: I/O ports at 30dc [size=4]
+	Region 2: I/O ports at 30e0 [size=8]
+	Region 3: I/O ports at 30d8 [size=4]
+	Region 4: I/O ports at 30c0 [size=16]
+	Region 5: Memory at f0784000 (32-bit, non-prefetchable) [size=8K]
+	Capabilities: [44] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [8c] SATA HBA v1.0 InCfgSpace
+	Capabilities: [b0] MSI: Enable+ Count=1/8 Maskable- 64bit+
+		Address: 00000000fee01004  Data: 0027
+	Kernel driver in use: ahci
+	Kernel modules: ahci
+
+00:0c.0 PCI bridge [0604]: NVIDIA Corporation MCP79 PCI Express Bridge [10de:0ac4] (rev b1) (prog-if 00 [Normal decode])
+	Subsystem: NVIDIA Corporation MCP79 PCI Express Bridge [10de:0000]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx+
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 24
+	Bus: primary=00, secondary=02, subordinate=02, sec-latency=0
+	I/O behind bridge: 4000-4fff [size=4K] [16-bit]
+	Memory behind bridge: ae000000-afefffff [size=31M] [32-bit]
+	Prefetchable memory behind bridge: ce000000-dfffffff [size=288M] [32-bit]
+	Secondary status: 66MHz- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort+ <SERR- <PERR-
+	BridgeCtl: Parity- SERR+ NoISA+ VGA- VGA16- MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Capabilities: [40] Subsystem: NVIDIA Corporation MCP79 PCI Express Bridge [10de:0000]
+	Capabilities: [48] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [50] MSI: Enable+ Count=1/2 Maskable- 64bit+
+		Address: 00000000fee01004  Data: 0021
+	Capabilities: [80] Express (v2) Root Port (Slot+), MSI 00
+		DevCap:	MaxPayload 256 bytes, PhantFunc 0
+			ExtTag+ RBE+
+		DevCtl:	CorrErr- NonFatalErr- FatalErr- UnsupReq-
+			RlxdOrd+ ExtTag+ PhantFunc- AuxPwr- NoSnoop-
+			MaxPayload 128 bytes, MaxReadReq 512 bytes
+		DevSta:	CorrErr+ NonFatalErr- FatalErr- UnsupReq- AuxPwr- TransPend-
+		LnkCap:	Port #0, Speed 5GT/s, Width x16, ASPM L0s L1, Exit Latency L0s <512ns, L1 <4us
+			ClockPM- Surprise- LLActRep+ BwNot+ ASPMOptComp-
+		LnkCtl:	ASPM Disabled; RCB 64 bytes, Disabled- CommClk+
+			ExtSynch- ClockPM- AutWidDis- BWInt- AutBWInt-
+		LnkSta:	Speed 5GT/s, Width x16
+			TrErr- Train- SlotClk+ DLActive+ BWMgmt+ ABWMgmt-
+		SltCap:	AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug- Surprise-
+			Slot #0, PowerLimit 0W; Interlock- NoCompl-
+		SltCtl:	Enable: AttnBtn- PwrFlt- MRL- PresDet- CmdCplt- HPIrq+ LinkChg+
+			Control: AttnInd Off, PwrInd On, Power- Interlock-
+		SltSta:	Status: AttnBtn- PowerFlt- MRL- CmdCplt- PresDet+ Interlock-
+			Changed: MRL- PresDet+ LinkState+
+		RootCap: CRSVisible-
+		RootCtl: ErrCorrectable- ErrNon-Fatal- ErrFatal- PMEIntEna- CRSVisible-
+		RootSta: PME ReqID 0000, PMEStatus- PMEPending-
+		DevCap2: Completion Timeout: Range AB, TimeoutDis+ NROPrPrP- LTR-
+			 10BitTagComp- 10BitTagReq- OBFF Not Supported, ExtFmt- EETLPPrefix-
+			 EmergencyPowerReduction Not Supported, EmergencyPowerReductionInit-
+			 FRS- LN System CLS Not Supported, TPHComp- ExtTPHComp- ARIFwd-
+			 AtomicOpsCap: Routing- 32bit- 64bit- 128bitCAS-
+		DevCtl2: Completion Timeout: 65ms to 210ms, TimeoutDis- LTR- 10BitTagReq- OBFF Disabled, ARIFwd-
+			 AtomicOpsCtl: ReqEn- EgressBlck-
+		LnkCtl2: Target Link Speed: 5GT/s, EnterCompliance- SpeedDis-
+			 Transmit Margin: Normal Operating Range, EnterModifiedCompliance- ComplianceSOS-
+			 Compliance Preset/De-emphasis: -6dB de-emphasis, 0dB preshoot
+		LnkSta2: Current De-emphasis Level: -3.5dB, EqualizationComplete- EqualizationPhase1-
+			 EqualizationPhase2- EqualizationPhase3- LinkEqualizationRequest-
+			 Retimer- 2Retimers- CrosslinkRes: unsupported
+	Kernel driver in use: pcieport
+
+00:10.0 PCI bridge [0604]: NVIDIA Corporation MCP79 PCI Express Bridge [10de:0aa0] (rev b1) (prog-if 00 [Normal decode])
+	Subsystem: NVIDIA Corporation MCP79 PCI Express Bridge [10de:0000]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 64 bytes
+	Bus: primary=00, secondary=03, subordinate=03, sec-latency=0
+	I/O behind bridge: 5000-5fff [size=4K] [16-bit]
+	Memory behind bridge: ac000000-acffffff [size=16M] [32-bit]
+	Prefetchable memory behind bridge: b0000000-cbffffff [size=448M] [32-bit]
+	Secondary status: 66MHz- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort+ <SERR- <PERR-
+	BridgeCtl: Parity- SERR+ NoISA+ VGA+ VGA16- MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Capabilities: [40] Subsystem: NVIDIA Corporation MCP79 PCI Express Bridge [10de:0000]
+	Capabilities: [48] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [50] MSI: Enable- Count=1/2 Maskable- 64bit+
+		Address: 0000000000000000  Data: 0000
+
+00:15.0 PCI bridge [0604]: NVIDIA Corporation MCP79 PCI Express Bridge [10de:0ac6] (rev b1) (prog-if 00 [Normal decode])
+	Subsystem: NVIDIA Corporation MCP79 PCI Express Bridge [10de:0000]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx+
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 25
+	Bus: primary=00, secondary=04, subordinate=05, sec-latency=0
+	I/O behind bridge: 6000-6fff [size=4K] [16-bit]
+	Memory behind bridge: f0200000-f03fffff [size=2M] [32-bit]
+	Prefetchable memory behind bridge: f0000000-f01fffff [size=2M] [32-bit]
+	Secondary status: 66MHz- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- <SERR- <PERR-
+	BridgeCtl: Parity- SERR+ NoISA+ VGA- VGA16- MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Capabilities: [40] Subsystem: NVIDIA Corporation MCP79 PCI Express Bridge [10de:0000]
+	Capabilities: [48] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [50] MSI: Enable+ Count=1/2 Maskable- 64bit+
+		Address: 00000000fee02004  Data: 0022
+	Capabilities: [80] Express (v2) Root Port (Slot+), MSI 00
+		DevCap:	MaxPayload 256 bytes, PhantFunc 0
+			ExtTag+ RBE+
+		DevCtl:	CorrErr- NonFatalErr- FatalErr- UnsupReq-
+			RlxdOrd+ ExtTag+ PhantFunc- AuxPwr- NoSnoop-
+			MaxPayload 128 bytes, MaxReadReq 512 bytes
+		DevSta:	CorrErr- NonFatalErr- FatalErr- UnsupReq- AuxPwr- TransPend-
+		LnkCap:	Port #3, Speed 2.5GT/s, Width x1, ASPM L0s L1, Exit Latency L0s <512ns, L1 <4us
+			ClockPM- Surprise- LLActRep+ BwNot+ ASPMOptComp-
+		LnkCtl:	ASPM Disabled; RCB 64 bytes, Disabled- CommClk-
+			ExtSynch- ClockPM- AutWidDis- BWInt- AutBWInt-
+		LnkSta:	Speed 2.5GT/s, Width x4 (overdriven)
+			TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-
+		SltCap:	AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug- Surprise-
+			Slot #0, PowerLimit 0W; Interlock- NoCompl-
+		SltCtl:	Enable: AttnBtn- PwrFlt- MRL- PresDet- CmdCplt- HPIrq+ LinkChg+
+			Control: AttnInd Off, PwrInd On, Power- Interlock-
+		SltSta:	Status: AttnBtn- PowerFlt- MRL- CmdCplt- PresDet- Interlock-
+			Changed: MRL- PresDet- LinkState-
+		RootCap: CRSVisible-
+		RootCtl: ErrCorrectable- ErrNon-Fatal- ErrFatal- PMEIntEna- CRSVisible-
+		RootSta: PME ReqID 0000, PMEStatus- PMEPending-
+		DevCap2: Completion Timeout: Range AB, TimeoutDis+ NROPrPrP- LTR-
+			 10BitTagComp- 10BitTagReq- OBFF Not Supported, ExtFmt- EETLPPrefix-
+			 EmergencyPowerReduction Not Supported, EmergencyPowerReductionInit-
+			 FRS- LN System CLS Not Supported, TPHComp- ExtTPHComp- ARIFwd-
+			 AtomicOpsCap: Routing- 32bit- 64bit- 128bitCAS-
+		DevCtl2: Completion Timeout: 65ms to 210ms, TimeoutDis- LTR- 10BitTagReq- OBFF Disabled, ARIFwd-
+			 AtomicOpsCtl: ReqEn- EgressBlck-
+		LnkCtl2: Target Link Speed: 2.5GT/s, EnterCompliance- SpeedDis-
+			 Transmit Margin: Normal Operating Range, EnterModifiedCompliance- ComplianceSOS-
+			 Compliance Preset/De-emphasis: -6dB de-emphasis, 0dB preshoot
+		LnkSta2: Current De-emphasis Level: -3.5dB, EqualizationComplete- EqualizationPhase1-
+			 EqualizationPhase2- EqualizationPhase3- LinkEqualizationRequest-
+			 Retimer- 2Retimers- CrosslinkRes: unsupported
+	Kernel driver in use: pcieport
+
+00:16.0 PCI bridge [0604]: NVIDIA Corporation MCP79 PCI Express Bridge [10de:0ac7] (rev b1) (prog-if 00 [Normal decode])
+	Subsystem: NVIDIA Corporation MCP79 PCI Express Bridge [10de:0000]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx+
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 26
+	Bus: primary=00, secondary=06, subordinate=06, sec-latency=0
+	I/O behind bridge: [disabled] [32-bit]
+	Memory behind bridge: f0400000-f04fffff [size=1M] [32-bit]
+	Prefetchable memory behind bridge: [disabled] [64-bit]
+	Secondary status: 66MHz- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort+ <SERR- <PERR-
+	BridgeCtl: Parity- SERR+ NoISA+ VGA- VGA16- MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Capabilities: [40] Subsystem: NVIDIA Corporation MCP79 PCI Express Bridge [10de:0000]
+	Capabilities: [48] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [50] MSI: Enable+ Count=1/2 Maskable- 64bit+
+		Address: 00000000fee01004  Data: 0022
+	Capabilities: [80] Express (v2) Root Port (Slot+), MSI 00
+		DevCap:	MaxPayload 256 bytes, PhantFunc 0
+			ExtTag+ RBE+
+		DevCtl:	CorrErr- NonFatalErr- FatalErr- UnsupReq-
+			RlxdOrd+ ExtTag+ PhantFunc- AuxPwr- NoSnoop-
+			MaxPayload 128 bytes, MaxReadReq 512 bytes
+		DevSta:	CorrErr- NonFatalErr- FatalErr- UnsupReq- AuxPwr- TransPend-
+		LnkCap:	Port #4, Speed 2.5GT/s, Width x1, ASPM L0s L1, Exit Latency L0s <512ns, L1 <4us
+			ClockPM- Surprise- LLActRep+ BwNot+ ASPMOptComp-
+		LnkCtl:	ASPM Disabled; RCB 64 bytes, Disabled- CommClk+
+			ExtSynch- ClockPM- AutWidDis- BWInt- AutBWInt-
+		LnkSta:	Speed 2.5GT/s, Width x1
+			TrErr- Train- SlotClk+ DLActive+ BWMgmt+ ABWMgmt-
+		SltCap:	AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug- Surprise-
+			Slot #0, PowerLimit 0W; Interlock- NoCompl-
+		SltCtl:	Enable: AttnBtn- PwrFlt- MRL- PresDet- CmdCplt- HPIrq+ LinkChg+
+			Control: AttnInd Off, PwrInd On, Power- Interlock-
+		SltSta:	Status: AttnBtn- PowerFlt- MRL- CmdCplt- PresDet+ Interlock-
+			Changed: MRL- PresDet+ LinkState+
+		RootCap: CRSVisible-
+		RootCtl: ErrCorrectable- ErrNon-Fatal- ErrFatal- PMEIntEna- CRSVisible-
+		RootSta: PME ReqID 0000, PMEStatus- PMEPending-
+		DevCap2: Completion Timeout: Range AB, TimeoutDis+ NROPrPrP- LTR-
+			 10BitTagComp- 10BitTagReq- OBFF Not Supported, ExtFmt- EETLPPrefix-
+			 EmergencyPowerReduction Not Supported, EmergencyPowerReductionInit-
+			 FRS- LN System CLS Not Supported, TPHComp- ExtTPHComp- ARIFwd-
+			 AtomicOpsCap: Routing- 32bit- 64bit- 128bitCAS-
+		DevCtl2: Completion Timeout: 65ms to 210ms, TimeoutDis- LTR- 10BitTagReq- OBFF Disabled, ARIFwd-
+			 AtomicOpsCtl: ReqEn- EgressBlck-
+		LnkCtl2: Target Link Speed: 2.5GT/s, EnterCompliance- SpeedDis-
+			 Transmit Margin: Normal Operating Range, EnterModifiedCompliance- ComplianceSOS-
+			 Compliance Preset/De-emphasis: -6dB de-emphasis, 0dB preshoot
+		LnkSta2: Current De-emphasis Level: -3.5dB, EqualizationComplete- EqualizationPhase1-
+			 EqualizationPhase2- EqualizationPhase3- LinkEqualizationRequest-
+			 Retimer- 2Retimers- CrosslinkRes: unsupported
+	Kernel driver in use: pcieport
+
+00:17.0 PCI bridge [0604]: NVIDIA Corporation MCP79 PCI Express Bridge [10de:0ac7] (rev b1) (prog-if 00 [Normal decode])
+	Subsystem: NVIDIA Corporation MCP79 PCI Express Bridge [10de:0000]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx+
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 27
+	Bus: primary=00, secondary=07, subordinate=07, sec-latency=0
+	I/O behind bridge: [disabled] [32-bit]
+	Memory behind bridge: [disabled] [32-bit]
+	Prefetchable memory behind bridge: [disabled] [64-bit]
+	Secondary status: 66MHz- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- <SERR- <PERR-
+	BridgeCtl: Parity- SERR+ NoISA+ VGA- VGA16- MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Capabilities: [40] Subsystem: NVIDIA Corporation MCP79 PCI Express Bridge [10de:0000]
+	Capabilities: [48] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [50] MSI: Enable+ Count=1/2 Maskable- 64bit+
+		Address: 00000000fee02004  Data: 0023
+	Capabilities: [80] Express (v2) Root Port (Slot+), MSI 00
+		DevCap:	MaxPayload 256 bytes, PhantFunc 0
+			ExtTag+ RBE+
+		DevCtl:	CorrErr- NonFatalErr- FatalErr- UnsupReq-
+			RlxdOrd+ ExtTag+ PhantFunc- AuxPwr- NoSnoop-
+			MaxPayload 128 bytes, MaxReadReq 512 bytes
+		DevSta:	CorrErr- NonFatalErr- FatalErr- UnsupReq- AuxPwr- TransPend-
+		LnkCap:	Port #5, Speed 2.5GT/s, Width x1, ASPM L0s L1, Exit Latency L0s <512ns, L1 <4us
+			ClockPM- Surprise- LLActRep+ BwNot+ ASPMOptComp-
+		LnkCtl:	ASPM Disabled; RCB 64 bytes, Disabled- CommClk-
+			ExtSynch- ClockPM- AutWidDis- BWInt- AutBWInt-
+		LnkSta:	Speed 2.5GT/s, Width x1
+			TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-
+		SltCap:	AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug- Surprise-
+			Slot #0, PowerLimit 0W; Interlock- NoCompl-
+		SltCtl:	Enable: AttnBtn- PwrFlt- MRL- PresDet- CmdCplt- HPIrq+ LinkChg+
+			Control: AttnInd Off, PwrInd On, Power- Interlock-
+		SltSta:	Status: AttnBtn- PowerFlt- MRL- CmdCplt- PresDet- Interlock-
+			Changed: MRL- PresDet- LinkState-
+		RootCap: CRSVisible-
+		RootCtl: ErrCorrectable- ErrNon-Fatal- ErrFatal- PMEIntEna- CRSVisible-
+		RootSta: PME ReqID 0000, PMEStatus- PMEPending-
+		DevCap2: Completion Timeout: Range AB, TimeoutDis+ NROPrPrP- LTR-
+			 10BitTagComp- 10BitTagReq- OBFF Not Supported, ExtFmt- EETLPPrefix-
+			 EmergencyPowerReduction Not Supported, EmergencyPowerReductionInit-
+			 FRS- LN System CLS Not Supported, TPHComp- ExtTPHComp- ARIFwd-
+			 AtomicOpsCap: Routing- 32bit- 64bit- 128bitCAS-
+		DevCtl2: Completion Timeout: 65ms to 210ms, TimeoutDis- LTR- 10BitTagReq- OBFF Disabled, ARIFwd-
+			 AtomicOpsCtl: ReqEn- EgressBlck-
+		LnkCtl2: Target Link Speed: 2.5GT/s, EnterCompliance- SpeedDis-
+			 Transmit Margin: Normal Operating Range, EnterModifiedCompliance- ComplianceSOS-
+			 Compliance Preset/De-emphasis: -6dB de-emphasis, 0dB preshoot
+		LnkSta2: Current De-emphasis Level: -3.5dB, EqualizationComplete- EqualizationPhase1-
+			 EqualizationPhase2- EqualizationPhase3- LinkEqualizationRequest-
+			 Retimer- 2Retimers- CrosslinkRes: unsupported
+	Kernel driver in use: pcieport
+
+00:18.0 PCI bridge [0604]: NVIDIA Corporation MCP79 PCI Express Bridge [10de:0ac7] (rev b1) (prog-if 00 [Normal decode])
+	Subsystem: NVIDIA Corporation MCP79 PCI Express Bridge [10de:0000]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx+
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 28
+	Bus: primary=00, secondary=08, subordinate=08, sec-latency=0
+	I/O behind bridge: [disabled] [32-bit]
+	Memory behind bridge: [disabled] [32-bit]
+	Prefetchable memory behind bridge: [disabled] [64-bit]
+	Secondary status: 66MHz- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- <SERR- <PERR-
+	BridgeCtl: Parity- SERR+ NoISA+ VGA- VGA16- MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Capabilities: [40] Subsystem: NVIDIA Corporation MCP79 PCI Express Bridge [10de:0000]
+	Capabilities: [48] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [50] MSI: Enable+ Count=1/2 Maskable- 64bit+
+		Address: 00000000fee01004  Data: 0023
+	Capabilities: [80] Express (v2) Root Port (Slot+), MSI 00
+		DevCap:	MaxPayload 256 bytes, PhantFunc 0
+			ExtTag+ RBE+
+		DevCtl:	CorrErr- NonFatalErr- FatalErr- UnsupReq-
+			RlxdOrd+ ExtTag+ PhantFunc- AuxPwr- NoSnoop-
+			MaxPayload 128 bytes, MaxReadReq 512 bytes
+		DevSta:	CorrErr- NonFatalErr- FatalErr- UnsupReq- AuxPwr- TransPend-
+		LnkCap:	Port #6, Speed 2.5GT/s, Width x1, ASPM L0s L1, Exit Latency L0s <512ns, L1 <4us
+			ClockPM- Surprise- LLActRep+ BwNot+ ASPMOptComp-
+		LnkCtl:	ASPM Disabled; RCB 64 bytes, Disabled- CommClk-
+			ExtSynch- ClockPM- AutWidDis- BWInt- AutBWInt-
+		LnkSta:	Speed 2.5GT/s, Width x1
+			TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-
+		SltCap:	AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug- Surprise-
+			Slot #0, PowerLimit 0W; Interlock- NoCompl-
+		SltCtl:	Enable: AttnBtn- PwrFlt- MRL- PresDet- CmdCplt- HPIrq+ LinkChg+
+			Control: AttnInd Off, PwrInd On, Power- Interlock-
+		SltSta:	Status: AttnBtn- PowerFlt- MRL- CmdCplt- PresDet- Interlock-
+			Changed: MRL- PresDet- LinkState-
+		RootCap: CRSVisible-
+		RootCtl: ErrCorrectable- ErrNon-Fatal- ErrFatal- PMEIntEna- CRSVisible-
+		RootSta: PME ReqID 0000, PMEStatus- PMEPending-
+		DevCap2: Completion Timeout: Range AB, TimeoutDis+ NROPrPrP- LTR-
+			 10BitTagComp- 10BitTagReq- OBFF Not Supported, ExtFmt- EETLPPrefix-
+			 EmergencyPowerReduction Not Supported, EmergencyPowerReductionInit-
+			 FRS- LN System CLS Not Supported, TPHComp- ExtTPHComp- ARIFwd-
+			 AtomicOpsCap: Routing- 32bit- 64bit- 128bitCAS-
+		DevCtl2: Completion Timeout: 65ms to 210ms, TimeoutDis- LTR- 10BitTagReq- OBFF Disabled, ARIFwd-
+			 AtomicOpsCtl: ReqEn- EgressBlck-
+		LnkCtl2: Target Link Speed: 2.5GT/s, EnterCompliance- SpeedDis-
+			 Transmit Margin: Normal Operating Range, EnterModifiedCompliance- ComplianceSOS-
+			 Compliance Preset/De-emphasis: -6dB de-emphasis, 0dB preshoot
+		LnkSta2: Current De-emphasis Level: -3.5dB, EqualizationComplete- EqualizationPhase1-
+			 EqualizationPhase2- EqualizationPhase3- LinkEqualizationRequest-
+			 Retimer- 2Retimers- CrosslinkRes: unsupported
+	Kernel driver in use: pcieport
+
+02:00.0 VGA compatible controller [0300]: NVIDIA Corporation GT216M [GeForce GT 230M] [10de:0a28] (rev a2) (prog-if 00 [VGA controller])
+	Subsystem: Mitac GT216M [GeForce GT 230M] [1071:9072]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx+
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 30
+	Region 0: Memory at ae000000 (32-bit, non-prefetchable) [size=16M]
+	Region 1: Memory at d0000000 (64-bit, prefetchable) [size=256M]
+	Region 3: Memory at ce000000 (64-bit, prefetchable) [size=32M]
+	Region 5: I/O ports at 4000 [size=128]
+	Expansion ROM at af000000 [virtual] [disabled] [size=512K]
+	Capabilities: [60] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [68] MSI: Enable+ Count=1/1 Maskable- 64bit+
+		Address: 00000000fee02004  Data: 0028
+	Capabilities: [78] Express (v2) Endpoint, MSI 00
+		DevCap:	MaxPayload 128 bytes, PhantFunc 0, Latency L0s unlimited, L1 <64us
+			ExtTag+ AttnBtn- AttnInd- PwrInd- RBE+ FLReset- SlotPowerLimit 0W
+		DevCtl:	CorrErr- NonFatalErr- FatalErr- UnsupReq-
+			RlxdOrd+ ExtTag+ PhantFunc- AuxPwr- NoSnoop+
+			MaxPayload 128 bytes, MaxReadReq 512 bytes
+		DevSta:	CorrErr+ NonFatalErr- FatalErr- UnsupReq- AuxPwr- TransPend-
+		LnkCap:	Port #0, Speed 5GT/s, Width x16, ASPM L0s L1, Exit Latency L0s <256ns, L1 <4us
+			ClockPM+ Surprise- LLActRep- BwNot- ASPMOptComp-
+		LnkCtl:	ASPM Disabled; RCB 128 bytes, Disabled- CommClk+
+			ExtSynch- ClockPM- AutWidDis- BWInt- AutBWInt-
+		LnkSta:	Speed 5GT/s, Width x16
+			TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-
+		DevCap2: Completion Timeout: Not Supported, TimeoutDis+ NROPrPrP- LTR-
+			 10BitTagComp- 10BitTagReq- OBFF Not Supported, ExtFmt- EETLPPrefix-
+			 EmergencyPowerReduction Not Supported, EmergencyPowerReductionInit-
+			 FRS- TPHComp- ExtTPHComp-
+			 AtomicOpsCap: 32bit- 64bit- 128bitCAS-
+		DevCtl2: Completion Timeout: 50us to 50ms, TimeoutDis- LTR- 10BitTagReq- OBFF Disabled,
+			 AtomicOpsCtl: ReqEn-
+		LnkCtl2: Target Link Speed: 5GT/s, EnterCompliance- SpeedDis-
+			 Transmit Margin: Normal Operating Range, EnterModifiedCompliance- ComplianceSOS-
+			 Compliance Preset/De-emphasis: -6dB de-emphasis, 0dB preshoot
+		LnkSta2: Current De-emphasis Level: -3.5dB, EqualizationComplete- EqualizationPhase1-
+			 EqualizationPhase2- EqualizationPhase3- LinkEqualizationRequest-
+			 Retimer- 2Retimers- CrosslinkRes: unsupported
+	Capabilities: [b4] Vendor Specific Information: Len=14 <?>
+	Capabilities: [100 v1] Virtual Channel
+		Caps:	LPEVC=0 RefClk=100ns PATEntryBits=1
+		Arb:	Fixed- WRR32- WRR64- WRR128-
+		Ctrl:	ArbSelect=Fixed
+		Status:	InProgress-
+		VC0:	Caps:	PATOffset=00 MaxTimeSlots=1 RejSnoopTrans-
+			Arb:	Fixed- WRR32- WRR64- WRR128- TWRR128- WRR256-
+			Ctrl:	Enable+ ID=0 ArbSelect=Fixed TC/VC=ff
+			Status:	NegoPending- InProgress-
+	Capabilities: [128 v1] Power Budgeting <?>
+	Capabilities: [600 v1] Vendor Specific Information: ID=0001 Rev=1 Len=024 <?>
+	Kernel driver in use: nouveau
+	Kernel modules: nouveau
+
+02:00.1 Audio device [0403]: NVIDIA Corporation GT216 HDMI Audio Controller [10de:0be2] (rev a1)
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 19
+	Region 0: Memory at afefc000 (32-bit, non-prefetchable) [size=16K]
+	Capabilities: [60] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [68] MSI: Enable- Count=1/1 Maskable- 64bit+
+		Address: 0000000000000000  Data: 0000
+	Capabilities: [78] Express (v2) Endpoint, MSI 00
+		DevCap:	MaxPayload 128 bytes, PhantFunc 0, Latency L0s <4us, L1 <64us
+			ExtTag+ AttnBtn- AttnInd- PwrInd- RBE+ FLReset- SlotPowerLimit 0W
+		DevCtl:	CorrErr- NonFatalErr- FatalErr- UnsupReq-
+			RlxdOrd+ ExtTag+ PhantFunc- AuxPwr- NoSnoop+
+			MaxPayload 128 bytes, MaxReadReq 512 bytes
+		DevSta:	CorrErr+ NonFatalErr- FatalErr- UnsupReq- AuxPwr- TransPend-
+		LnkCap:	Port #0, Speed 5GT/s, Width x16, ASPM L0s L1, Exit Latency L0s <256ns, L1 <1us
+			ClockPM+ Surprise- LLActRep- BwNot- ASPMOptComp-
+		LnkCtl:	ASPM Disabled; RCB 128 bytes, Disabled- CommClk+
+			ExtSynch- ClockPM- AutWidDis- BWInt- AutBWInt-
+		LnkSta:	Speed 5GT/s, Width x16
+			TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-
+		DevCap2: Completion Timeout: Not Supported, TimeoutDis+ NROPrPrP- LTR-
+			 10BitTagComp- 10BitTagReq- OBFF Not Supported, ExtFmt- EETLPPrefix-
+			 EmergencyPowerReduction Not Supported, EmergencyPowerReductionInit-
+			 FRS- TPHComp- ExtTPHComp-
+			 AtomicOpsCap: 32bit- 64bit- 128bitCAS-
+		DevCtl2: Completion Timeout: 50us to 50ms, TimeoutDis- LTR- 10BitTagReq- OBFF Disabled,
+			 AtomicOpsCtl: ReqEn-
+		LnkSta2: Current De-emphasis Level: -3.5dB, EqualizationComplete- EqualizationPhase1-
+			 EqualizationPhase2- EqualizationPhase3- LinkEqualizationRequest-
+			 Retimer- 2Retimers- CrosslinkRes: unsupported
+	Kernel driver in use: snd_hda_intel
+	Kernel modules: snd_hda_intel
+
+03:00.0 VGA compatible controller [0300]: NVIDIA Corporation C79 [GeForce 9100M G] [10de:086e] (rev b1) (prog-if 00 [VGA controller])
+	Subsystem: Mitac C79 [GeForce 9100M G] [1071:9072]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx+
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 31
+	Region 0: Memory at ac000000 (32-bit, non-prefetchable) [size=16M]
+	Region 1: Memory at b0000000 (64-bit, prefetchable) [size=256M]
+	Region 3: Memory at ca000000 (64-bit, prefetchable) [size=32M]
+	Region 5: I/O ports at 5000 [size=128]
+	Expansion ROM at 000c0000 [virtual] [disabled] [size=128K]
+	Capabilities: [60] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [68] MSI: Enable+ Count=1/1 Maskable- 64bit+
+		Address: 00000000fee01004  Data: 0028
+	Kernel driver in use: nouveau
+	Kernel modules: nouveau
+
+06:00.0 Network controller [0280]: Broadcom Inc. and subsidiaries BCM43142 802.11b/g/n [14e4:4365] (rev 01)
+	Subsystem: Hewlett-Packard Company BCM43142 802.11b/g/n [103c:2230]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 11
+	Region 0: Memory at f0400000 (64-bit, non-prefetchable) [size=32K]
+	Capabilities: [40] Power Management version 3
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=2 PME-
+	Capabilities: [58] Vendor Specific Information: Len=78 <?>
+	Capabilities: [48] MSI: Enable- Count=1/1 Maskable- 64bit+
+		Address: 0000000000000000  Data: 0000
+	Capabilities: [d0] Express (v1) Endpoint, MSI 00
+		DevCap:	MaxPayload 128 bytes, PhantFunc 0, Latency L0s <4us, L1 unlimited
+			ExtTag+ AttnBtn- AttnInd- PwrInd- RBE+ FLReset- SlotPowerLimit 0W
+		DevCtl:	CorrErr- NonFatalErr- FatalErr- UnsupReq-
+			RlxdOrd+ ExtTag+ PhantFunc- AuxPwr- NoSnoop-
+			MaxPayload 128 bytes, MaxReadReq 512 bytes
+		DevSta:	CorrErr+ NonFatalErr- FatalErr- UnsupReq+ AuxPwr+ TransPend-
+		LnkCap:	Port #0, Speed 2.5GT/s, Width x1, ASPM L0s L1, Exit Latency L0s <4us, L1 <64us
+			ClockPM+ Surprise- LLActRep- BwNot- ASPMOptComp-
+		LnkCtl:	ASPM Disabled; RCB 64 bytes, Disabled- CommClk+
+			ExtSynch- ClockPM- AutWidDis- BWInt- AutBWInt-
+		LnkSta:	Speed 2.5GT/s, Width x1
+			TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-
+	Capabilities: [100 v1] Advanced Error Reporting
+		UESta:	DLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt- UnxCmplt- RxOF- MalfTLP- ECRC- UnsupReq- ACSViol-
+		UEMsk:	DLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt- UnxCmplt- RxOF- MalfTLP- ECRC- UnsupReq- ACSViol-
+		UESvrt:	DLP+ SDES+ TLP- FCP+ CmpltTO- CmpltAbrt- UnxCmplt- RxOF+ MalfTLP+ ECRC- UnsupReq- ACSViol-
+		CESta:	RxErr- BadTLP- BadDLLP- Rollover- Timeout- AdvNonFatalErr+
+		CEMsk:	RxErr- BadTLP- BadDLLP- Rollover- Timeout- AdvNonFatalErr+
+		AERCap:	First Error Pointer: 14, ECRCGenCap+ ECRCGenEn- ECRCChkCap+ ECRCChkEn-
+			MultHdrRecCap- MultHdrRecEn- TLPPfxPres- HdrLogCap-
+		HeaderLog: 00000000 00000000 00000000 00000000
+	Capabilities: [13c v1] Virtual Channel
+		Caps:	LPEVC=0 RefClk=100ns PATEntryBits=1
+		Arb:	Fixed- WRR32- WRR64- WRR128-
+		Ctrl:	ArbSelect=Fixed
+		Status:	InProgress-
+		VC0:	Caps:	PATOffset=00 MaxTimeSlots=1 RejSnoopTrans-
+			Arb:	Fixed- WRR32- WRR64- WRR128- TWRR128- WRR256-
+			Ctrl:	Enable+ ID=0 ArbSelect=Fixed TC/VC=ff
+			Status:	NegoPending- InProgress-
+	Capabilities: [160 v1] Device Serial Number ...
+	Capabilities: [16c v1] Power Budgeting <?>
+
