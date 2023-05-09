@@ -1,0 +1,157 @@
+0000:00:0b.0 Host bridge [0600]: Apple Inc. UniNorth 2 AGP [106b:0034]
+	Device tree node: /sys/firmware/devicetree/base/pci@f0000000/uni-north-agp@b
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV+ VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort+ >SERR- <PERR- INTx-
+	Latency: 16, Cache Line Size: 32 bytes
+	Capabilities: [80] AGP version 1.0
+		Status: RQ=8 Iso- ArqSz=0 Cal=0 SBA+ ITACoh- GART64- HTrans- 64bit- FW+ AGP3- Rate=x1,x2,x4
+		Command: RQ=1 ArqSz=0 Cal=0 SBA- AGP- GART64- 64bit- FW- Rate=<none>
+	Kernel driver in use: agpgart-uninorth
+	Kernel modules: uninorth_agp
+
+0000:00:10.0 VGA compatible controller [0300]: Advanced Micro Devices, Inc. [AMD/ATI] RV360/M12 [Mobility Radeon 9550] [1002:4e56] (rev 80) (prog-if 00 [VGA controller])
+	Subsystem: Advanced Micro Devices, Inc. [AMD/ATI] RV360/M12 [Mobility Radeon 9550] [1002:4e56]
+	Device tree node: /sys/firmware/devicetree/base/pci@f0000000/ATY,SnowyParent@10
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 255 (2000ns min), Cache Line Size: 32 bytes
+	Interrupt: pin A routed to IRQ 48
+	Region 0: Memory at 98000000 (32-bit, prefetchable) [size=128M]
+	Region 1: I/O ports at 0400 [size=256]
+	Region 2: Memory at 90000000 (32-bit, non-prefetchable) [size=64K]
+	Expansion ROM at 90020000 [disabled] [size=128K]
+	Capabilities: [58] AGP version 2.0
+		Status: RQ=80 Iso- ArqSz=0 Cal=0 SBA+ ITACoh- GART64- HTrans- 64bit- FW+ AGP3- Rate=x1,x2,x4
+		Command: RQ=1 ArqSz=0 Cal=0 SBA+ AGP- GART64- 64bit- FW- Rate=<none>
+	Capabilities: [50] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: radeon
+
+0001:10:0b.0 Host bridge [0600]: Apple Inc. UniNorth 2 PCI [106b:0035]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV+ VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort+ >SERR- <PERR- INTx-
+	Latency: 16, Cache Line Size: 32 bytes
+	Kernel modules: uninorth_agp
+
+0001:10:12.0 Network controller [0280]: Broadcom Inc. and subsidiaries BCM4318 [AirForce One 54g] 802.11g Wireless LAN Controller [14e4:4318] (rev 02)
+	Subsystem: Apple Inc. BCM4318 [AirForce One 54g] 802.11g Wireless LAN Controller [106b:4318]
+	Device tree node: /sys/firmware/devicetree/base/pci@f2000000/pci106b,4318@12
+	Control: I/O- Mem- BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 16
+	Interrupt: pin A routed to IRQ 52
+	Region 0: Memory at 80084000 (32-bit, non-prefetchable) [disabled] [size=8K]
+
+0001:10:17.0 Unassigned class [ff00]: Apple Inc. KeyLargo/Intrepid Mac I/O [106b:003e]
+	Device tree node: /sys/firmware/devicetree/base/pci@f2000000/mac-io@17
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 16, Cache Line Size: 32 bytes
+	Region 0: Memory at 80000000 (32-bit, non-prefetchable) [size=512K]
+	Kernel driver in use: macio
+
+0001:10:18.0 USB controller [0c03]: Apple Inc. KeyLargo/Intrepid USB [106b:003f] (prog-if 10 [OHCI])
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Interrupt: pin A routed to IRQ 27
+	Region 0: Memory at <unassigned> (32-bit, non-prefetchable) [disabled] [size=4K]
+	Kernel modules: ohci_pci
+
+0001:10:19.0 USB controller [0c03]: Apple Inc. KeyLargo/Intrepid USB [106b:003f] (prog-if 10 [OHCI])
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Interrupt: pin A routed to IRQ 28
+	Region 0: Memory at <unassigned> (32-bit, non-prefetchable) [disabled] [size=4K]
+	Kernel modules: ohci_pci
+
+0001:10:1a.0 USB controller [0c03]: Apple Inc. KeyLargo/Intrepid USB [106b:003f] (prog-if 10 [OHCI])
+	Device tree node: /sys/firmware/devicetree/base/pci@f2000000/usb@1a
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 16 (750ns min, 21500ns max), Cache Line Size: 32 bytes
+	Interrupt: pin A routed to IRQ 29
+	Region 0: Memory at 80083000 (32-bit, non-prefetchable) [size=4K]
+	Kernel driver in use: ohci-pci
+	Kernel modules: ohci_pci
+
+0001:10:1b.0 USB controller [0c03]: NEC Corporation OHCI USB Controller [1033:0035] (rev 43) (prog-if 10 [OHCI])
+	Subsystem: NEC Corporation USB Controller [1033:0035]
+	Device tree node: /sys/firmware/devicetree/base/pci@f2000000/usb@1b
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 16 (250ns min, 10500ns max), Cache Line Size: 32 bytes
+	Interrupt: pin A routed to IRQ 63
+	Region 0: Memory at 80082000 (32-bit, non-prefetchable) [size=4K]
+	Capabilities: [40] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: ohci-pci
+	Kernel modules: ohci_pci
+
+0001:10:1b.1 USB controller [0c03]: NEC Corporation OHCI USB Controller [1033:0035] (rev 43) (prog-if 10 [OHCI])
+	Subsystem: NEC Corporation USB Controller [1033:0035]
+	Device tree node: /sys/firmware/devicetree/base/pci@f2000000/usb@1b,1
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 16 (250ns min, 10500ns max), Cache Line Size: 32 bytes
+	Interrupt: pin B routed to IRQ 63
+	Region 0: Memory at 80081000 (32-bit, non-prefetchable) [size=4K]
+	Capabilities: [40] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: ohci-pci
+	Kernel modules: ohci_pci
+
+0001:10:1b.2 USB controller [0c03]: NEC Corporation uPD72010x USB 2.0 Controller [1033:00e0] (rev 04) (prog-if 20 [EHCI])
+	Subsystem: NEC Corporation uPD72010x USB 2.0 Controller [1033:00e0]
+	Device tree node: /sys/firmware/devicetree/base/pci@f2000000/usb@1b,2
+	Control: I/O- Mem+ BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Interrupt: pin C routed to IRQ 63
+	Region 0: Memory at 80080000 (32-bit, non-prefetchable) [size=256]
+	Capabilities: [40] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+
+0002:20:0b.0 Host bridge [0600]: Apple Inc. UniNorth 2 Internal PCI [106b:0036]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV+ VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort+ >SERR- <PERR- INTx-
+	Latency: 16, Cache Line Size: 32 bytes
+	Kernel modules: uninorth_agp
+
+0002:20:0d.0 Unassigned class [ff00]: Apple Inc. UniNorth/Intrepid ATA/100 [106b:003b]
+	Device tree node: /sys/firmware/devicetree/base/pci@f4000000/ata-6@d
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR+ INTx-
+	Latency: 32, Cache Line Size: 32 bytes
+	Interrupt: pin ? routed to IRQ 39
+	Region 0: Memory at f5004000 (32-bit, non-prefetchable) [size=16K]
+	Kernel driver in use: pata-pci-macio
+	Kernel modules: pata_macio
+
+0002:20:0e.0 FireWire (IEEE 1394) [0c00]: Apple Inc. UniNorth 2 FireWire [106b:0031] (rev 81) (prog-if 10 [OHCI])
+	Subsystem: Apple Inc. iBook G4 2004 [106b:5811]
+	Device tree node: /sys/firmware/devicetree/base/pci@f4000000/firewire@e
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 64 (3000ns min, 6000ns max), Cache Line Size: 32 bytes
+	Interrupt: pin A routed to IRQ 40
+	Region 0: Memory at f5000000 (32-bit, non-prefetchable) [size=4K]
+	Capabilities: [44] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0+,D1+,D2+,D3hot+,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME+
+	Kernel driver in use: firewire_ohci
+	Kernel modules: firewire_ohci
+
+0002:20:0f.0 Ethernet controller [0200]: Apple Inc. UniNorth 2 GMAC (Sun GEM) [106b:0032] (rev 80)
+	Device tree node: /sys/firmware/devicetree/base/pci@f4000000/ethernet@f
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV+ VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=slow >TAbort- <TAbort- <MAbort- >SERR- <PERR+ INTx-
+	Latency: 16 (16000ns min, 16000ns max), Cache Line Size: 32 bytes
+	Interrupt: pin A routed to IRQ 41
+	Region 0: Memory at f5200000 (32-bit, non-prefetchable) [size=2M]
+	Expansion ROM at f5100000 [disabled] [size=1M]
+	Kernel driver in use: gem
+	Kernel modules: sungem
+
