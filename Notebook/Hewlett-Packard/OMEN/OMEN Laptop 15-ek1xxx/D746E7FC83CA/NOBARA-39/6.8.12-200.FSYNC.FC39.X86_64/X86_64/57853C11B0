@@ -1,0 +1,383 @@
+00:00.0 Host bridge [0600]: Intel Corporation 10th Gen Core Processor Host Bridge/DRAM Registers [8086:9b54] (rev 02)
+	Subsystem: Hewlett-Packard Company Device [103c:88c8]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort+ >SERR- <PERR- INTx-
+	Latency: 0
+	IOMMU group: 1
+	Capabilities: <access denied>
+	Kernel driver in use: skl_uncore
+
+00:01.0 PCI bridge [0604]: Intel Corporation Xeon E3-1200 v5/E3-1500 v5/6th Gen Core Processor PCIe Controller (x16) [8086:1901] (rev 02) (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 122
+	IOMMU group: 2
+	Bus: primary=00, secondary=01, subordinate=01, sec-latency=0
+	I/O behind bridge: 00004000-00004fff [size=4K]
+	Memory behind bridge: 77000000-780fffff [size=17M]
+	Prefetchable memory behind bridge: 0000006000000000-0000006201ffffff [size=8224M]
+	Secondary status: 66MHz- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort+ <SERR- <PERR-
+	BridgeCtl: Parity- SERR+ NoISA- VGA- VGA16+ MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Capabilities: <access denied>
+	Kernel driver in use: pcieport
+
+00:02.0 VGA compatible controller [0300]: Intel Corporation UHD Graphics [8086:9bc4] (rev 05) (prog-if 00 [VGA controller])
+	DeviceName:  Onboard IGD
+	Subsystem: Hewlett-Packard Company Device [103c:88c8]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 162
+	IOMMU group: 0
+	Region 0: Memory at 6232000000 (64-bit, non-prefetchable) [size=16M]
+	Region 2: Memory at 4000000000 (64-bit, prefetchable) [size=256M]
+	Region 4: I/O ports at 5000 [size=64]
+	Expansion ROM at 000c0000 [virtual] [disabled] [size=128K]
+	Capabilities: <access denied>
+	Kernel driver in use: i915
+
+00:12.0 Signal processing controller [1180]: Intel Corporation Comet Lake PCH Thermal Controller [8086:06f9]
+	Subsystem: Hewlett-Packard Company Device [103c:88c8]
+	Control: I/O- Mem+ BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Interrupt: pin A routed to IRQ 16
+	IOMMU group: 3
+	Region 0: Memory at 623311f000 (64-bit, non-prefetchable) [size=4K]
+	Capabilities: <access denied>
+	Kernel driver in use: intel_pch_thermal
+
+00:14.0 USB controller [0c03]: Intel Corporation Comet Lake USB 3.1 xHCI Host Controller [8086:06ed] (prog-if 30 [XHCI])
+	Subsystem: Hewlett-Packard Company Device [103c:88c8]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Interrupt: pin A routed to IRQ 131
+	IOMMU group: 4
+	Region 0: Memory at 6233100000 (64-bit, non-prefetchable) [size=64K]
+	Capabilities: <access denied>
+	Kernel driver in use: xhci_hcd
+
+00:14.2 RAM memory [0500]: Intel Corporation Comet Lake PCH Shared SRAM [8086:06ef]
+	Subsystem: Hewlett-Packard Company Device [103c:88c8]
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	IOMMU group: 4
+	Region 0: Memory at 6233118000 (64-bit, non-prefetchable) [disabled] [size=8K]
+	Region 2: Memory at 623311e000 (64-bit, non-prefetchable) [disabled] [size=4K]
+	Capabilities: <access denied>
+
+00:14.3 Network controller [0280]: Intel Corporation Wi-Fi 6 AX201 [8086:06f0]
+	DeviceName: Intel Wireless LAN + BT
+	Subsystem: Intel Corporation Device [8086:0074]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 16
+	IOMMU group: 5
+	Region 0: Memory at 6233114000 (64-bit, non-prefetchable) [size=16K]
+	Capabilities: <access denied>
+	Kernel driver in use: iwlwifi
+
+00:15.0 Serial bus controller [0c80]: Intel Corporation Comet Lake PCH Serial IO I2C Controller #0 [8086:06e8]
+	Subsystem: Hewlett-Packard Company Device [103c:88c8]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 16
+	IOMMU group: 6
+	Region 0: Memory at 4010000000 (64-bit, non-prefetchable) [size=4K]
+	Capabilities: <access denied>
+	Kernel driver in use: intel-lpss
+
+00:15.1 Serial bus controller [0c80]: Intel Corporation Comet Lake PCH Serial IO I2C Controller #1 [8086:06e9]
+	Subsystem: Hewlett-Packard Company Device [103c:88c8]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin B routed to IRQ 17
+	IOMMU group: 6
+	Region 0: Memory at 4010001000 (64-bit, non-prefetchable) [size=4K]
+	Capabilities: <access denied>
+	Kernel driver in use: intel-lpss
+
+00:16.0 Communication controller [0780]: Intel Corporation Comet Lake HECI Controller [8086:06e0]
+	Subsystem: Hewlett-Packard Company Device [103c:88c8]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Interrupt: pin A routed to IRQ 163
+	IOMMU group: 7
+	Region 0: Memory at 623311b000 (64-bit, non-prefetchable) [size=4K]
+	Capabilities: <access denied>
+	Kernel driver in use: mei_me
+
+00:17.0 RAID bus controller [0104]: Intel Corporation 82801 Mobile SATA Controller [RAID mode] [8086:282a]
+	Subsystem: Hewlett-Packard Company Device [103c:88c8]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Interrupt: pin A routed to IRQ 16
+	IOMMU group: 8
+	Region 0: Memory at 78400000 (32-bit, non-prefetchable) [size=8K]
+	Region 1: Memory at 78403000 (32-bit, non-prefetchable) [size=256]
+	Region 2: I/O ports at 5090 [size=8]
+	Region 3: I/O ports at 5080 [size=4]
+	Region 4: I/O ports at 5060 [size=32]
+	Region 5: Memory at 78402000 (32-bit, non-prefetchable) [size=2K]
+	Capabilities: <access denied>
+	Kernel driver in use: ahci
+
+00:1b.0 PCI bridge [0604]: Intel Corporation Comet Lake PCI Express Root Port #17 [8086:06c0] (rev f0) (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 123
+	IOMMU group: 9
+	Bus: primary=00, secondary=02, subordinate=3a, sec-latency=0
+	I/O behind bridge: 00006000-00007fff [size=8K]
+	Memory behind bridge: 60000000-760fffff [size=353M]
+	Prefetchable memory behind bridge: 0000006210000000-0000006231ffffff [size=544M]
+	Secondary status: 66MHz- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort+ <SERR- <PERR-
+	BridgeCtl: Parity- SERR+ NoISA- VGA- VGA16+ MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Capabilities: <access denied>
+	Kernel driver in use: pcieport
+
+00:1b.4 PCI bridge [0604]: Intel Corporation Comet Lake PCI Express Root Port #21 [8086:06ac] (rev f0) (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 124
+	IOMMU group: 10
+	Bus: primary=00, secondary=3b, subordinate=3b, sec-latency=0
+	I/O behind bridge: [disabled]
+	Memory behind bridge: 78300000-783fffff [size=1M]
+	Prefetchable memory behind bridge: [disabled]
+	Secondary status: 66MHz- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort+ <SERR- <PERR-
+	BridgeCtl: Parity- SERR+ NoISA- VGA- VGA16+ MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Capabilities: <access denied>
+	Kernel driver in use: pcieport
+
+00:1d.0 PCI bridge [0604]: Intel Corporation Device [8086:06b5] (rev f0) (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin B routed to IRQ 125
+	IOMMU group: 11
+	Bus: primary=00, secondary=3c, subordinate=3c, sec-latency=0
+	I/O behind bridge: 00003000-00003fff [size=4K]
+	Memory behind bridge: 78200000-782fffff [size=1M]
+	Prefetchable memory behind bridge: [disabled]
+	Secondary status: 66MHz- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort+ <SERR- <PERR-
+	BridgeCtl: Parity- SERR+ NoISA- VGA- VGA16+ MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Capabilities: <access denied>
+	Kernel driver in use: pcieport
+
+00:1d.7 PCI bridge [0604]: Intel Corporation Device [8086:06b7] (rev f0) (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin D routed to IRQ 126
+	IOMMU group: 12
+	Bus: primary=00, secondary=3d, subordinate=3d, sec-latency=0
+	I/O behind bridge: [disabled]
+	Memory behind bridge: 78100000-781fffff [size=1M]
+	Prefetchable memory behind bridge: [disabled]
+	Secondary status: 66MHz- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort+ <SERR- <PERR-
+	BridgeCtl: Parity- SERR+ NoISA- VGA- VGA16+ MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Capabilities: <access denied>
+	Kernel driver in use: pcieport
+
+00:1f.0 ISA bridge [0601]: Intel Corporation Comet Lake LPC Controller [8086:068d]
+	Subsystem: Hewlett-Packard Company Device [103c:88c8]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	IOMMU group: 13
+
+00:1f.3 Multimedia audio controller [0401]: Intel Corporation Comet Lake PCH cAVS [8086:06c8]
+	Subsystem: Hewlett-Packard Company Device [103c:88c8]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 32, Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 194
+	IOMMU group: 13
+	Region 0: Memory at 6233110000 (64-bit, non-prefetchable) [size=16K]
+	Region 4: Memory at 6233000000 (64-bit, non-prefetchable) [size=1M]
+	Capabilities: <access denied>
+	Kernel driver in use: sof-audio-pci-intel-cnl
+
+00:1f.4 SMBus [0c05]: Intel Corporation Comet Lake PCH SMBus Controller [8086:06a3]
+	Subsystem: Hewlett-Packard Company Device [103c:88c8]
+	Control: I/O+ Mem+ BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Interrupt: pin A routed to IRQ 16
+	IOMMU group: 13
+	Region 0: Memory at 623311a000 (64-bit, non-prefetchable) [size=256]
+	Region 4: I/O ports at efa0 [size=32]
+	Kernel driver in use: i801_smbus
+
+00:1f.5 Serial bus controller [0c80]: Intel Corporation Comet Lake PCH SPI Controller [8086:06a4]
+	Subsystem: Hewlett-Packard Company Device [103c:88c8]
+	Control: I/O- Mem+ BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	IOMMU group: 13
+	Region 0: Memory at fe010000 (32-bit, non-prefetchable) [size=4K]
+	Kernel driver in use: intel-spi
+
+01:00.0 VGA compatible controller [0300]: NVIDIA Corporation Device [10de:24dd] (rev a1) (prog-if 00 [VGA controller])
+	DeviceName: NVIDIA Graphics Device
+	Subsystem: Hewlett-Packard Company Device [103c:88c8]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Interrupt: pin A routed to IRQ 195
+	IOMMU group: 2
+	Region 0: Memory at 77000000 (32-bit, non-prefetchable) [size=16M]
+	Region 1: Memory at 6000000000 (64-bit, prefetchable) [size=8G]
+	Region 3: Memory at 6200000000 (64-bit, prefetchable) [size=32M]
+	Region 5: I/O ports at 4000 [size=128]
+	Expansion ROM at 78000000 [virtual] [disabled] [size=512K]
+	Capabilities: <access denied>
+	Kernel driver in use: nvidia
+
+01:00.1 Audio device [0403]: NVIDIA Corporation Device [10de:228b] (rev a1)
+	Subsystem: Hewlett-Packard Company Device [103c:88c8]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin B routed to IRQ 17
+	IOMMU group: 2
+	Region 0: Memory at 78080000 (32-bit, non-prefetchable) [size=16K]
+	Capabilities: <access denied>
+	Kernel driver in use: snd_hda_intel
+
+02:00.0 PCI bridge [0604]: Intel Corporation JHL7540 Thunderbolt 3 Bridge [Titan Ridge 2C 2018] [8086:15e7] (rev 06) (prog-if 00 [Normal decode])
+	Physical Slot: 20
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 128 bytes
+	Interrupt: pin A routed to IRQ 16
+	IOMMU group: 14
+	Bus: primary=02, secondary=03, subordinate=3a, sec-latency=0
+	I/O behind bridge: 00006000-00006fff [size=4K]
+	Memory behind bridge: 60000000-760fffff [size=353M]
+	Prefetchable memory behind bridge: 0000006210000000-0000006231ffffff [size=544M]
+	Secondary status: 66MHz- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- <SERR- <PERR-
+	BridgeCtl: Parity- SERR+ NoISA- VGA- VGA16+ MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Capabilities: <access denied>
+	Kernel driver in use: pcieport
+
+03:00.0 PCI bridge [0604]: Intel Corporation JHL7540 Thunderbolt 3 Bridge [Titan Ridge 2C 2018] [8086:15e7] (rev 06) (prog-if 00 [Normal decode])
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 128 bytes
+	Interrupt: pin A routed to IRQ 127
+	IOMMU group: 15
+	Bus: primary=03, secondary=04, subordinate=04, sec-latency=0
+	I/O behind bridge: [disabled]
+	Memory behind bridge: 76000000-760fffff [size=1M]
+	Prefetchable memory behind bridge: [disabled]
+	Secondary status: 66MHz- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- <SERR- <PERR-
+	BridgeCtl: Parity- SERR+ NoISA- VGA- VGA16+ MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Capabilities: <access denied>
+	Kernel driver in use: pcieport
+
+03:01.0 PCI bridge [0604]: Intel Corporation JHL7540 Thunderbolt 3 Bridge [Titan Ridge 2C 2018] [8086:15e7] (rev 06) (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 128 bytes
+	Interrupt: pin A routed to IRQ 128
+	IOMMU group: 16
+	Bus: primary=03, secondary=05, subordinate=39, sec-latency=0
+	I/O behind bridge: 00006000-00006fff [size=4K]
+	Memory behind bridge: 60000000-75efffff [size=351M]
+	Prefetchable memory behind bridge: 0000006210000000-0000006231ffffff [size=544M]
+	Secondary status: 66MHz- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- <SERR- <PERR-
+	BridgeCtl: Parity- SERR+ NoISA- VGA- VGA16+ MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Capabilities: <access denied>
+	Kernel driver in use: pcieport
+
+03:02.0 PCI bridge [0604]: Intel Corporation JHL7540 Thunderbolt 3 Bridge [Titan Ridge 2C 2018] [8086:15e7] (rev 06) (prog-if 00 [Normal decode])
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 128 bytes
+	Interrupt: pin A routed to IRQ 129
+	IOMMU group: 17
+	Bus: primary=03, secondary=3a, subordinate=3a, sec-latency=0
+	I/O behind bridge: [disabled]
+	Memory behind bridge: 75f00000-75ffffff [size=1M]
+	Prefetchable memory behind bridge: [disabled]
+	Secondary status: 66MHz- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- <SERR- <PERR-
+	BridgeCtl: Parity- SERR+ NoISA- VGA- VGA16+ MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Capabilities: <access denied>
+	Kernel driver in use: pcieport
+
+04:00.0 System peripheral [0880]: Intel Corporation JHL7540 Thunderbolt 3 NHI [Titan Ridge 2C 2018] [8086:15e8] (rev 06)
+	Subsystem: Hewlett-Packard Company Device [103c:878a]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 128 bytes
+	Interrupt: pin A routed to IRQ 16
+	IOMMU group: 18
+	Region 0: Memory at 76000000 (32-bit, non-prefetchable) [size=256K]
+	Region 1: Memory at 76040000 (32-bit, non-prefetchable) [size=4K]
+	Capabilities: <access denied>
+	Kernel driver in use: thunderbolt
+
+3a:00.0 USB controller [0c03]: Intel Corporation JHL7540 Thunderbolt 3 USB Controller [Titan Ridge 2C 2018] [8086:15e9] (rev 06) (prog-if 30 [XHCI])
+	Subsystem: Hewlett-Packard Company Device [103c:878a]
+	Control: I/O+ Mem+ BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Interrupt: pin A routed to IRQ 139
+	IOMMU group: 19
+	Region 0: Memory at 75f00000 (32-bit, non-prefetchable) [size=64K]
+	Capabilities: <access denied>
+	Kernel driver in use: xhci_hcd
+
+3b:00.0 Non-Volatile memory controller [0108]: Toshiba Corporation Device [1179:011a] (prog-if 02 [NVM Express])
+	Subsystem: Toshiba Corporation Device [1179:0001]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 16
+	IOMMU group: 20
+	Region 0: Memory at 78300000 (64-bit, non-prefetchable) [size=16K]
+	Capabilities: <access denied>
+	Kernel driver in use: nvme
+
+3c:00.0 Ethernet controller [0200]: Realtek Semiconductor Co., Ltd. RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller [10ec:8168] (rev 16)
+	DeviceName: Realtek PCIe GBE Family Controller
+	Subsystem: Hewlett-Packard Company Device [103c:88c8]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 17
+	IOMMU group: 21
+	Region 0: I/O ports at 3000 [size=256]
+	Region 2: Memory at 78204000 (64-bit, non-prefetchable) [size=4K]
+	Region 4: Memory at 78200000 (64-bit, non-prefetchable) [size=16K]
+	Capabilities: <access denied>
+	Kernel driver in use: r8169
+
+3d:00.0 SD Host controller [0805]: Genesys Logic, Inc GL9750 SD Host Controller [17a0:9750] (rev 01) (prog-if 01)
+	DeviceName: Genesys Logic PCIE CardReader
+	Subsystem: Hewlett-Packard Company Device [103c:88c8]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 161
+	IOMMU group: 22
+	Region 0: Memory at 78100000 (32-bit, non-prefetchable) [size=4K]
+	Capabilities: <access denied>
+	Kernel driver in use: sdhci-pci
+
