@@ -1,0 +1,203 @@
+00:00.0 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD/ATI] RS300 Host Bridge [1002:5831] (rev 02)
+	Subsystem: Samsung Electronics Co Ltd Device [144d:b028]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 32
+	NUMA node: 0
+	Region 0: Memory at c4000000 (32-bit, prefetchable) [size=64M]
+	Region 1: Memory at c0000000 (32-bit, non-prefetchable) [size=4K]
+	Capabilities: [a0] AGP version 3.0
+		Status: RQ=32 Iso- ArqSz=0 Cal=0 SBA+ ITACoh- GART64- HTrans- 64bit- FW+ AGP3+ Rate=x4,x8
+		Command: RQ=1 ArqSz=0 Cal=0 SBA+ AGP- GART64- 64bit- FW- Rate=<none>
+	Kernel driver in use: agpgart-ati
+	Kernel modules: ati_agp
+
+00:01.0 PCI bridge [0604]: Advanced Micro Devices, Inc. [AMD/ATI] RS300 AGP Bridge [1002:5838] (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz+ UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 99
+	NUMA node: 0
+	Bus: primary=00, secondary=01, subordinate=01, sec-latency=36
+	I/O behind bridge: 00009000-00009fff [size=4K]
+	Memory behind bridge: c0100000-c01fffff [size=1M]
+	Prefetchable memory behind bridge: d0000000-dfffffff [size=256M]
+	Secondary status: 66MHz+ FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort+ <SERR- <PERR-
+	BridgeCtl: Parity- SERR+ NoISA+ VGA+ VGA16- MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+
+00:14.0 SMBus [0c05]: Advanced Micro Devices, Inc. [AMD/ATI] SB200 SMBus Controller [1002:4353] (rev 1a)
+	Subsystem: Samsung Electronics Co Ltd Device [144d:b028]
+	Control: I/O+ Mem+ BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz+ UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	NUMA node: 0
+	Region 0: I/O ports at 8060 [size=16]
+	Region 1: Memory at c0004000 (32-bit, non-prefetchable) [size=1K]
+	Kernel driver in use: piix4_smbus
+	Kernel modules: i2c_piix4
+
+00:14.1 IDE interface [0101]: Advanced Micro Devices, Inc. [AMD/ATI] SB200 IDE Controller [1002:4349] (prog-if 8a [ISA Compatibility mode controller, supports both channels switched to PCI native mode, supports bus mastering])
+	Subsystem: Samsung Electronics Co Ltd Device [144d:b028]
+	Control: I/O+ Mem- BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort+ <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 32
+	Interrupt: pin A routed to IRQ 10
+	NUMA node: 0
+	Region 0: I/O ports at 01f0 [size=8]
+	Region 1: I/O ports at 03f4
+	Region 2: I/O ports at 0170 [size=8]
+	Region 3: I/O ports at 0374
+	Region 4: I/O ports at 8070 [size=16]
+	Kernel driver in use: pata_atiixp
+	Kernel modules: pata_atiixp, pata_acpi
+
+00:14.3 ISA bridge [0601]: Advanced Micro Devices, Inc. [AMD/ATI] SB200 PCI to LPC Bridge [1002:434c]
+	Subsystem: Samsung Electronics Co Ltd Device [144d:b028]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle+ MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz+ UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	NUMA node: 0
+
+00:14.4 PCI bridge [0604]: Advanced Micro Devices, Inc. [AMD/ATI] SB200 PCI to PCI Bridge [1002:4342] (prog-if 01 [Subtractive decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 32
+	NUMA node: 0
+	Bus: primary=00, secondary=02, subordinate=06, sec-latency=69
+	I/O behind bridge: 00002000-00002fff [size=4K]
+	Memory behind bridge: c0200000-c02fffff [size=1M]
+	Prefetchable memory behind bridge: 58000000-5fffffff [size=128M]
+	Secondary status: 66MHz- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort+ <SERR- <PERR-
+	BridgeCtl: Parity- SERR+ NoISA- VGA- VGA16- MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+
+00:14.5 Multimedia audio controller [0401]: Advanced Micro Devices, Inc. [AMD/ATI] SB200 AC97 Audio Controller [1002:4341] (rev 01)
+	Subsystem: Samsung Electronics Co Ltd Device [144d:b028]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV+ VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz+ UDF- FastB2B- ParErr- DEVSEL=slow >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 32 (500ns min), Cache Line Size: 32 bytes
+	Interrupt: pin B routed to IRQ 5
+	NUMA node: 0
+	Region 0: Memory at c0004400 (32-bit, non-prefetchable) [size=256]
+	Kernel driver in use: snd_atiixp
+	Kernel modules: snd_atiixp
+
+00:14.6 Modem [0703]: Advanced Micro Devices, Inc. [AMD/ATI] SB200 AC97 Modem Controller [1002:434d] (rev 01) (prog-if 00 [Generic])
+	Subsystem: Samsung Electronics Co Ltd Device [144d:2115]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV+ VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz+ UDF- FastB2B- ParErr- DEVSEL=slow >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 32 (500ns min), Cache Line Size: 32 bytes
+	Interrupt: pin B routed to IRQ 5
+	NUMA node: 0
+	Region 0: Memory at c0004800 (32-bit, non-prefetchable) [size=256]
+	Kernel driver in use: snd_atiixp_modem
+	Kernel modules: snd_atiixp_modem
+
+01:05.0 VGA compatible controller [0300]: Advanced Micro Devices, Inc. [AMD/ATI] RS300M [Mobility Radeon 9100 IGP] [1002:5835] (prog-if 00 [VGA controller])
+	Subsystem: Samsung Electronics Co Ltd Device [144d:6102]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B+ DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 66 (2000ns min), Cache Line Size: 32 bytes
+	Interrupt: pin A routed to IRQ 10
+	NUMA node: 0
+	Region 0: Memory at d0000000 (32-bit, prefetchable) [size=256M]
+	Region 1: I/O ports at 9000 [size=256]
+	Region 2: Memory at c0100000 (32-bit, non-prefetchable) [size=64K]
+	Expansion ROM at 000c0000 [virtual] [disabled] [size=128K]
+	Capabilities: [58] AGP version 3.0
+		Status: RQ=256 Iso- ArqSz=0 Cal=7 SBA+ ITACoh- GART64- HTrans- 64bit+ FW+ AGP3+ Rate=x4,x8
+		Command: RQ=1 ArqSz=0 Cal=0 SBA+ AGP- GART64- 64bit- FW- Rate=<none>
+	Capabilities: [50] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: radeon
+	Kernel modules: radeonfb, radeon
+
+02:04.0 CardBus bridge [0607]: Ricoh Co Ltd RL5c475 [1180:0475] (rev b8)
+	Subsystem: Samsung Electronics Co Ltd Device [144d:b028]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 168
+	Interrupt: pin A routed to IRQ 10
+	NUMA node: 0
+	Region 0: Memory at 60000000 (32-bit, non-prefetchable) [size=4K]
+	Bus: primary=02, secondary=03, subordinate=06, sec-latency=176
+	Memory window 0: 58000000-5bffffff (prefetchable)
+	Memory window 1: 64000000-67ffffff
+	I/O window 0: 00002000-000020ff
+	I/O window 1: 00002400-000024ff
+	BridgeCtl: Parity- SERR- ISA- VGA- MAbort- >Reset- 16bInt+ PostWrite+
+	16-bit legacy interface ports at 0001
+	Capabilities: [dc] Power Management version 2
+		Flags: PMEClk+ DSI- D1+ D2+ AuxCurrent=0mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=2 PME-
+		Bridge: PM- B3+
+	Kernel driver in use: yenta_cardbus
+	Kernel modules: yenta_socket
+
+02:04.1 FireWire (IEEE 1394) [0c00]: Ricoh Co Ltd R5C551 IEEE 1394 Controller [1180:0551] (prog-if 10 [OHCI])
+	Subsystem: Samsung Electronics Co Ltd Device [144d:b023]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 32 (500ns min, 1000ns max)
+	Interrupt: pin B routed to IRQ 5
+	NUMA node: 0
+	Region 0: Memory at c0200000 (32-bit, non-prefetchable) [size=2K]
+	Capabilities: [dc] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=2 PME+
+	Kernel driver in use: firewire_ohci
+	Kernel modules: firewire_ohci
+
+02:05.0 Ethernet controller [0200]: Broadcom Inc. and subsidiaries BCM4401-B0 100Base-TX [14e4:170c] (rev 02)
+	Subsystem: Samsung Electronics Co Ltd Device [144d:b028]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 32
+	Interrupt: pin A routed to IRQ 6
+	NUMA node: 0
+	Region 0: Memory at c0204000 (32-bit, non-prefetchable) [size=8K]
+	Capabilities: [40] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=2 PME-
+	Kernel driver in use: b44
+	Kernel modules: b44
+
+02:06.0 USB controller [0c03]: NEC Corporation OHCI USB Controller [1033:0035] (rev 43) (prog-if 10 [OHCI])
+	Subsystem: Samsung Electronics Co Ltd Device [144d:b028]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV+ VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 32 (250ns min, 10500ns max), Cache Line Size: 32 bytes
+	Interrupt: pin A routed to IRQ 11
+	NUMA node: 0
+	Region 0: Memory at c0201000 (32-bit, non-prefetchable) [size=4K]
+	Capabilities: [40] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0+,D1+,D2+,D3hot+,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME+
+	Kernel driver in use: ohci-pci
+
+02:06.1 USB controller [0c03]: NEC Corporation OHCI USB Controller [1033:0035] (rev 43) (prog-if 10 [OHCI])
+	Subsystem: Samsung Electronics Co Ltd Device [144d:b028]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV+ VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 32 (250ns min, 10500ns max), Cache Line Size: 32 bytes
+	Interrupt: pin B routed to IRQ 6
+	NUMA node: 0
+	Region 0: Memory at c0202000 (32-bit, non-prefetchable) [size=4K]
+	Capabilities: [40] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0+,D1+,D2+,D3hot+,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME+
+	Kernel driver in use: ohci-pci
+
+02:06.2 USB controller [0c03]: NEC Corporation uPD72010x USB 2.0 Controller [1033:00e0] (rev 04) (prog-if 20 [EHCI])
+	Subsystem: Samsung Electronics Co Ltd Device [144d:b028]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV+ VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 132 (4000ns min, 8500ns max), Cache Line Size: 32 bytes
+	Interrupt: pin C routed to IRQ 5
+	NUMA node: 0
+	Region 0: Memory at c0200800 (32-bit, non-prefetchable) [size=256]
+	Capabilities: [40] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0+,D1+,D2+,D3hot+,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: ehci-pci
+
